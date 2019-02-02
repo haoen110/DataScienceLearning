@@ -32,7 +32,8 @@ else:pass
 s = 0
 for i in range(1,100,2):
 	s += i
-else:print(s)
+else:
+	print(s)
 
 i = 1
 s = 0
