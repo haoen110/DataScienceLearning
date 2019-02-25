@@ -1,95 +1,240 @@
-sudo+命令 （超级用户权限执行命令）
-	-i 	切换root用户
-exit 推出用户
-poweroff
-reboot
-ctrl+c 强制停止
-ctrl+d 推出当前用
+Linux基本结构：
+	应用程序
+	标准库
+	Linux操作系统内核
 
-pwd 查看当前目录
-ls --help |more
-ls -s
-ls -l
-	文件类型：
-	d   文件夹
-	-   普通文件
-	l   链接文件
-	c/d 设备文件
-	权限分组：
-	用户权限（user）组权限（group）其他权限（other）
-ls -a
+Linux/Unix 命令：
+	命令名 [选项] [参数] 
+	注：[]的内容代表可选
 
-chmod [权限] [文件名]（修改文件权限)
-	a （所有用户）
-	u （用户）
-	g （同组用户）
-	o （其他用户）
-	+ （添加权限）
-	- （删除权限）
-chmod u+r a.txt
-chord o-rwx a.txt
+Linux/Unix 路径：
+	是用来记录一个文件或文件夹的字符串
+		/home/haha.txt
+		(root根)/xxx/xxx
 
-cd / 返回根目录
-cd   返回根目录
-cd . 当前目录
-cd ..返回上层目录
-cd ~
-cd -
+	绝对路径：以'/'字符开头的路径
+	相对路径：1、文件/文件夹名称
+			 2、.当前文件夹
+			 3、..上一级文件夹
+			 4、~用户主目录(home)
 
-mkdir abc bcd 创建文件夹
-mkdir -p aaa/bbb/ccc 逐步创建
-rm -rf 删除文件夹或者目录（r是递归删除;i是给出提示;f是强制删除）
-mkdir "a b" 创建特殊符号的路径
+常用操作：
+	sudo+命令 （超级用户权限执行命令）-i 	切换root用户
+	exit 		退出用户
+	poweroff 	关机
+	reboot 		重启
+	ctrl+c 		强制停止
+	ctrl+d 		推出当前用
+	ctrl+l 		清屏
+	Tab 		补全命令和路径
+	上下键 		翻出以前的操作过的命令
 
-touch 创建文件（如果文件已经存在，更新修改时间）
+help
+	作用：查看此命令帮助信息
+	格式：命令名 --help
+	示例：ls --help
 
+man
+	作用：查看命令所对应的帮助文档（手册）
+	格式：man Linux/Unix的命令名
+	示例：
+		man ls
+		man rm
+	翻页：上下键
+	退出：q键
 
-find / -name "" 在根目录下查找
-find . -name "" 在当前目录下查找
-find ./ -name "" 当前目录下的所有目录
+pwd
+	作用：用于显示当前的工作路径位置（当前工作文件夹）
+	示例：pwd
 
+ls
+	作用：显示文件或文件夹内容
+	格式：ls [选项] [文件夹名或文件名]
+	ls -l # 列表显示文件的详细信息
+		权限分组：
+			-rw- rw- r--   haoen haoen ???? a.txt
+							属主   属组
+			用户权限（user）组权限（group）其他权限（other）
+		文件类型：
+			d   文件夹
+			l   链接文件
+			c/d 设备文件
+	ls -a # 显示全部文件、文件夹（隐藏文件等）
+	ls --help |more
+	ls -al
 
-cp -R 源文件 目标地址； 拷贝文件(-R为拷贝文件夹; -a 复制文件夹中的全部内容)
-mv 移动文件/重命名(rename) mv passed mapw; mv passed ~/ 
+chmod 
+	作用：（修改文件权限)
+	格式：chmod [权限] [文件名]
+		a （所有用户）
+		u （用户）
+		g （同组用户）
+		o （其他用户）
+		+ （添加权限）
+        - （删除权限）
+	示例：
+		chmod u+r a.txt
+		chord o-rwx a.txt
 
-cat 查看文件
-more 分页显示
+cd
+	作用：改变当前工作路径（进入某个目录）
+	格式：cd [路径]
+	示例：
+		cd /  # 返回根目录
+		cd    # 返回根目录
+		cd .  # 当前目录
+		cd .. # 返回上层目录
+		cd ~  # 返回home
+		cd -  # 切换到进入这个文件夹之前的文件夹
 
-通配符：*(匹配0个，1个或多个任意字符） ？（匹配一个任意字符）
-ls a*
-ls *c
-ls *b*
+mkdir 
+	作用：创建一个或多个文件夹
+	格式：mkdir 文件夹1 文件夹2 ……
+	示例：
+		mkdir abc bcd 创建文件夹
+		mkdir -p aaa/bbb/ccc 如果中间文件夹不存在则逐步创建
+		mkdir "a b" 创建特殊符号的路径
 
-gzip   压缩 只能对一个文件操作
-gunzip 解压
-tar -czvf xxx.tar.gz(压缩包名称） ./xxx（压缩内容） 压缩
-tar -xzvf xxxx 解压缩
-	-c 创建包
-	-x 解包
-	-v 显示操作文件细节
-	-z 用gzip/gunzip压缩和解压
-	-f 文件名 正在操作的文件名
-	-C 改变解压缩路径
+rmdir
+	作用：删除一个或多个文件夹（文件夹内必须为空）
+	格式：rmdir [选项] 文件夹名
+	示例：
+		rmdir a b c d
+		rmdir -p aaa/bbb/ccc 如果中间文件夹不存在则逐步删除
 
+rm
+	作用：删除文件或文件夹
+	格式：rm [选项] 文件/文件夹
+	选项：
+		-r 递归删除文件夹内的文件和文件夹
+		-i 删除前给出提示
+		-f 强制删除，不给出任何提示
+	示例：
+		rm a.txt b.txt
+		rm c.txt
+		rm *.txt
+		rm -r a
 
+tree
+	作用：显示目录树
+	示例：tree haoen110
 
+touch
+	作用：创建新的文件、更新文件的最后修改时间
+	格式：touch 文件路径
+	示例：touch file
 
-head -20 查看文件，从头开始20个
-tail 查看文件，从尾开始
-cat user.log |grep "2017-04-15" 在user.log搜索有关2017....的内容 (grep "root" /etc/passwd -n)显示行号
+cat
+	作用：将文件内容作为标准输出打印到终端
+	格式：cat 文件名1 文件名2
+	示例：cat /home/1.txt
+	head -20 查看文件，从头开始20个
+	tail 查看文件，从尾开始
 
-输出重定向：
-1、标准输出重定向
-	>将一个命令的标准输出重定向到指定文件
-	>>将一个命令的标准输出重定向“追加”到指定文件
-2、标准错误输出
-	2>
-	2>>
-3、重定向所有输出 &>
-find /etc/ -name "passwd" > t.txt 2>w.txt 将正确的结果输出到t，错误的输出到w
+more
+	作用：分页显示文本的内容
+	格式：more 文件名
+	示例：more ../day.txt
+	基本操作：q 退出；空格 下翻一页
 
+通配符：
+	格式：
+		* 匹配0个，1个或多个任意字符
+		? 匹配1个任意字符
+	示例：
+		touch a ab ac abc aabb bc cd
+		ls a?
+		ls a*
+		ls ?c
+		ls *c
+		ls a*b
+		rm *c
 
+cp 
+	作用：复制文件或文件夹
+	格式：cp [选项] 原文件或文件夹 目标文件或文件夹
+	选项：-a 复制文件夹内的全部选项；-R 拷贝文件夹
+	示例：
+		cp ../ day01/day01.txt ~/
+		cp ../ day01/day01.txt ~/day01.txt.bak 复制过程中改名
 
+mv
+	作用：文件的搬移或更名
+	格式：mv 原文件或文件夹 目标文件或文件夹
+	示例：
+		mv passwd mypw # 改名字
+		mv passwd ~/   # 移动文件
+
+find
+	作用：根据文件名等信息查找指定文件
+	格式：find 路径 -name "文件名"
+	示例：查找用户主目录下有那些文件以.txt结尾
+		find ~ -name "*.txt"
+		find . -name "" 在当前目录下查找
+		find ./ -name "" 当前目录下的所有目录
+
+grep
+	作用：查找文件中相应的内容以及文本信息
+	格式：grep "内容" [选项] 文件名或路径
+	常用选项：
+		-n    显示行号
+		-r/-R 递归搜索文件夹内的文件
+	示例：
+		grep "文件" *.txt
+		grep "root" -nr /etc 
+		grep "tedu" -nr /etc 2> /dev/null 把错误信息映射到dev的null
+		cat user.log |grep "2017-04-15" 在user.log搜索有关2017....的内容 
+
+压缩和解压缩命令
+	gzip
+		作用：用zip压缩算法对文件进行压缩，生成压缩后的文件
+		格式：gzip 文件名
+	gunzip
+		作用：用gzip研所过的文件解压
+		格式：gunzip 文件名
+	示例：
+		cp /etc/passwd ~/
+		gzip ~/passwd
+		ls -l ~/passwd.gz
+		gunzip ~/passwd.gz
+		ls -l ~/passwd
+
+tar
+	作用：对文件或文件夹进行打包和解包的操作
+	格式：tar [选项] 文件名 [文件名或路径]
+	常用选项：
+	    -c 创建包
+	    -x 解包
+	    -v 显示操作文件细节
+	    -z 用gzip/gunzip压缩和解压
+	    -f 文件名 正在操作的文件名
+	    -C 改变解压缩路径
+	示例：
+		tar -czvf day01.tar.gz linux/day01
+		tar -xzvf xxxx 解压缩
+
+sudo 命令：
+	作用：用超级用户权限来执行这些命令
+	格式：sudo 命令 [选项] [参数]
+	常用选项：-i 切换到root用户
+	示例：
+		sudo mkdir /mytest
+
+输出重定向
+	分类
+		1、标准输出
+		2、标准错误输出
+	标准输出重定向
+		>将一个命令的标准输出重定向到指定文件
+		>>将一个命令的标准输出重定向“追加”到指定文件
+	标准错误输出重定向
+		同上类似
+	重定向所有输出 
+		&>
+		&>>
+	示例：
+		find /etc/ -name "passwd" > t.txt 2>w.txt 将正确的结果输出到t，错误的输出到w
+		find /etc/ -name "passwd" 2>w.txt /dev/null 宇宙黑洞
 
 
 ————————————Vim——————————————————
