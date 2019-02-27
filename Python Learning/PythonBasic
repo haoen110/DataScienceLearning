@@ -105,13 +105,6 @@ Python核心数据类型
 	混合类型自动升级
 		1 + 2.14 返回浮点数3.14			
 
-print() 基本输出函数
-	格式：print(要打印的数据)；各数据可以用逗号分隔开
-	示例：
-		print(1+2)
-		print("hello")
-		print("1 + 2 =", 1 + 2)
-
 variable 变量
 	作用：变量是用来绑定数据对象的标识符
 	方法：
@@ -188,7 +181,7 @@ del 语句
 	语法：del 变量名
 	
 	python的内存管理和引用计数
-		每个对象都会记录有几个变量引用自身，当引用的数量为0时，则对象被销毁，此种自动化内存管理方式叫做引用计数
+		每个对象都会记录有几个变量引用自身，当引用的数量为0时，则对象被销毁，此种自动化内存管理方式叫做引用计数(reference count)
 
 复合赋值算数运算符
 	y += x 等同于 y = y + x
@@ -197,27 +190,108 @@ del 语句
 	y /= x 等同于 y = y / x
 	y %= x 等同于 y = y % x
 
+比较运算符
+	<
+	<=
+	>
+	>=
+	==
+	!=
+	语法：
+		左表达式 < 右表达式
+	说明：
+		比较运算符返回布尔类型的值
+	示例：
+		10 < 20 # True
+		1 + 10 > 2 + 8 # True
+		10 < 20 <= 30 # True
 
-int(x, base=10) base是进制，默认是10
+数值对象的构造函数
+	float(obj)
+		用字符串或数字转换为浮点数，如果不给出参数则返回0
+	int(x,base=10) 或 int(x=0); base是进制
+		用数字或字符串转换为整数，如果不给出参数，则返回0
+	compx(r=0.0, i=0.0)
+		用数字或字符创建一个复数
+	bool(x)
+		用x创建一个布尔值(True/False)
+		返回假值的情况
+			None 空
+			False 假
+			0, 0.0, 0j
+			''
+			()
+			[]
+			{}
+			set()
 
-内建数值型函数：
-	abs()
-	round(x, ndigits) 四舍五入；ndigits正数时是向右取整的位数
+函数调用
+	函数名(传参列表)
+		说明：
+			函数调用是表达式，一定会返回一个对象的引用关系
+
+内建数值型函数
+	abs()	取绝对值
+	round(x[, ndigits]) 四舍五入；ndigits正数时是向右取整的位数
+		round(x, -1)
 	pow(x, y) x ** y
+	help() 函数
+		作用：查看函数帮助文档
+		用法：help(函数名)
 
-换行：
-	显式换行 \
-	隐式换行 括号内换行
+statement 语句
+	语句是有一些表达式等组成，通过一条语句可以独立执行来完成一部分事情并形成结果
+	一天语句建议写在一行内
+	多条语句写在一行内需要用分号(;)分开
+	示例：
+		print("hello")
+		x = 100 + 200
+		print(x)
+		del x
+	
+	换行：
+		显式换行 \
+		隐式换行 括号内换行() [] {}
+		示例：
+			i = 1 + 2 + 3 \
+				  + 4 + 5
+			i = (1 + 2 + 3 
+			       + 4 + 5)
 
-基本输入输出函数：input(); print()
-	s = input("请输入字符串:")
-	print("您输入的字符串是:", s)
-	print(1+int(s))
-	-----------------
-	print(value,value, seq=''（分隔符号默认空格）,end='\n')
+input() 基本输入函数
+	作用：从标准输入设置上读取一个字符串（末尾的换行符会被删除）
+	格式：input("提示字符串")
+	说明：返回输入的字符串（仅python3）“提示字符串”可以为空
+	示例：
+		s = input("请输入字符串:")
+		print("您输入的字符串是:", s)
+		print(1+int(s)) 转换整形
 
-if语句：
-	elif可以有多个；else只能有一个；
+print() 基本输出函数
+	作用：将以系列的值以字符串形式输出到标准输出设备上，默认是终端
+	格式：print(要打印的数据)；各数据可以用逗号分隔开
+	示例：
+		print(1+2)
+		print("hello")
+		print("1 + 2 =", 1 + 2)
+		print(value,value, seq=''（分隔符号默认空格）,end='\n')
+
+if 语句
+	作用：让程序根据条件选择的执行某条语句或某些语句
+	说明：if语句又叫做条件语句，也叫分支语句
+	语法：
+		if 真表达式1:
+			语句块
+		elif 真表达式2:
+			语句块2
+		elif 真表达式3:
+			语句块3
+		……
+		else:
+			语句块4
+	elif可以有多个；else只能有0个或1个；
+	要求：if语句内部的语句通常要以4个空格的是缩进来表示包含关系，相同的缩进格式代表相同的所属级别
+
 	s = input("请再输入字符串:")
 	j = int(s)
 	if j > 100:
@@ -227,59 +301,110 @@ if语句：
 	else:
 		print("Other")
 
-条件表达式：
-	商场促销满100减20
-	money = int(input("请输入商品总额"))
-	pay = money - 20 if money >= 100 else money
-	print("您需要支付", pay, "元")
+	if 语句的真值表达式
+		if 100:
+			print("真值")
+		# 等同于
+		if bool(100):
+			print("真值")
 
-pass：填充空白用
+	if 语句嵌套
+		if语句本身是由多条字句组成的一条复合语句
+		if语句可以作为语句嵌套到另一个语句的内部
+		if 1 <= month <= 12:
+			print("是合法的月份")
+			if month <= 3:
+				print("是春季")
+			elif....
+		else:....
+
+条件表达式
+	作用：如果真值表达式的布尔环境值为True，则执行表达式1并返回结果的引用，否则执行表达式2并返回结果的引用
+	语法：表达式1 if 真值表达式 else 表达式2
+	示例：
+		商场促销满100减20
+		money = int(input("请输入商品总额"))
+		pay = money - 20 if money >= 100 else money
+		print("您需要支付", pay, "元")
+
+pass 语句
+	作用：通常来填充语法空白，又名空语句
+	语法：psss
+	示例：
 	g = int(input("请输入学生的成绩"))
 	if 0 <= g <= 100:
 		psss
 	else:print("不处于成绩范围")
 
-布尔运算：
-	not and or
-	not True = False
-	not 100 = False
-布尔与操作：
-	x and y
-	True and True = True
-	True and False = False
-	100 or 200 = 100 （都为真优先返回左侧的）
-	应用：
-	sore = int(input("请输入成绩：") or '0')
-	if score < 0 or score > 100:
-		print("您的成绩不合法！！！")
-	else:
-		print("您输入的成绩是：", score)
-正负号运算符：
-	a = 5
-	b = -a
+布尔运算
+	运算符：
+		not and or
+	
+	布尔非操作：not
+		语法：not x
+		作用：对x进行布尔取值，如bool(x)，为True，返回False，否则返回True
+		示例：
+			not True = False
+			not 100 = False
+	布尔与操作：and
+		语法：x and y
+		作用：优先返回假值对象，当bool(x)的为False时，返回x，否则返回y
+		示例：
+			True and True = True 
+			True and False = False
+			100 and 200 = 200
+
+	布尔或操作：or
+		语法：x or y
+		作用：优先返回真值对象，当x为True时返回x，否则返回y
+		100 or 200 = 100 （都为真优先返回左侧的）
+		应用：
+			sore = int(input("请输入成绩：") or '0')
+			if score < 0 or score > 100:
+				print("您的成绩不合法！！！")
+			else:
+				print("您输入的成绩是：", score)
+
+正负号运算符
+	+（正号） -（负号）
+	语法：
+		+ 表达式
+		- 表达式
+	示例：
+		a = 5
+		b = -a
 
 str 字符串
-	' 单引号
-	" 双引号
-	''' 三单引号
-	""" 三双引号
-	三引号字符串：
-		三引号字符串换行会自动转换为换行符'\n'
-		三引号内可以包含单引号和双引号
-		print('Welcome to Beijing\nI like Python!\nI am learning!')
-		s = '''Welcome to Beijing
-		I like Python!
-		I am learning!'''
+	作用：用来记录文本（文字）信息
+	表示方法：
+		' 单引号
+		" 双引号
+			单引号和双引号的区别：
+				单引号内的双引号不算结束符
+				双引号内的单引号不算结束符
+		''' 三单引号
+		""" 三双引号
+		三引号字符串：
+			三引号字符串换行会自动转换为换行符'\n'
+			三引号内可以包含单引号和双引号
+			s = '''Welcome to Beijing
+			I like Python!
+			I am learning!'''
+			print('Welcome to Beijing\nI like Python!\nI am learning!')
 
-用转移序列代表特殊字符
-	\' \" \\ 
-	\n \r(返回行首并替换) \f(换页) \t(水平制表符) \v(垂直制表符) 
-	\b(倒退、删除) \0(空字符) 
-	\0oo(oo为两位八进制表示的字符) 
-	\xXX(XX为两位十六进制表示的字符)
-	\uXXXX(Unicode16的十六进制表示的字符)
+用转义序列代表特殊字符
+	字符串字面值中，用字符反斜杠后跟一些字符代表一个字符
+	字符串中的转义字符表
+		\' \" \\ 
+		\n \r(光标返回行首并替换) \f(换页) \t(水平制表符) \v(垂直制表符) 
+		\b(倒退、删除) \0(空字符) 
+		\0oo(oo为两位八进制表示的字符) 
+		\xXX(XX为两位十六进制表示的字符)
+		\uXXXX(Unicode16的十六进制表示的字符)
+		\uXXXXXXXX(Unicode16的十六进制表示的字符)
 	
-ASCII编码：man ascii (八进制十六进制都可以表示)
+ASCII编码
+	man ascii (八进制十六进制都可以表示)
 	常用ASCII：
 	字符  十进制  十六进制
 	'0'   48      0x30
@@ -290,7 +415,10 @@ ASCII编码：man ascii (八进制十六进制都可以表示)
 	print(ord('A')) # 65
 	print(ord('中'))# 20013
 
-raw 字符串：让转义字符\无效
+raw 字符串（原始字符串）
+	字面格式：r'字符串内容'(""","")
+	作用：让转义字符\无效
+	示例：
 	a = 'C:\newfile\test.py'
 	print(a)
 	print(len(a))
@@ -298,20 +426,31 @@ raw 字符串：让转义字符\无效
 	print(a)
 	print(len(a))
 
-字符串的运算：
-	+ += * *=
-	x = 'abcd' = 'efg'
-	print(x) 	# abcdefg
-	x += '123'  # abcdefg123
-	--------------------------
-	x = '123'
-	y = x * 2 # y = '123123'
-	--------------------------
-	> >= < <= == !=
+字符串的运算
+	算术运算符：
+		+ += * *=
+		+ 加号运算符用于字符串的拼接
+			x = 'abcd' + 'efg'
+			print(x) 	# abcdefg
+			x += '123'  # abcdefg123
+		* 运算符用于生成重复的字符串
+			x = '123'
+			y = x * 2 # y = '123123'
+	
+	比较运算符：
+		> >= < <= == !=
+		示例：
+			'A' < 'B' # True
+			'B' < 'a' # True
+			'AD'< 'ABC' # False 从左到右依次相比
+			'ABC' == 'abc' # False
 
-in / not in :用于序列、字典、集合，判断某个值是否在该容器中返回TF
-	s = 'Welcome to Ningbo!'
-	'to' in s #True
+in / not in
+	作用：用于序列、字典、集合，判断某个值是否在该容器中返回TF
+	格式：对象 in 容器
+	示例：
+		s = 'Welcome to Ningbo!'
+		'to' in s #True
 
 index 索引
 	s[0] = s[-len(s)] # W
