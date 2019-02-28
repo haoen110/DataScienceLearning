@@ -274,7 +274,7 @@ print() 基本输出函数
 		print(1+2)
 		print("hello")
 		print("1 + 2 =", 1 + 2)
-		print(value,value, seq=''（分隔符号默认空格）,end='\n')
+		print(value,value, sep=''（分隔符号默认空格）,end='\n')
 
 if 语句
 	作用：让程序根据条件选择的执行某条语句或某些语句
@@ -568,7 +568,7 @@ str() 字符串的构造、创建函数
 			'%010d'% 123 # '0000000000123'
 			'%7.3f' % 3.1415926
 
-Format函数格式化字符串
+format 函数格式化字符串
 	s = "I love {}".format("WW")
 	print(s)
 	s1 = "I love {0} and {1}".format("haha",99)
@@ -662,57 +662,130 @@ break 语句：
 				break
 			print(n)
 
-for 语句：
+for 语句
+	作用：用来遍历可迭代对象的数据元素，可迭代对象是指能以此获取数据元素的对象，可迭代对象包括：
+		字符串str、列表list、元组tuple、字典dict、集合set……
+	
+	语法：
 	for 变量列表 in 可迭代对象：
 		语句快1
 	else: (结束循环后)
 		语句快2
 
-range() 函数：
-	range(stop) 从零开始，每次生成一个整数后加一，直到stop
-	rang(start, stop, step)
-	整数序列生成器，可迭代对象
-	不包括最后一项
+	说明：
+		1、可迭代对象每次提供一个元素依次赋值给变量列表中的变量，赋值完毕后执行语句块1，重复执行此步骤，直到可迭代对象不能提供数据为止。
+		2、可迭代对象提供完所有元素后，执行else子句部分的语句快2，然后退出此for语句。
+		3、else子句部分可以省略（同while类似）。
+		4、当在循环内部使用break中止循环时，else子句部分语句不会执行。
 
-continue 语句：
-	用作循环语句while、for中，不再执行本次循环内continue语句，重新开始一次新的循环
-	1、在while中，会跳到真值表达式重新判断
-	2、在for中，会从迭代对象取下一个元素
-	for x in range(5):
-		if x == 2:
-			continue
-		print(x)
+	示例：
+		s = 'ABCDE'
+		for ch in s:
+			print("ch--->", ch)
+		else:
+			print("for语句执行else语句")
+		print("程序退出")
 
-python中的序列类型（sequence）
+	for 语句嵌套
+		for 语句内部可以放冉义语句，包含for语句和while语句
+
+	示例：
+		for x in 'ABC':
+			for y in '123':
+				print(x+y)
+
+		count = 0
+		for x in range(5):
+			for y in range(10):
+				count += 1
+		print(count)
+
+range() 函数
+	格式见：help(range)
+
+	作用：用来创建一个生成一系列整数的迭代对象（也叫做整数序列生成器）
+
+	函数：
+		range(stop)从零开始，每次生成一个整数后加1操作，直到stop为止（不包含stop）
+	
+		rang(start, stop[, step])
+		从start开始，每次生成一个整数后移动step，直到stop为止（不包含stop，且step可以是负数）
+
+	说明：range返回的对象是可迭代对象，可以用于for语句中
+
+	示例：
+		range(4)		# 0, 1, 2, 3
+		range(3, 6)		# 3, 4, 5
+		range(1, 10, 2) # 1, 3, 5, 7, 9
+		range(5, 0 , -2)# 5, 3, 1
+		range(4, 0)		# 空
+
+		for x in range(4):
+			print(x)
+		for x in range(3, 6):
+			print(x)
+
+continue 语句
+	作用：用于循环语句（while、for）中，不再执行本次循环内continue之后的语句，重新开始一次新的循环
+	说明：
+		1、在while语句中，执行continue语句将会直接跳转到while语句的真值表达式处重新判断循环条件
+		2、在for语句中，执行continue语句，将会从可迭代对象中取下一个元素，绑定变量后再次进行循环
+	示例：
+		for x in range(5):
+			if x == 2:
+				continue
+			print(x)
+
+sequence 序列类型
 	字符串 str
 	列表 list
 	元组 tuple
 	字节串 bytes
 	字节数组 bytearray
 
-list列表：
-	L = [] # 空列表
-	L = [1, 2, 3, 4]
-	L = ["北京", "上海", "重庆"]
-	L = [1, 'two', 3, '四']
-	L = [1, 2, [3.1, 3.2, 3.3], 4]
-	构造函数：list()
-	L = list(range(1, 10, 2))
-	L = list("ABCD")
+list 列表
+	概念：列表式由一系列特定元素组成的，元素和元素之间没有任何关联关系，但他们之间有先后顺序关系。列表式一种容器，是序列的一种，是可以被改变的序列
+	
+	创建列表：
+		L = [] # 空列表
+		L = [1, 2, 3, 4]
+		L = ["北京", "上海", "重庆"]
+		L = [1, 'two', 3, '四']
+		L = [1, 2, [3.1, 3.2, 3.3], 4]
+	
+	构造函数：list()、list(interable) 用可迭代对象创建一个列表
+		L = list(range(1, 10, 2))
+		L = list("ABCD")
 
-list运算：
-	+ += * *=
-	x = [1, 2, 3]
-	y = [4, 5, 6]
-	z = x + y  (拼接)
-	x += [4,5,6] -> [1,2,3,4,5,6]
-	x += 'ABC'   -> 
-	x *= 用于生成重复的列表
-	x = [1, 2]
-	x *= 3 # x = [1,2,1,2,1,2]
+list 运算
+	算术运算：
+		+ += * *=
+		+ 用于拼接
+			x = [1, 2, 3]
+			y = [4, 5, 6]
+			z = x + y  (拼接)
+			
+		+= 用于愿列表与右侧的可迭代对象进行拼接，生成新的列表
+			x += [4,5,6] -> [1,2,3,4,5,6]
+			x += 'ABC'   -> [1,2,3,4,5,6,'A','B','C']
+		* 用于生成重复的列表
+			x = [1, 2]
+			x *= 3 # x = [1,2,1,2,1,2]
 
-	比较运算
-	< <= > >=  == !=
+	比较运算：
+		< <= > >=  == !=
+		x = [1,2,3]
+		y = [2,3,4]
+		x != y  # True
+		x > [1,2] #True
+		x < y #True
+		[1,3,2] > [1,2,3] # True
+		['AB', 'CD'] > ['AC', 'BD'] #False
+		[1, 'two'] > ['two', 1]  # Typeerror
+
+
+
+
 	in / not in
 	判断一个数据元素是否怒在容器（列表内）
 
