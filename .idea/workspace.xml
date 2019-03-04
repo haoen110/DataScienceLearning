@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="commit">
+    <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/DataScienceLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataScienceLearning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Numpy Learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Pandas Learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/001print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/002print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/003statement.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/004.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/005input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/006if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/007if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/008if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/009if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/010abs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/011or.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/012.5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/012.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/013str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/014slice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/015srt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/016str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/017str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/018str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/019while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/020while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/021while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/022while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/023while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/024while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/025while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/026for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/027for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/028for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/029for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/030continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/031continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/032prime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/033.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/034list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/035list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/036list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/037.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/038dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/039dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/040dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/041.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/042students.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/043set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/044set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/Programs/045set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/PythonBasic" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/PythonBasicPractice" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,79 +66,75 @@
     <session id="848410379">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="__Python 面向对象编程__" value="35" />
-          <entry key="py" value="3" />
+          <entry key="py" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="35" />
-          <entry key="Python" value="3" />
+          <entry key="Python" value="23" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvanced">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvancedPractice">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python Learning/__Python 面向对象编程__">
+        <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" selection-start-line="2" selection-end-line="2" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Learning/Programs/class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Learning/Programs/for.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="132">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -100,6 +146,8 @@
         <option value="$PROJECT_DIR$/Python Learning/&lt;&lt;Python 面向对象编程&gt;&gt;" />
         <option value="$PROJECT_DIR$/Python Learning/Programs/for.py" />
         <option value="$PROJECT_DIR$/Python Learning/__Python 面向对象编程__" />
+        <option value="$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py" />
+        <option value="$PROJECT_DIR$/Python Learning/PythonAdvanced/1.py" />
       </list>
     </option>
   </component>
@@ -110,32 +158,10 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="DataScienceLearning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Python Learning" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="Python Learning" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Programs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,6 +174,37 @@
               <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
               <item name="Python Learning" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Python Learning" type="462c0819:PsiDirectoryNode" />
+              <item name="PythonAdvanced" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="DataScienceLearning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="DataScienceLearning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Python Learning" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -155,8 +212,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="E:/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,8 +227,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.for">
-    <configuration name="class" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="DataScienceLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -179,50 +236,40 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Learning/Programs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Learning/PythonAdvanced" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Learning/Programs/class.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="for" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="DataScienceLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Learning/Programs" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="E:\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Learning/PythonAdvanced" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Learning/Programs/for.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Learning/PythonAdvanced" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.class" />
-      <item itemvalue="Python.for" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.for" />
-        <item itemvalue="Python.class" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -245,22 +292,31 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26492536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -277,13 +333,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python Learning/&lt;&lt;Python 面向对象编程&gt;&gt;">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Learning/&lt;&lt;Python 面向对象编程&gt;&gt;" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/__Python 面向对象编程__" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/Programs/class.py" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/Programs/for.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -294,24 +347,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/Programs/class.py">
+    <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvancedPractice">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/Programs/for.py">
+    <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvanced">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="462">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/__Python 面向对象编程__">
+    <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
