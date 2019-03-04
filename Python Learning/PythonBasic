@@ -515,7 +515,7 @@ str() 字符串的构造、创建函数
 		'abc'.isalpha()
 		if 'abc'.isalpha():
 			print("True")
-		s.center(30, '#') #给出宽度居中 默认为空格
+		s.(30, '#') #给出宽度居中 默认为空格
 		s.count('A', 3, 5) #返回3到5的A个数
 		s.find()
 		s.strip() #去掉左右侧空白字符，lstrip，rstrip
@@ -783,34 +783,58 @@ list 运算
 		['AB', 'CD'] > ['AC', 'BD'] #False
 		[1, 'two'] > ['two', 1]  # Typeerror
 
+list in / not in
+	作用：判断一个数据元素是否怒在容器（列表内），如果存在，返回True，否则返回False
+	示例：
+		x = [1. 'Two', 3.14, '四']
+		1 in x    # True
+		2 in x    # True
+		'四' not in x # False
 
-
-
-	in / not in
-	判断一个数据元素是否怒在容器（列表内）
-
-索引 index / slice
-	取值、赋值
-	切片取值
+list index / slice
+	取值语法：列表[整数表达式]
+	取值用法：列表的索引取值与字符串的索引取值规则完全相同，列表的索引为分正向索引和反向索引
 	x = list(range(9))
 	y = x[1:9:2] # y = [1, 3, 5, 7]
-	切片赋值
-	L = [2, 3, 4]
-	L[0:1] = [1.1, 2.2] -> [1.1, 2.2, 3, 4]
-	L[1:2] = [1.1, 2.2] -> 
-	L[1:2] = [] 
-	del 列表元素删除
-		del 列表[index/slice]
 
-常用的序列函数：
-	len(x) 
-	max(x)
-	min(x)
-	sum(x)
-	any(x) 真值测试，如果列表中其中有一个值为真
-	all(x) 所有都为真值
+	索引赋值：列表式可变的序列，可以通过索引赋值改变列表中地元素
+	索引语法：列表[索引] = 表达式
 
-List 方法
+	切片赋值语法：列表[切片] = 可迭代对象
+	说明：切片赋值的赋值运算符的右侧必须是一个可迭代对象
+		切出来然后再赋值
+	示例：
+		L = [2, 3, 4]
+		L[0:1] = [1.1, 2.2] -> [1.1, 2.2, 3, 4]
+		L[1:2] = [1.1, 2.2] -> 
+		L[1:2] = [] 
+
+	切片不长不为1的切片赋值：
+		L = list(range(1, 9))
+		L[1::2] = [2.2, 4.4, 6.6, 8.8]
+		print(L)
+	注意事项：对于步长不等于1的切片赋值，赋值运算符的右侧的可迭代对象提供元素的个数一定要等于切片切出的段数
+
+	L += 'ABC' 会改变原有id，相当于新建变量
+
+del 列表元素删除
+	语法：del 列表[index/slice]
+	示例：
+		L = [1, 2, 3, 4, 5, 6]
+		del L[0]  #L = [2, 3, 4, 5, 6]
+		del L[-1] #L = [2, 3, 4, 5]
+		L = [1, 2, 3, 4, 5, 6]
+		del L[::2] # L = [2, 4, 6]
+
+常用的序列函数
+	len(x)	返回序列的长度
+	max(x)	返回序列的最大元素
+	min(x)	返回序列中最小值元素
+	sum(x)	返回序列中所有元素的和（必须是数值类型）
+	any(x)  真值测试，如果列表中其中有一个值为真
+	all(x) 	真值测试，如果所有都为真值
+
+list 常用方法
 	L.index() 查询元素的索引下标
 	L.insert(x,y) x索引 y内容
 	L.count(x) 返回列表中x的个数
@@ -823,56 +847,353 @@ List 方法
 	L.reverse() 反转顺序
 	L.pop([index]) 删除元素，默认最后一个，会返回值
 
-字符串文本解析方法split和join
-	S.split(sep=None) 	使用sep作为分隔符，返回分割后的字符串列表
-	S.join(interable)   使用可迭代对象的字符串，返回一个中间用S进行分割的字符串
-	s = 'Beijing is capital'
-	L = s.split() ->['Beijing', 'is', 'captial']
+split/join 字符串文本解释方法
+	S.split(sep=None) 	
+		使用sep作为分隔符分隔s字符串，返回分割后的字符串列表，默认为空白字符作文分隔符
+	S.join(interable)
+		使用可迭代对象的字符串，返回一个中间用S进行分割的字符串
+	示例
+		s = 'Beijing is capital'
+		L = s.split() ->['Beijing', 'is', 'captial']
 
-	s = '\\'
-	L = ['C:', 'Programe files', 'python3']
-	s2 = s.join(L) -> s2 = 'C:\\Programe files\\python3'
+		s = '\\'
+		L = ['C:', 'Programe files', 'python3']
+		s2 = s.join(L) -> s2 = 'C:\\Programe files\\python3'
 
 深拷贝deep copy；浅拷贝shallow copy
-	浅拷贝：复制过程中一层变量
+	浅拷贝：是指在复制过程只复制一层变量，不会复制深层变量绑定的对象的复制过程
+	深拷贝：深拷贝通常只对可变对象进行解释不可变对象通常不变
 	L  = [3.1, 3.2]
 	L1 = [1, 2, L]
-	L2 = L1.copy   浅拷贝，改变L2[2][0]，L也会改变
+	L2 = L1.copy 等同于 L1[:]  浅拷贝，改变L2[2][0]，L也会改变
 	import copy
 	L2 = copy.deepcopy(L1) 深拷贝
 
-列表推导式：lsit comprehension
-	用迭代对象依次生成带有多个元素的列表的表达式
-	[表达式 for 变量 in 可迭代对象]
-	[表达式 for 变量 in 可迭代对象 if 真值表达式]
-	例子：
-	L = [x*x for x in range(1, 10)]
-	L = [i for i in range(1,100,2)] #打印出1-100以内的奇数
-	L = [i for i in range(1,100) if x % 2 ==1] #同上！！
+lsit comprehension 列表推导式
+	列表推导式是用可迭代对象依次生成带有多个元素的列表的表达式
+	作用：用简单方法生成列表
+	语法：
+		[表达式 for 变量 in 可迭代对象]
+		[表达式 for 变量 in 可迭代对象 if 真值表达式]
+	示例：
+		L = [x*x for x in range(1, 10)]
+		L = [i for i in range(1,100,2)] #打印出1-100以内的奇数
+		L = [i for i in range(1,100) if x % 2 ==1] #同上！！
 	--------------
-	嵌套
-	[表达式1 for v1 in 迭代1 if 真表1 
-				for v2 迭代2 if 真表2 ……]
-	例子：
-	L1 = [2, 3, 5]
-	L2 = [7, 11, 13]
-	将L1中的全部元素与L2中的全部元素一次相乘后放到L3中
-	L3 = [x * y for x in L1 for y in L2]
-	print(L3)
+	嵌套：
+		[表达式1 for v1 in 迭代1 if 真表1 
+					for v2 迭代2 if 真表2 ……]
+	示例：
+		L1 = [2, 3, 5]
+		L2 = [7, 11, 13]
+		将L1中的全部元素与L2中的全部元素一次相乘后放到L3中
+		L3 = [x * y for x in L1 for y in L2]
+		print(L3)
 
-函数
-	函数需要先定义，调用函数
-	参数：负责函数传递一些信息
-		普通参数：定义的时候直接定义变量名
-		默认参数：def reg(name, age, gender='male'):
-		关键字参数：
-	返回值return：函数的执行结果
+tuple 元组
+	元祖是不可改变的序列，同list一样元组可以存放任意类型的元素，一单元组生成，则他不可以改变
+	表示方式：用小括号()括起来，单个元素括起来用逗号，区分是单个对象还是元组。
+		t = ()
+		t = 200,
+		t = (20,)
+		t = (1, 2, 3)
+		t = 100, 200, 300
 
+	构造函数 tuple
+		tuple()生成一个空的元组，等同于()
+		tuple(interable) 用可迭代对象生成一个元组
+		示例：
+			t = tuple()
+			t = tuple(range(10))
+			t = tuple('hello')
+			t = tuple([1,2,3,4])
 
+	元组的算术运算：
+		+ += * *= 用法语列表的用法完全相同
+	元组的比较运算：
+		< <= > >= == != 和列表用法完全相同
+	in / not in 切片、索引规则与列表完全相同
 
+	区别：元组是不可变对象，不支持索引赋值和切片赋值
 
+	元祖的方法：help(tuple)
+		T.count(value) -> integer -- return number of occurrences of value
+		T.index(value, [start, [stop]]) -> integer -- return first index of value.
 
+可以用于序列的函数
+	len, max, min, sum, all, any
+	构造函数:
+		str(obj)
+		list(interable)
+		tuple(interable)
+	其他函数：
+		reversed(seq) 返回反向顺序的可迭代对象
+		sorted(interable, reversed=False) 返回排序的可迭代对象注意区分它和.sort()方法
+		返回已排序的列表
 
+	示例：
+		for x in reversed('ABCD')；
+			print(x)
+		L = [8,]
+
+dict 字典
+	1、字典是一种可变的容器，可以存储任意类型的数据
+	2、字典中的每个数据都是‘键’(（key)进行索引，而不像序列可以用下表来进行索引
+	3、字典的数据没有先后顺序关系，字典的存储是无序的
+	4、字典中的数以 键(key)——值(value)对 进行映射存储
+	5、字典的键不能重复，且只能用不可变类型作为字典的键。
+
+	字典的字面值表示方式：
+		用{}括起来，以冒号(:)分割 键——值对 ，各键值对 用分号(;)来分开
+
+	创建字典
+		d = {}
+		d = {'name': 'howie', 'age': 15}
+		d = {'姓名'： '小张'}
+		d = {1:'壹', 2:'贰'}
+
+	字典的构造函数
+		dict() 传建一个空字典，等同于{}
+		dict(interable) 用可迭代对象初始化一个字典
+		dict(**kargs) 关键字传参形式生成一个字典
+
+	示例：
+		d = dict()
+		d = dict([('name', 'Howie'), ('age', 15)])
+		d = dict(name = 'Howie', age = 15)
+
+	不可变类型（可以作为键）：int, float, complex, bool, str, tuple, frozensrt
+	可变类型：list, dict, set, bytearry（字节数组）
+
+	字典的键索引
+		用[]运算符可以获取字典内'键'所对应的'值'
+		语法：字典[键]
+		获取数据元素
+			d = dict(name='Howie', age=15)
+			print(d['age'])
+
+		添加、修改字典元素
+			字典[键] = 表达式
+			d = {}
+			d['name'] = 'Howie'
+			d['age'] = 15
+			d['age'] =16
+
+		del 语句删除字典的元素
+			语法：del 字典[键]
+			d = {'name': 'china', 'pos': 'asia'}
+			del d['pos']
+			print(d)
+
+dict in / not in
+	可以用in运算符来判断一个‘键’是否存在于字典中，如果存在则返回True，否则返回False
+	示例：
+		d = {'a': 1, 'b': 2}
+		'a' in d # True
+		1 in d # False
+		100 not in d # True
+		2 not in d # True
+
+dict 迭代访问
+	字典是可迭代对象，字典只能对键进行迭代访问
+	d = {'name': 'Howie', (2002, 1, 1): '生日'}
+	for x in d:
+		print(x)
+		print(d[x])
+
+dict 方法	
+	D.clear()	清空字典
+	D.pop(key)	移除键，同时返回此键所对应的值
+	D.copy()	返回字典D的副本,只复制一层(浅拷贝)
+	D.update(D2)	将字典 D2 合并到D中，如果键相同，则此键的值取D2的值作为新值
+	D.get(key, default)	返回键key所对应的值,如果没有此键，则返回default
+	D.keys()	返回可迭代的 dict_keys 集合对象
+	D.values()	返回可迭代的 dict_values 值对象
+	D.items()	返回可迭代的 dict_items 对象
+
+	示例：
+		for k, v in d.items():
+			print(k, v)
+
+dict 推导式
+	字典推导式是用可迭代对象依次生成字典内元素的表达式
+	语法：
+		{键表达式 : 真值表达式 for 变量 in 可迭代对象 [if 真值表达式]}
+		注：[]的内容可以省略
+	示例：
+		d = {x : x ** 2 for x in range(10)}
+		d = {x : x ** 2 for x in range(10) if x % 3 == 0}
+
+set 集合
+	集合是可变的容器
+	集合内的数据对象是唯一的（不能重复多次的）
+	集合是无序的储存结构，集合中的数据没有先后关系
+	集合内的元素必须是不可变对象
+	集合是可迭代的
+	集合是相当于只有键没有值的字典（键则是集合的数据）
+
+	创建集合
+		set()
+		s = {1, 2, 3}
+		set(interable)
+
+	示例：
+		s = set("ABC")
+		s = set('ABCCBA')
+		s = set({1:"一", 2:"二", 5:"五"})
+		s = set([1, 3.14, False])
+		s = set((2, 3, 5, 7))
+
+	集合的运算：
+		交集，并集，补集，子集，超集
+		& 交集：
+			s1 = {1,2,3}
+			s2 = {2,3,4}
+			s3 = s1 & s2 # s3 = {2,3}
+
+		| 并集：
+			s1 = {1,2,3}
+			s2 = {2,3,4}
+			s3 = s1 | s2 # s3 = {1,2,3,4}	
+			对于可变对象，不等用于 s1 |= s2		
+
+		- 生成两个集合的补集：生成属于s1，但不属于s2的所有元素集合
+			s1 = {1,2,3}
+			s2 = {2,3,4}
+			s3 = s1 - s2 # s3 = {1}			
+
+		^ 生成两个集合的对称补集：
+			s1 = {1,2,3}
+			s2 = {2,3,4}
+			s3 = s1 ^ s2 # s3 = {1,4}	相当于 s3 = (s1-s2) | (s2-s1)					
+		< 判断一个集合是另一个集合的子集
+		> 判断一个集合是另一个集合的超集
+			s1 = {1,2,3}	
+			s2 = {2,3}
+			s2 < s1 # True s2是s1的子集
+			s1 > s2 # True s1是s2的超集
+
+		= ！= 判断集合相不相同
+			s1 = {1,2,3}
+			s2 = {2,3,1}
+			s1 == s2 # True
+			s1 != s2 # False  	集合的数据没有先后顺序
+
+		in / not in
+			等同于字典，in运算符用于集合中，当某个值存在于集合中，则为真，否则为假
+			not in 与 in 返回值相反
+			示例：
+				s = {1, 'Two', 3.14}
+				1 in s # True
+				3.14 not in s # False
+
+		可用于集合的函数：
+			len(x) max(x) min(x) sum(x) any(x) all(x)
+
+		集合是可迭代对象：不保证顺序
+			s = {1, 2, 3}
+			for x in s:
+				print(x)
+
+set 方法
+	S.add(e)	在集合中添加一个新的元素e；如果元素已经存在，则不添加
+	S.remove(e)	从集合中删除一个元素，如果元素不存在于集合中，则会产生一个KeyError错误
+	S.discard(e)	从集合S中移除一个元素e,在元素e不存在时什么都不做;
+	S.clear()	清空集合内的所有元素
+	S.copy()	将集合进行一次浅拷贝
+	S.pop()	从集合S中删除一个随机元素;如果此集合为空，则引发KeyError异常
+	S.update(s2)	用 S与s2得到的全集更新变量S
+	S.difference(s2)	用S - s2 运算，返回存在于在S中，但不在s2中的所有元素的集合
+
+	S.difference_update(s2)	等同于 S = S - s2
+	S.intersection(s2)	等同于 S & s2
+	S.intersection_update(s2)	等同于S = S & s2
+	S.isdisjoint(s2)	如果S与s2交集为空返回True,非空则返回False
+	S.issubset(s2)	如果S与s2交集为非空返回True,空则返回False
+	S.issuperset(...)	如果S为s2的子集返回True,否则返回False
+	S.symmetric_difference(s2)	返回对称补集,等同于 S ^ s2
+	S.symmetric_difference_update(s2)	用 S 与 s2 的对称补集更新 S
+	S.union(s2)	生成 S 与 s2的全集
+
+set 集合推导式
+	用可迭代对象来创建（生成）集合的表达式
+	语法：
+		{表达式 for 变量 in 可迭代对象 [if 真值表达式]}
+		[]部分可以省略
+	示例：
+		L = [2,3,5,7,3,5,7,11]
+		s = {x ** 2 for x in L}
+
+	集合推导式的嵌套规则和列表推导式相同
+		{x + y for x in "ABC for y in "123"}
+
+frozensey 固定集合
+	固定集合是不可变得，无序的，含有唯一元素的集合
+	作用：
+		固定集合可以作为字典的键，也可以作为集合的值（元素）
+	创建固定集合：
+		fs = frozenset()
+		fs = frozenset([2,3,5,7])
+		frozenset(interable)
+	固定集合的运算等同于集合运算
+
+总结
+	不可变数据类型：
+		bool, int, float, complex, str, tuple, frozenset, bytes
+	可变数据类型：
+		list, dict, set, bytearray(字节数组)
+	
+	运算符：
+		+ - * / // % **
+		> >= < <= == !=
+		is  is not 
+		in  not in
+		not  and  or
+		&  |  ^
+
+	表达式：
+		1
+		1 + 2
+		len([1,2,3])
+		条件表达式： x if x > y else y
+		全部的推导式：
+			列表、字典、集合推导式（三种）
+
+	语句：
+		表达式语句：
+			print("ABC")
+			'hello'
+		赋值语句：
+			a = 100
+			a = b = c = 200
+			x, y = 100, 200
+		if 语句
+		while 语句
+		for 语句
+		break 语句
+		continue 语句
+		pass 语句
+		del 语句
+
+	内建函数：
+		len(x)
+		max(x)
+		min(x)
+		sum(x)
+		any(x)
+		all(x)
+		----------
+		bool(x) int(x) float(x) complex(x) str(s) list(s) dict(s) set(s) frozenset(s)
+		----------
+		bin(x)
+		oct(x)
+		hex(x)
+		chr(x)
+		----------
+		range([sratr, ]stop[, step])
+		----------
+		input(x)
+		print()
 
 
 

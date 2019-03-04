@@ -23,3 +23,11 @@ for i in range(100, 1000):
 	if b ** 3 + s ** 3 + g ** 3 == i:
 		print(i,"是水仙花数")
 
+for bai in range(1, 10):
+	for shi in range(10):
+		for ge in range(10):
+			x = bai * 100 + shi * 10 +ge
+			if x == bai *** 3 + shi ** 3 + ge ** 3
+				print(x)
+
+
