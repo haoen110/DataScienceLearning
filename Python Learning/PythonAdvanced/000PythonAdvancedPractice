@@ -100,3 +100,61 @@ return 练习
 			L += input_student()
 			print("添加学生后的学生信息如下：")
 			output_student(L)
+
+练习：013calculator.py
+	写一个计算其解释执行器：
+		已知有以下函数：
+			def myadd(x, y):
+				return x+y
+			def mymul(x, y):
+				return x*y
+
+			def get_op(s) # s代表操作字符串
+				......
+	主函数：
+		def main():
+			while True:
+				s = input("请输入计算公式：") # 如：10 加 20
+				L = s.split()
+				a, s, b = L
+				fn = get_op(s)
+				print("结果是：", fn(a, b)) # 结果是30
+
+lambda练习：014lambda.py
+	1、写一个lambda表达式，判断这个数的2次方加1等否被5整除，如果能整除返回True，否则返回False
+		fx = lambda n: ...
+		print(fx(3))
+		print(fx(4))	
+
+	2、写一个lambda表达式，求两个变量的最大值：
+		def mamax(x, y):
+			...
+		mymax = lambda ....
+		print(mymax(100,200))
+
+看懂下面的程序
+	def fx(f, x, y):
+		print(f(x, y))
+	fx((lambda a, b: a + b), 100, 200)
+	fx((lambda a, b: a * b), 100, 200)
+
+练习：015.py
+	1、写一个函数mysum，要求给一个数n，求1+2+3+4+...n的和
+		print(mysum(100)) # 5050
+	2、写一个函数myfac来计算n！（n的阶乘）
+		print(myfac(5)) # 120
+	3、写一个函数，求1 + 2**2 + 3**3 + ... n**n的和
+	4、修改之前的学生信息管理系统，实现添加菜单和选择菜单操作的功能016students.py
+		菜单
+		+-------------------+
+		| 1)添加学生生信息
+		  2)查看所有学生信息
+		  3)修改学生信息
+		  4)删除学生信息
+		  q)退出
+		请选择：1
+		  请输入姓名：...
+		请选择：3
+		  请输入修改学生的姓名：...
+		（要求每个功能都对应一个函数）
+
