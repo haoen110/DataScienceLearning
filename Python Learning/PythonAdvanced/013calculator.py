@@ -4,10 +4,14 @@ def myadd(x, y):
 def mymul(x, y):
 	return x*y
 
+
+
+
+
 def get_op(s): # s代表操作字符串
-	if s == "加":
+	if s == "加" or s == '+':
 		return myadd
-	elif s == "乘":
+	elif s == "乘" or s == '*':
 		return mymul
 
 def main():

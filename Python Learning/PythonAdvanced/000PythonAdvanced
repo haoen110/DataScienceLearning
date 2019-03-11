@@ -447,3 +447,331 @@ eval() exec() 函数
 			exec(s, {'x':10, 'y':20}) # 10, 20, 30
 			exec(s, {'x':10}, {'x':1, 'y':2}) # 1 2 3
 			exec(s, {'x':10}, {'y':2}) # 10 2 12
+
+函数式编程
+	
+	函数式编程是指用一系列函数决定问题
+	函数是一等公民，函数本身可以赋值给变量，复制后绑定函数，允许将行数本身作为参数传入另一个函数，允许返回一个函数
+
+	函数的可重入性:
+		可重入是指一个函数传递的参数一定，则结果必须一定
+		要求：def定义的函数不要访问除局部变量以外的变量
+
+		不可重入：
+			y = 200
+			def myadd(x):
+				return x+y
+			print(myadd(10))
+
+		可重入：
+			def myadd(x, y):
+				return x + y
+			print(myadd(10,20))
+
+高阶函数 High Order Function
+	满足下列条件中的一个函数即为高阶函数
+		1、函数接受一个或多个函数作为参数传入
+		2、函数返回一个函数
+
+python中内建（builtins）的高阶函数
+
+map() 函数
+	man(func, *interables) 用函数和对可迭代对象中的每一个元素作为参数计算出新的可迭代对象，当最短的一个可迭代对象不再提供数据时，次迭代对象生成结束
+
+	示例
+		def pow2(x):
+			return x ** 2
+		for x in map(pow2, range(1, 10)):
+			print(x)
+
+		# 内建的pow(x, y, z=None) # z 是对z求余
+		# 生成 1 ** 4, 2 ** 3, 3 ** 2, 4 ** 1 
+		for x in map(pow, range(1, 10), range(4, 0, -1)):
+			print(x)
+
+		for x in map(pow,[2,3,5,7],[4,3,2,1],range(5,10)):
+			print(x)
+
+		def pow2(x):
+			return x ** 2
+		print(sum(map(pow2, range(1,10))))
+
+		print(sum(map(lambda x: x**2, range(1, 10))))
+		print(sum(map(pow, range(1,10), range(9,0,-1))))
+
+filter 函数
+	格式：filter(fun, interable)
+	作用：筛选可迭代对象iterable中的数据，返回一个可迭代对象，此可迭代对象将对iterable进行筛选
+	说明：函数func将对每个元素进行求值，返回False则将此数据丢弃，True则保留此数据
+
+	示例
+		def isodd(x):
+			return x % 2 == 1
+		for x in filter(isodd, range(10)):
+			print(x)
+		even = [x for x in filter(lambda x: x % 2 == 0, range(10))]	
+		even = list(filter(lambda x: x % 2 == 0, range(10)))
+
+sorted 函数
+	作用：将原可迭代对象的数据进行排序，生成排序后的列表
+	格式：sorted(iterable, key=None, reverse=False)
+	说明：iterable是尅迭代对象、key函数是用来提供一个参考值，这个值作为排序的依据、reverse标志用来设置升序还是降序
+	示例
+		L = [5, -2, -4, 0, 3, 1]
+		L2 = sorted(L) 
+		L2 = sorted(L, reverse=True) 
+		L3 = sorted(L, key=abs)
+
+		name = ['Tom', 'Jerry', 'Spike', 'Tyke']
+		sorted(name, key=len)
+		# 让names排序，排序的依据是字符串的反序
+		# 'moT' 'yrreJ'.........
+		def fx(name):
+			return name[::-1]
+
+		L2 = sorted(name, key=fx)
+		L3 = sorted(name, key=lambda n: n[::-1])
+		print(L2)
+
+
+recursion 递归函数
+
+	函数直接或间接地调用自身
+
+	说明：
+	1、递归一定要控制递归的层数，当符合某一条件时要终止递归
+	2、几乎所有的递归都能用while循环来代替。
+
+	控制递归层数的示例：
+		def fx(n):
+			print("递归进入第", n, "层")
+			if n == 3:
+				return
+			fx(n + 1)
+			print("递归退出", n, "层")
+		fx(1)
+		print("程序结束")
+
+	优点：递归可以把问题简单化，让思路更为清晰，代码简洁
+	缺点：递归因系统环境影响大，当递归深度太大时，可能会得到不可预知的后果
+
+	递归函数的实现方法：
+		先假设函数已经实现
+
+		# 03_recursion_sum.py 1+2+....100
+		def mysum(x):
+			if x == 1:
+				return 1
+			return x + mysum(x-1)
+		v = mysum(100)
+		print(v)
+
+closure 闭包
+
+	将内嵌函数的语句和这些语句的执行环境打印在一起时，得到的对象称为闭包（closure）
+
+	三个条件：
+		1、必须有一个内嵌函数
+		2、内嵌函数必须引用外部函数中的变量
+		3、外部函数返回值必须是内嵌函数
+
+	示例：
+		def make_power(y):
+			def fx(arg):
+				return arg ** y
+			return fx
+
+		pow2 = make_power(2) # y 绑定2，留在了make_power环境里，传给了里面的fx中的y
+		pow3 = make_power(3)
+		print('3的平方是：', pow2(3)) # 9
+		print('3的平方是：', pow3(3)) # 27
+
+	数学函数示例：
+		# 函数 y = a*x**2 + b*x + c
+		def make_function(a, b, c):
+			def fx(x):
+				return a*x**2 + b*x + c
+			return fx
+		fx1 = make_function(4, 5, 6) # 创建一个 y = 4*2 + 5*x + 6的函数用fx1绑定
+		print(fx1(2))
+
+decorators 装饰器 (闭包概念)
+
+	函数装饰器：是指装饰的是一个函数，传入的是一个函数，返回的也是一个函数
+
+	语法：
+		def 装饰器函数名(参数)：
+			语句块
+			return 函数对象
+
+	被装饰函数的语法：
+		@装饰器函数名
+		def 函数名(形参列表):
+			语句块
+
+	示例：
+		#定义一个装饰器函数
+		def mydeco(fn):
+			def fx():
+				print('++++++++++')
+				fn()
+				print('----------')
+			return fx
+
+		@mydeco   #   相当于myfunc = mydeco(myfunc)
+		def myfunc():
+			print("myfunc被调用")
+
+		myfunc()
+
+	案例：023deco.py
+
+函数的文档字符串
+
+	函数内部，第一个没有赋值给任何变量的字符串为函数文档字符串
+
+	语法：
+		def 函数名(形参列表):
+			'''函数的文档字符串'''
+			函数语句块
+
+	示例：
+		def cba():
+			'''这是一块文档字符串'''
+			pass
+		help(cba)
+
+函数的属性 __doc__ __name__
+
+	__doc__ 属性用于绑定该函数的文档字符串
+
+	示例：
+		def fx(a, b):
+			'''
+			这是函数的文档文档字符串
+			这是第二行...
+			'''
+		print(fx.__doc__)
+
+		def fx():
+			pass
+		f1 = fx
+		print(f1.__name__)
+
+函数定义语句（def语句的语法）
+
+	[@装饰器名1]
+	[@装饰器名2]
+	...
+	def 函数名([位置形参], [*[元组形参名]], [命名关键字形参], [**字典形参])
+		'''文档字符串'''
+		语句块
+	注：[]内的可以省略
+
+
+面试题
+
+	L = [1, 2, 3]
+	def f(n, lst=[]):
+		lst.append(n)
+		print(lst)
+	# 按顺序往下操作，请问结果是什么
+	f(4, L) # [1,2,3,4]
+	f(5, L) # [1,2,3,4,5]
+	f(100)  # [100]
+	f(200)  # [100, 200]
+
+    # 默认参数（缺省参数）绑定在函数对象内部，随着函数的生命一直存在
+    # lst=[]是缺省参数，lst一旦调用，一直存在于f函数中
+
+    解决方法：
+    def f(n, lst=None):
+    	if lst = None:
+    		lst = []
+		lst.append(n)
+		print(lst)
+
+Moudule 模块
+
+	模块是一个包含有一系列数据、函数、类等组成的程序组
+	模块是一个文件，模块名通常以.py结尾
+
+	作用：
+		让一些相关的数据，函数，类等有逻辑地组织在一起，使逻辑结构更加清晰
+		模块中的数据，函数的类等可提供其他模块或程序使用
+
+	分类：
+		1、内置模块（builtins），在解释器的内部可以直接使用
+		2、标准库模块，安装python时已安装且可以直接使用
+		3、第三方模块（通常为开源），需要自己安装
+		4、用户自己的模块（可以作为其他人的第三方模块）
+
+import 模块的导入语句
+
+	语法：import 模块名1[as 模块新名1][,模块名2 as 模块新名2], ...
+
+	示例：
+		# 导入数学模块
+		import math
+		# 导入系统模块sys和os模块
+		import sys, os
+
+	作用：将某模块整体导入到当前模块
+	用法：模块.属性名
+
+	dir(obj) 函数返回模块所有属性的字符串列表
+	help(obj) 可以查看模块相关的文档字符串
+
+from import 语句
+
+	语法：from 模块名 import 模块属性名1 [as 属性新名1] [, 模块属性名2[as 属性新名2]]
+	作用：将某模块内的一个或多个属性导入到当前模块的作用域
+
+	示例：
+		from math import pi
+		from math import pow, sqrt
+		from math import factorial as fac
+		fac(5)
+		sqrt(9)
+
+from import *语句
+
+	将某模块的所有属性全部导入到当前模块,但是会和变量名字冲突
+
+	示例：
+		from math import *
+		print(sin(10))
+		sqrt(9)
+
+dir 函数
+	dir([对象]) 返回一个字符串列表
+	作用：
+		1、如果没有参数调用，则返回当前作用域内的所有变量的列表
+		2、如果给定一个对象作为参数，则返回这个对象的所有变量
+
+模块们
+
+	math数学模块
+	time时间模块
+		公元纪年
+		计算机元年从1970.1.1零时，每过一秒+1
+		UTC时间（Coordinated Universal Time）是从Greenwich时间开始计算的。UTC时间不会因失去问题而产生错误
+		DST阳关节约时间（Daylight Saving Time）又称夏令时
+		
+		time.time() 返回计算机元年到现在过了多少秒
+		time.sleep(secs) 让程序按给指定秒数的浮点数睡眠一段时间
+		time.gmtime() 用给指定秒数转换为UTC表达的时间元组，缺省式返回当前UTC时间元组
+		time.asctime([tuple]) 将时间元祖转换为日期时间字符串
+		time.mktime(tuple) 将本地日期时间元组转换为新纪元秒数时间
+			time.mktime((2018, 1, 1, 12, 20, 30, 0, 0, 0))
+		time.localtime
+			time.localtime()
+
+
+
+
+
+
+
+
+
