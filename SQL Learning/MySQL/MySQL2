@@ -1,0 +1,135 @@
+MySQL2
+
+表记录管理
+
+	删除表记录
+        delete form 表名 where 条件；
+        注意：delete 语句后如果不加where条件，所有记录全部清空
+
+	更新表记录
+        update 表名 set 字段1=值1,字段2=值2,... where 条件;
+        注意：必须加where条件
+
+运算符操作
+
+	数值比较/字符比较
+
+		数值比较：= != > >= < <=        
+		字符比较：= !=
+
+	1. 找出攻击力高于150的英雄的名字和攻击值
+		select name,gongji from sanguo where gongji > 150;
+	2. 将赵云的攻击力设置为360，防御力设置为68
+		update sanguo set gongji=360, fangyu=68 where name='赵云';	
+	逻辑比较
+		
+		and（两个或多个条件同时成立）
+		or （任意一个条件成立即可）
+
+	1. 找出攻击值高于200的蜀国英雄的名字、攻击力
+		select name,gongji from sanguo where gongji > 200 and country = '蜀国';
+	2. 将吴国英雄中攻击值为110的英雄的攻击值改为100，防御力改为60
+		update sanguo set gongji = 100, fangyu = 60 where country = '吴国' and gongji = 110;
+	3. 查找蜀国和魏国的英雄信息
+		select * from hero where country = '蜀国' or country = '魏国';
+	
+	范围内比较
+
+		between 值1 and 值2
+		where 字段名 in(值1,值2,...)
+		where 字段名 not in(值1,值2,...)
+
+	1、查找攻击值100～200的蜀国英雄信息
+		select * from sanguo where gongji between 100 and 200 and country = "蜀国";
+	2、找到蜀国和吴国以外的国家的女英雄信息
+		select * from sanguo where country not in ("蜀国","吴国") and sex = "女";
+	3、找到id为1、3或5的蜀国英雄和貂蝉的信息
+		select * from sanguo where id in(1, 3, 5) and country = '蜀国' or name="貂蝉";
+		select * from sanguo where (id in(1, 3, 5) and country = '蜀国') or name="貂蝉";用括号来制定优先级
+
+	匹配空、非空
+
+		空：		where name is null
+		非空：	where name is not null
+			注意：
+				NULL：空值，只能用is或者is not去匹配
+				""：空字符串，用=或者!=去匹配
+
+	1、姓名为NULL值的蜀国男英雄信息
+		select * from sanguo where name is null and country = "蜀国" and sex = "男"
+	2、姓名为""的英雄信息
+		select * from sanguo where name="";
+
+	模糊比较
+
+		where 字段名 like 表达式
+			表达式：
+				1、_:匹配单个字符
+				2、%:匹配0到多个字符
+				#NULL不会被统计，只能用is、is not去匹配
+
+	1、示例：
+		select name from sanguo where name like "_%_";
+		select name from sanguo where name like "%";
+		select name from sanguo where name like "___";
+		select name from sanguo where name like "赵%";
+
+SQL查询
+
+	select ...聚合函数 from 表名
+	where ...
+	group by ...
+	having ...
+	order by ...
+	limit ...;		
+
+	order by
+
+		1、给查询结果进行排序
+		2、... order by 字段名 asc/desc
+
+		1、将英雄安防御值从高到低排序
+			select * from sanguo order by fangyu desc;
+		2、将蜀国英雄按攻击值从高到低排序
+			select * from sanguo where country = "蜀国" order by gongji ASC;
+		3、将魏蜀两国英雄中名字为三个字的防御值升序排列
+			select * from sanguo where country in("蜀国","魏国") and name like"___" order by fangyu ASC;
+
+	limit 永远放在SQL语句的最后写
+
+		作用：限制显示查询记录的个数
+		用法：
+			1、limit n # 显示n条记录	
+			2、limit m,n # m表示从m+1条记录开始显示，显示n条
+				limit 2,3 显示第3、4、5三条记录
+			3、分页：每页显示5条记录，显示4第四页的内容
+				第1页：limit 0,5 # 1 2 3 4 5
+				第2页：limit 5,5 # 6 7 8 9 10
+				第3页：limit 10,5 # 11 12 13 14 15
+				第4页：limit 15,5 # 16 17 18 19 20
+
+				每页显示n条记录，显示第m页：limit (m-1)*n,n
+
+		1、在蜀国英雄中，查找防御值倒数第二名至倒数第四名的英雄的记录
+			select * from sanguo where country = "蜀国" order by fangyu ASC limit 1,3;
+		2、在蜀国英雄中，查找攻击值前三名且名字不为NULL的英雄的姓名、攻击值和国家
+			select name,gongji,country from sanguo where country = "蜀国" and name is not NULL order by gongji ASC limit 3;
+
+	聚合函数
+
+		avg(字段名):求该字段平均值
+		sum(字段名):求和
+		max(字段名):最大值
+		min(字段名):最小值
+		count(字段名):统计该字段记录的个数
+
+		1、攻击力平均值是多少？
+			select avg(gongji) from sanguo;
+		2、统计id、name两个字段分别有几条记录？
+			select count(id),count(name) from sanguo;
+			# 空值 NULL 不会被统计，""会被统计
+		3、计算蜀国英雄的总攻击力
+			select sum(gongji) from sanguo where country = '蜀国';
+		4、统计蜀国英雄中攻击力大于200的英雄
+			select count(*) from sanguo where gongji>200 and country="蜀国";
+			# 用*以防NULL不被统计

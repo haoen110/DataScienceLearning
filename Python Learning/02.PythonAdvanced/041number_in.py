@@ -11,7 +11,7 @@ def read():
 
 def write():
 	L = list(str(i) for i in read())
-	f = open('/Users/haoen110/Documents/DataScienceLearning/Python Learning/02.PythonAdvanced/041number.txt', mode='w')
+	f = open('041number.txt', mode='w')
 	for i in L:
 		if i == L[len(L)-1]:
 			f.write(i)

@@ -15,19 +15,14 @@ def primes(begin, end):
 L = [x for x in primes(10, 20)]
 print(L)
 
-def myrange(start=0, stop, step=1):
-	if start == 0:
+def myrange(start, stop=None, step=1):
+	if not stop:
 		stop = start
+		start = 0
 	i = start
 	while i < stop:
 		yield i
-		i += step
+		i += step # 增加i的值，供下次生成
 
 for x in myrange(10):
 	print(x)
-
-def myrange(start = 0, stop, step = 1):
-	print(start, stop, step)
-
-myrange(1,2,3)
-
