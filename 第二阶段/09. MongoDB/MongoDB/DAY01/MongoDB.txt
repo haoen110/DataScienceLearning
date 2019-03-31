@@ -1,0 +1,402 @@
+第一天
+
+MongoDB （芒果数据库）
+
+数据存储阶段
+
+文件管理阶段（.txt  .doc .xls）
+
+优点 :  使用简单，展现直观
+        可以长期保存数据
+	可存储数据量比较大
+
+缺点 ： 查找不方便
+        容易造成数据冗余
+        数据格式不规范
+
+数据库管理阶段
+
+优点： 将数据结构化存储，降低冗余
+       提高了增删改查效率
+       方便扩展，方便程序调用
+缺点： 数据库往往需要指令或语句操作，相对复杂
+
+几个概念
+
+数据 ：能够输入到计算机中并被识别处理的信息的集合
+
+数据结构 ：组成一个数据集合的数据之间的关系
+
+数据库 ：按照一定的数据结构，存储数据的仓库。数据库是在数据库管理系统管理和控制下，在一定介质上的数据集合
+
+数据库管理系统：数据库管理软件，用于建立维护操作数据库
+
+数据库系统： 由数据库和数据库管理系统高等开发工具组成的集合
+
+
+关系型数据库
+
+采用关系模型（二维表）来组织数据结构的数据库
+
+Oracle   DB2   SQLServer  Mysql   SQLite
+
+优点 ：容易理解，逻辑类似常见的表格
+       使用方便，都使用sql语句，sql语句非常成熟
+       数据一致性高，冗余低，数据完整性好，便于操作
+       技术成熟，功能强大，支持很多复杂操作
+
+缺点 ：* 每次操作都要进行sql语句解析，消耗较大
+       * 能很好的满足并发需求，特别是海量数据爆发，关系型数据库读写能力会显得不足
+       * 关系型数据库往往每一步都要进行加锁的操作，也造成了数据库的负担
+       * 数据一致性高，有时也会使数据的存储不灵活
+
+非关系型数据库 （NoSql---》 not  only  sql）
+
+优点 ： 高并发，读写能力强
+        弱化数据结构一致性，使用更加灵活
+	有良好的可扩展性
+缺点 ： 通用性差，没有sql语句那样同于的语句
+        操作灵活导致容易出错和混乱
+	没有外键关联等复杂的操作
+
+Nosql的使用情况
+1. 对数据存储灵活性要求高，一致性要求低
+2. 数据处理海量并发，要求瞬间效率速度比较高
+3. 数据比较容易建立Nosql模型
+4. 网站临时缓冲存储，爬虫应用
+
+Nosql分类
+1.键值型数据库  Redis
+2.文档型数据库  MongoDB
+3.列存储数据库  HBase
+4.图形数据库
+
+
+MongoDB数据库
+
+标签 ： 非关系型数据库   文档型数据库   
+        最像关系型的非关系型数据库
+
+特点 ：
+1. 是由c++编写的数据库管理系统
+2. 支持丰富的数据操作，增删改查索引聚合
+3. 支持丰富的数据类型
+4. 使用方便，可以很好的扩展。相对比较成熟
+5. 支持众多的编程语言接口 （python  PHP c++  c#） 
+
+要求：
+1. 关系型数据库和非关系型数据库各自有什么特点
+2. MongoDB是一个什么样的数据库
+
+MongoDB的安装
+
+自动安装
+sudo apt-get install mongodb
+
+默认安装位置 ： /var/lib/mongodb
+配置文件位置 ： /etc/mongodb.conf
+命令集： /usr/bin   /usr/local/bin
+
+
+手动安装
+1. 下载安装包
+www.mongodb.com
+2. 解压安装包
+/usr/local   /opt
+3.将解压后的MongoDB文件夹中的bin目录添加到环境比变量
+PATH=$PAHT:/opt/mongo...../bin
+export PATH
+将以上两句写入启动脚本  /etc/rc.local
+4.重启
+
+
+
+Mongodb 命令
+
+设置数据库存储位置
+mongod --dbpath  目录
+  e.g.  将存储路径设置为dbs
+	mongod --dbpath  dbs 
+
+设置数据库监听端口
+mongod --port  8080
+* 默认监听端口27017
+
+mongo 
+进入数据库交互操作界面
+
+mongo shell ： 用来操作mongodb数据库的界面，在这里可                以使用mongo语句操作数据库内容
+
+退出mongo shell：quit()  exit  ctrl-c
+
+组织结构 ： 键值对 --》 文档 --》集合 --》 数据库
+
+---------------------------------
+ ID   |   NAME   |   AGE
+---------------------------------
+ 1    |   Lily   |   17
+---------------------------------
+ 2    |   Lucy   |   18
+---------------------------------
+
+{
+  "ID":1,	
+  "NAME":'Lily',
+  "AGE":17
+},
+{
+  "ID":2,	
+  "NAME":'Lucy',
+  "AGE":18
+}
+
+mysql 和 mongodb 概念对比
+
+mysql        mongodb         含义
+
+database     database       数据库
+
+table        collection     表/集合
+
+column       field          字段/域
+
+row          document       记录/文档
+
+index        index          索引
+
+
+三个表
+1. 用户信息      1
+2. 朋友圈内容   多       多
+3. 其他用户点赞，评论    多
+
+{id:xxx,name:'zhan',age:12,pyq:[{date:xxx,conten:xxx,image:[1,2,3],zan:[id1,id2],pl:[{date:xxx,con:xxx},{},{}]},{},{}]}
+
+
+
+创建数据库
+use  databaseName
+
+ e.g.  创建一个名字为stu的数据库
+ use stu
+
+ * use实际为选择使用哪个数据库，当数据库不存在时会自   动创建
+ * use 后并不会立即创建出数据库，而是需要等到插入数   据时数据库才会创建
+
+
+查看系统中的数据库
+show dbs
+
+系统数据库说明
+ admin ： 存储用户信息
+ local ： 存储本地数据
+ config ： 存储分片信息
+
+数据库命名规则
+1. 使用utf-8字符 （mongo默认支持utf-8）
+2. 不能含有空格  .  /  \   '\0' 字符
+3. 长度不超过64字节
+4. 不能和系统数据库重名
+
+db ： mongodb的全局量，代表当前正在使用的数据库
+
+* 如果不选择使用任何数据库db代表test，直接插入数据就会建立test数据库
+
+
+数据库的备份和恢复
+
+备份  mongodump  -h host  -d  dbname -o  bak
+
+e.g. 将本机test数据库备份到bak目录下
+mongodump -h 127.0.0.1 -d test -o bak
+
+恢复  mongorestore  -h  dbhost:port -d  dbname path
+
+e.g. 将test数据库恢复到本机的res数据库中（res不存在自动创建）
+ mongorestore -h 127.0.0.1:27017 -d res  bak/test
+
+
+数据库的监测
+
+ mongostat  监测数据库运行数据
+
+  insert query update delete ： 每秒增查改删的次数
+  flushes  每秒和磁盘交互次数
+  vsize    虚拟内存
+  res      物理内存
+  time     时间
+ 
+ mongotop  监控数据库读写时长
+
+  ns  数据表
+  total  总时间
+  read   读时间
+  write  写时间  
+
+删除数据库
+
+db.dropDatabase()
+删除db所代表的数据库
+
+创建集合
+
+方法1
+
+ db.createCollection(collection_name)
+
+  e.g. 创建class1集合
+  db.createCollection('class1')
+
+方法2
+ 当向一个集合中插入数据的时候如果集合不存在则自动创建
+
+ db.collection_name.insert(...)
+
+查看数据库中集合
+
+show collections
+show tables
+
+集合命名规则
+1.合法的UTF-8字符
+2.不能有‘\0’
+3.不能以system.开头，因为这是系统保留集合前缀 
+4.不能和关键字重名
+
+删除集合
+
+db.collection.drop()
+
+e.g. 删除class2集合
+    db.class2.drop()
+
+集合的重命名
+
+db.collection.renameCollection("new_name")
+
+e.g. 将class集合重命名为 class0
+db.class.renameCollection("class0")
+
+
+文档
+
+mongodb中数据的组织形式 ---》文档
+
+mongodb 文档 ： 是以键值对的形成组成的一组数据。类似                 python中字典描述数据的方式
+
+键 ： 即文档的域，表达了一个键值对的含义
+
+键的命名规则：
+1. utf-8格式字符串
+2. 不能使用‘\0’
+3. 一个文档中的键不能重复
+
+值 ： 即文档存储的数据。
+
+* 文档中键值对是有序的
+* 文档中键值对严格区分大小写
+
+类型                  值
+
+整型                整数 1  2   3
+布尔类型            true  false
+浮点型              小数
+
+Array               数组
+
+Date                时间日期
+Timestamp           时间戳
+
+String              字符串
+Symbol              特殊字符串
+Binary data         二进制子串
+
+Null                 null 空值
+Object               内部文档（对象）
+code                 js代码
+regex                正则子串
+ObjectId             自动生成ID标记
+
+"_id" : ObjectId("5ba07671b17d2b40342f7c5c")
+
+_id : 当mongodb插入文档时如果不指定_id域则自动生成_id域。值如果不自己指定即会自动生成一个ObjectId值
+
+24位16进制  使用ObjectId经过算法处理保证其唯一性
+
+5ba07671b17d2b40342f7c5c  
+8位文档创建时间  6位  机器ID   4位进程id  6位计数器
+
+
+集合中的文档
+
+  1. 集合中的文档不一定有相同的域 
+     * 个数不同
+     * 域不相同
+     * 数据类型不同
+
+  2. 集合中文档各自比较独立，相互并不影响
+
+集合创建原则
+  1.集合中的文档要描述同一类事物
+  2.数据库中同一类数据尽量集中存放在相同的集合
+  3.集合中的文档嵌套层数不要太多
+
+
+插入文档
+
+db.collection.insert()
+功能 ： 插入一个文档
+参数 ： 要插入的文档
+
+插入单个文档
+
+e.g. 
+db.class0.insert({'name':'Lucy',"age":18,"sex":'w'})
+db.class0.insert({_id:1,name:'Jame',age:16,sex:'m'})
+
+* 插入操作中键可以不加引号
+* 查看插入结果 db.class0.find()
+* _id 值可以自己插入，但是不能重复
+
+插入多条文档
+ 插入多条文档时，参数用中括号里面放入多个文档
+
+ e.g.
+ db.class0.insert([{name:"Alex",age:19,sex:'m'},{name:'Abby',age:18,sex:'w'}])
+
+其他插入方法
+
+insertOne()  插入一条文档
+
+db.class0.insertOne({name:"Levi",age:20,sex:'m'})
+
+insertMany()  插入多条文档
+
+db.class0.insertMany([{name:"John",age:16,sex:'m'},{name:"Lenzer",age:17,sex:'m'}])
+
+
+save插入文档
+
+db.collection.save()
+
+如果正常插入与insert用法相同
+e.g.
+db.class0.save({name:'Allen',age:19,sex:'m'})
+db.class0.save([{name:"Sunny",age:17,sex:'w'},{name:'Alice',age:16,sex:'w'}])
+
+如果插入数据是有_id域，且_id域值存在时则会修改原有文档，如果该值不存在则正常插入
+db.class0.save({_id:2,name:'Mary',age:20,sex:'w'})
+
+获取集合对象方法
+db.class0  ===> db.getCollection('class0')
+
+e.g.
+db.getCollection("class0").find()
+
+
+作业 ：
+1. 对 “要求” 问题进行总结，描述
+2. 练习数据库的创建删除，集合创建删除
+3. 练习数据库插入操作
+4. 复习mysql基本增删改查操作
+

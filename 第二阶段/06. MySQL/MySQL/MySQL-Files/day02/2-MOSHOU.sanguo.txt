@@ -1,0 +1,18 @@
+use MOSHOU;
+create table sanguo(
+id int,
+name char(20),
+gongji int,
+fangyu tinyint unsigned,
+sex enum("男","女"),
+country varchar(20)
+)default charset=utf8;
+insert into sanguo values
+(1,'诸葛亮',120,20,'男','蜀国'),
+(2,'司马懿',119,25,'男','魏国'),
+(3,'关羽',188,60,'男','蜀国'),
+(4,'赵云',200,66,'男','魏国'),
+(5,'孙权',110,20,'男','吴国'),
+(6,'貂蝉',666,10,'女','魏国'),
+(7,null,1000,99,'男','蜀国'),
+(8,'',1005,88,'女','蜀国');

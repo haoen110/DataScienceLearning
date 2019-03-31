@@ -1,0 +1,16 @@
+create database MOSHOU;
+use MOSHOU;
+create table hero(
+id int,
+name char(15),
+sex enum("男","女"),
+country char(10)
+)default charset=utf8;
+insert into hero values
+(1,"曹操","男","魏国"),
+(2,"小乔","女","吴国"),
+(3,"诸葛亮","男","蜀国"),
+(4,"貂蝉","女","东汉"),
+(5,"赵子龙","男","蜀国"),
+(6,"魏延","男","蜀国");
+

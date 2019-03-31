@@ -1,0 +1,348 @@
+day03回顾
+包
+　　__init__.py
+
+    __all__ 列表
+      from import * 
+
+  相对导入
+    指包内模块导入包内的其它模块或子包
+      from .xxxx import yyy
+      from .xxxx import *
+    相对路径:
+      .
+      ..
+      ...
+      ....
+
+异常
+  try-finally
+  try-except
+  raise
+  assert
+
+
+day04笔记
+迭代器 iterator 和 生成器 generator
+
+什么是迭代器
+  迭代器是指用iter(可迭代对象) 函数返回的对象(实例)
+  迭代器可以用next(it) 函数获取可迭代对象的数据
+
+迭代器函数:
+  iter(iterable) 从可迭代对象中返回一个迭代器,iterable必须是一个能提供迭代器的可迭代对象
+  next(iterator)  从迭代器iterator中获取下一条记录,如果无法获取下一条记录,则触发StopIteration 异常
+
+说明:
+  迭代器是访问可迭代对象的一种方式
+  迭代器只能向前取值,不会后退
+  用iter函数可以返回一个可迭代对象的迭代器
+
+问题:
+  能否用迭代器访问 range(100, 10000) 中的前三个数?
+      (要求不用for 循环)
+
+r = range(100, 10000)
+it = iter(r)
+print("第一个数是:", next(it))  # 100
+print("第二个数是:", next(it))  # 101
+print("第三个数是:", next(it))  # 102
+
+迭代器的用途
+  代迭器对象能用next函数获取下一个元素
+
+示例:
+  # 用while循环语句来访问如下列表
+  L = [2, 3, 5, 7]
+  详见:
+    01_iterator.py
+
+练习：
+　　有一个集合:
+    s = {'唐僧', '悟空', '八戒', '沙僧'}
+　　用for 语句来打印集合内的信息:
+    for x in s:
+        print(x)
+    else:
+        print("遍历结束")
+  请将上面的for语句改写为while,next,iter函数组合方式实现上述功能
+
+
+
+
+生成器 Generator (python2.5 及之后)
+什么是生成器:
+  生成器是能够动态提供数据的对象,生成器对象也是可迭代对象(实例)
+
+生成器有两种:
+  生成器函数
+  生成器表达式
+
+生成器函数定义
+  含有 yield 语句的函数是生成器函数，此函数被调用时将返回 一个生成器对象
+   注: yield 翻译为产生（或生成)
+
+yield 语句
+  语法:
+    yield 表达式
+　　说明:
+    yield用于def函数中，目的是将此函数作为生成器函数使用
+    yield用来生成数据，供迭代器 next(it) 函数使用
+
+示例见:
+  02_yield.py
+
+生成器函数说明:
+  生成器函数的调用将返回一个生成器对象，生成器对象是一个可迭代对象
+  在生成器函数调用return时会出生一个　StopIteration　异常来通知next(it) 函数不再能提供数据
+
+
+
+
+练习：
+　　写一个生成器函数:
+    def myinteger(n):
+        ....
+    此生成器函数可以生成从0开始，的一系列的整数,到n结束(不包含n)
+
+    for x in myinteger(3):
+        print(x)   # 打印 0, 1, 2
+    it = iter(myinteger(2))
+    print(next(it))  # 0
+    print(next(it))  # 1
+    print(next(it))  # StopIteration异常
+
+练习：
+　　写一个生成器函数myodd(x) 来生成一系列奇数
+  如:
+    myodd(10) 可以生成 1 3 5 7 9
+
+
+生成器表达式:
+  语法:
+    (表达式 for 变量　in 可迭代对象 [if 真值表达式])
+    注: []里的内容可以省略
+　　作用:
+    用推导式的形式生成一个新的生成器
+　　示例:
+    gen = (x**2 for x in range(1, 4))
+    it = iter(gen)
+    next(it)　　# 1
+    next(it)　　# 4
+    next(it)　　# 9
+    next(it)　　# StopIteration
+  优点：
+  　　不占用内存空间
+
+
+列表推导式 和　生成表达式的区别:
+    L = [1,2,3,4]
+
+    gen = (x for x in L)  # gen绑定生成器　
+    lst = [x for x in L]　　＃　lst 绑定列表
+    L[1] = 222  # 改变原列表的第二个元素
+    for x in lst:
+        print(x)  # 1 2 3 4 不变
+　　　　for x in gen:
+        print(x)  # 1 222 3 4 ,第二个数是 222
+
+
+
+迭代工具函数:
+  迭代工具函数的作用是生成一个个性化的可迭代对象
+
+函数
+  zip(iter1 [,iter2, iter3,...]) 返回一个zip对象此对象用于生成一个元组，此元组的个数由最小的可迭代对象决定
+
+  enumerate(iterable[,start])  生成带索引的枚举对象，返回迭代类型为索引-值对(index,value)对, 默认索引从零开始,也可以使用start绑定
+
+示例:
+    numbers = [10086, 10000, 10010, 95588]
+    names = ['中国移动', '中国电信', '中国联通']
+    for n, a in zip(numbers, names):
+        print(a, '的客服号码是:', n)
+
+    for x in zip(numbers, names):
+        print(x)
+
+    # 以下用zip函数生成一个字典
+    d = dict(zip(names, numbers))
+
+    for x in zip(range(10), numbers, names):
+        print(x)
+
+    # zip函数的实现机制见:
+       03_myzip.py
+    
+
+enumerate函数(枚举函数)
+  格式
+    enumerate(iterable[,start])
+  示例:
+    names = ['中国移动', '中国电信', '中国联通']
+    for x in enumerate(names):
+        print(x)  # (0, '中国移动'), (1, '中国电信').
+
+    for x in enumerate(names, start=100):
+        print(x)  # (100, '中国移动'), (101, '中国电信'), (102, '中国联通')
+
+
+练习:
+  写一个程序，读入任意行的文字，当输入空行时结束输入．
+  打印带有行号的输入结果:
+  如:
+    $ python3 mytest.py
+    请输入: hello<回车>
+    请输入: world<回车>
+    请输入: bye<回车>
+    请输入: <回车>
+    打印如下:
+    第1行: hello
+    第2行: world
+    第3行: bye
+
+
+
+问题:
+  之前学的容器类型:
+    str, list, tuple, dict, set, frozenset
+
+
+字节串 bytes 和 字节数组 bytearray
+
+字节串 bytes
+  作用:
+    存储以字节为单位的数据
+  说明:
+    字节串是不可变的字节序列
+    字节是0~255之间的整数
+
+创建空字节串的字面值
+   b'' 
+   b""
+   b''''''
+   b""""""
+   B''
+   B""
+   B''''''
+   B""""""
+
+创建非空字节串的字面值:
+   b'ABCD'
+   b'\x41\x42'
+   b'hello tarena'
+
+字节串的构造函数 bytes
+   bytes()  生成一个空的字节串 等同于 b''
+   bytes(整型可迭代对象)  用可迭代对象初始化一个字节串
+   bytes(整数n)  生成n个值为零的字节串
+   bytes(字符串, encoding='utf-8') 用字符串的转换编码生成一个字节串
+
+字节串的运算
+   + +=  *  *=
+   < <= > >= == !=
+   in / not in
+   索引/切片
+
+示例:
+   b = b'abc' + b'123'  # b=b'abc123'
+   b += b'ABC'    # b=b'abc123ABC'
+   b'ABD' > b'ABC'  # True
+   b = b'ABCD'
+   65 in b    # True
+   b'A' in b  # True
+
+用于序列函数:
+   len(x), max(x), min(x), sum(x), all(x), any(x)   
+
+bytes 与 str的区别:
+   bytes 存储字节(0-255)
+   str  存储Unicode字符(0-65535)
+
+bytes 与 str 转换
+        编码(encode)
+   str    ------>   bytes
+        b = s.encode('utf-8')
+        解码(decode)
+   bytes  ------>   str
+        s = b.decode('utf-8')
+
+
+字节数组 bytearray
+  可变的字节序列
+
+创建字节数组的构造函数:
+   bytearray() 创建空的字节数组
+   bytearray(整数)
+   bytearray(整型可迭代对象)
+   bytearray(字符串,encoding='utf-8')
+       注: 以上参数等同于字节串
+
+字节数组的运算:
+  +  +=  *  *= 
+  比较运算:  <  <= > >= == !=
+  in / not in 
+  索引　/ 切片(字节数组支持索引和切片赋值，规则与列表相同)
+
+bytearray的方法:
+  B.clear()  清空字节数组
+  B.append(n)  追加一个字节(n为0-255的整数)
+  B.remove(value)  删除第一个出现的字节，如果没有出现，则产生ValueError错误
+  B.reverse()  字节的顺序进行反转
+  B.decode(encoding='utf-8')  # 解码
+  B.find(sub[, start[, end]])  查找
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+小结:
+  迭代器
+    用来访问可迭代对象的数据　
+　　　　iter(iterable)  # 返回迭代器
+    next(iterator)  # 获取可迭代对象的数据
+  生成器函数
+    根据需要动态创建一些数据(数据原来不存在，用yield现用现生成)
+    range()
+  生成器表达式
+
+  字节串　和　字节数组
+
+
+
+
+
+
+
+
+练习:
+  １．　用生成器函数primes(begin, end)生成素数，给出起始值begin和终止值stop,　生成此范围内的全部素数，不包含(stop)
+
+  如:
+  　　　L = [x for x in primes(10, 20)] 
+  　　　将得到列表L = [11, 13, 17, 19]
+  　　　
+
+  2. 仿制range函数的功能，写一个生成器函数myrange,要求功能与range功能相近，能实现一个，两个，三个参数传参,生成正向的整数
+    如:
+      for x in myrange(1, 10, 3):
+         print(x)   # 1, 4, 7
+
+
+
+
+
+
+

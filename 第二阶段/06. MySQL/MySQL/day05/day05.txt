@@ -1,0 +1,231 @@
+Day04回顾
+1、外键
+  1、使用规则
+    1、数据类型要一致
+    2、主表被参考字段必须为KEY的一种 ：PRI
+  2、语法格式
+    constraint 外键名 foreign key(字段)
+    references 主表(字段)
+    on delete 级联动作
+    on update 级联动作
+  3、级联动作
+    1、cascade ：删除、更新同步(被参考字段)
+    2、restrict ：不让主表更新、删除
+    3、set null ：删除、更新,从表该字段设置为 NULL
+  4、删除
+    1、show create table 表名;
+    2、alter table 表名 drop foreign key 外键名;
+  5、已有表
+    alter table 表名 add constraint 外键名 
+    foreign key(字段) references 主表(字段)
+    on delete ...
+    on update ...
+  6、注意
+    在已有表中添加外键时,会受到表中原有数据的限制
+2、表复制
+  1、create table 表名 select * from 表名 where false;
+  2、注意 ：复制表时不会把原表的 键 属性复制过来
+3、嵌套查询(子查询)
+  1、把内层的查询结果作为外层的查询条件
+4、多表查询
+  1、笛卡尔积 ：不加where条件
+  2、多表查询 ：加where条件,只显示匹配到的
+5、连接查询
+  1、内连接 ：只显示匹配到的记录
+  2、外连接
+    1、左连接 ：以左表为主显示查询结果
+    2、右连接 ：以右表为主显示查询结果
+  3、select 字段名 from 表1 inner/left/right join 表2
+     on 条件;
+6、用户授权
+  1、开启远程访问
+    1、sudo -i
+    2、subl /etc/mysql/mysql.conf.d/mysqld.cnf
+       # bind-address = 127.0.0.1 注释掉
+    3、/etc/init.d/mysql restart
+  2、添加授权用户
+    grant select on *.* to "lion"@"%" identified by "123" with grant option; 
+    
+    所有权限 ：all privileges
+Day05笔记
+1、存储引擎(处理表的处理器)
+  1、基本操作
+    1、查看所有存储引擎
+      mysql> show engines;
+    2、查看已有表的存储引擎
+      mysql> show create table 表名;
+    3、创建表指定
+      create table 表名(...)engine=myisam;
+    4、已有表
+      alter table 表名 engine=innodb;
+2、锁
+  1、目的 ：解决客户端并发访问的冲突问题
+  2、锁分类
+    1、锁类型
+      1、读锁(共享锁)
+        select ：加读锁之后别人不能更改表记录,但可以进行查询
+      2、写锁(互斥锁、排他锁)
+        insert、delete、update
+	加写锁之后别人不能查、不能改
+    2、锁粒度
+      1、表级锁 ：myisam
+      2、行级锁 ：innodb
+  3、常用存储引擎特点
+    1、InnoDB特点
+      1、共享表空间
+        表名.frm ：表结构和索引文件
+	表名.ibd ：表记录
+      2、支持行级锁
+      3、支持外键、事务操作
+    2、MyISAM特点
+      1、独享表空间
+        表名.frm ：表结构
+	表名.myd ：表记录 mydata
+	表名.myi ：索引文件 myindex
+      2、支持表级锁
+  4、如何决定使用哪个存储引擎
+    1、执行查操作多的表用 MyISAM(使用InnoDB浪费资源)
+    2、执行写操作多的表用 InnoDB
+3、MySQL调优
+  1、选择合适的存储引擎
+    1、读操作多 ：MyISAM
+    2、写操作多 ：InnoDB
+  2、创建索引
+    在 select、where、order by常涉及到的字段建立索引
+  3、SQL语句的优化
+    1、where子句中不使用 != ,否则放弃索引全表扫描
+    2、尽量避免 NULL 值判断,否则放弃索引全表扫描
+      优化前 ：
+        select number from t1 where number is null;
+      优化后 ：
+        在number列上设置默认值0,确保number列无NULL值
+	select number from t1 where number=0;
+    3、尽量避免 or 连接条件,否则放弃索引全表扫描
+      优化前 ：
+        select id from t1 where id=10 or id=20 or id=30;
+      优化后：
+        select id from t1 where id=10
+	union all
+	select id from t1 where id=20
+	union all
+	select id from t1 where id=30;
+    4、模糊查询尽量避免使用前置 % ,否则全表扫描
+      select name from t1 where name like "%c%";
+    5、尽量避免使用 in 和 not in,否则全表扫描
+      select id from t1 where id in(1,2,3,4);
+      select id from t1 where id between 1 and 4;
+    6、尽量避免使用 select * ...;用具体字段代替 * ,不要返回用不到的任何字段
+4、事务和事务回滚
+  1、定义 ：一件事从开始发生到结束的整个过程
+  2、作用 ：确保数据一致性
+  3、事务和事务回滚应用
+    1、MySQL中sql命令会自动commit到数据库
+      show variables like "autocommit";
+    2、事务应用
+      1、开启事务
+        mysql> begin;
+	mysql> ...一条或多条SQL语句
+	  ## 此时autocommit被禁用
+      2、终止事务
+        mysql> commit; | rollback;
+    3、案例
+      1、背景
+        你 ：建行卡
+	你朋友 ：工商卡
+	你在建行自动取款机给你朋友的工商卡转账5000元
+      2、建表
+        表1、CCB
+	  create table CCB(
+	  name varchar(15),
+	  money decimal(20,2)
+	  );
+	  insert into CCB values("只手遮天",10000);
+	
+	表2、ICBC
+	  create table ICBC(
+	  name varchar(15),
+	  money decimal(20,2)
+	  );
+	  insert into ICBC values("为所欲为",1000);
+      3、开始转账
+        mysql> begin;
+	mysql> update CCB set money=money-5000 where name="只手遮天";
+	mysql> update ICBC set money=money+5000 where name="为所欲为";
+	mysql> commit;
+	#### 转账成功 ####
+5、与python交互
+  1、交互类型
+    1、python3
+      模块名 ：pymysql 
+      安装：
+        在线 ：sudo pip3 install pymysql
+	离线 ：pymysql-0.7.11.tar.gz
+	    $ tar -zxvf pymyql-0.7.11.tar.gz
+	    $ cd pymysql-0.7.11
+	    $ sudo python3 setup.py install
+    2、python2
+      模块名 ：MySQLdb
+      安装 ：sudo pip install mysql-python
+  2、pymysql使用流程
+    1、建立数据库连接(db = pymysql.connect(...))
+    2、创建游标对象(c = db.cursor())
+    3、游标方法: c.execute("insert ....")
+    4、提交到数据库 : db.commit()
+    5、关闭游标对象 ：c.close()
+    6、断开数据库连接 ：db.close()
+  3、connect对象
+    1、db = pymysql.connect(参数列表)
+      1、host ：主机地址,本地 localhost
+      2、port ：端口号,默认3306
+      3、user ：用户名
+      4、password ：密码
+      5、database ：库
+      6、charset ：编码方式,推荐使用 utf8
+    2、数据库连接对象(db)的方法
+      1、db.close() 关闭连接
+      2、db.commit() 提交到数据库执行
+      3、db.rollback() 回滚
+      4、cur = db.cursor() 返回游标对象,用于执行具体SQL命令
+    3、游标对象(cur)的方法
+      1、cur.execute(sql命令,[列表]) 执行SQL命令
+      2、cur.close() 关闭游标对象
+      3、cur.fetchone() 获取查询结果集的第一条数据
+                        (1,100001,"河北省")
+      4、cur.fetchmany(n) 获取n条
+                        ((记录1),(记录2))
+      5、cur.fetchall() 获取所有记录
+    错误：
+      1、root@"localhost" denied,Using password:YES
+      2、"localhostt"
+      3、connect object has no attribute "rollbake"
+      4、pymysql has no attribute "connect"
+6、orm(Object Relation Mapping 对象关系映射)
+  1、定义
+    把对象模型映射到MySQL数据库中
+  2、sqlalchemy安装：
+    在线 ：sudo pip3 install sqlalchemy
+    离线 ：
+      $ tar -zxvf SQLAlchemy-1.2.10.tar.gz
+      $ cd SQLAlchemy-1.2.10
+      $ sudo python3 setup.py install
+    验证：
+      $ python3
+      >>> import sqlalchemy
+      >>> 
+  3、示例
+    class User(Base):
+        __tablename__ = "t1"  #声明要创建的表名
+	id = Column(Integer,primary_key=True)
+	name = Column(String(20))
+    解释：
+      一个类User --> 一张表 t1
+      表中有两个字段 ：id 和 name
+
+
+
+
+
+
+
+
+
