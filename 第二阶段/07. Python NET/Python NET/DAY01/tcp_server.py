@@ -22,7 +22,7 @@ while True:
         break
     print(data)
     n = connfd.send(b'Receive your message')
-    print("发送了%d字节"%n)
+    print("发送了%d字节" % n)
 
 #关闭套接字
 connfd.close()
