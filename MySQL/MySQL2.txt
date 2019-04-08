@@ -1,0 +1,596 @@
+MySQL2
+
+表记录管理
+	
+	1. insert 插入
+
+    	insert into 表名 values(值1),(值2),...;
+    	insert into t1 values(1, 'Lucy', 90),(2, 'Green',86);
+    	insetr into 表名(字段1,...) values(值1),...;
+    	insert into t1(name,score) values('Peter',100); # id默认为空
+        
+	2. select 查询
+
+    	select * from 表名 [where 条件];
+    	select 字段1,字段2, from 表名 [where 条件];
+        
+        
+	3. alter 修改
+
+		alter table 表名 执行动作；
+
+        添加字段(add)
+            alter table 表名 add 字段名 数据类型;
+            alter table 表名 add 字段名 数据类型 first;
+            alter table 表名 add 字段名 数据类型 after 字段名;
+        删除字段(drop)
+            alter table 表名 drop 字段名;
+        修改类型(modify)
+            alter table 表名 modify 字段名 新数据类型;
+        表重命名(rename)
+            alter table 表名 rename 新表名;
+
+	4. 删除表记录
+        delete from 表名 where 条件；
+        注意：delete 语句后如果不加where条件，所有记录全部清空
+
+	5. 更新表记录
+        update 表名 set 字段1=值1,字段2=值2,... where 条件;
+        注意：必须加where条件
+
+运算符操作
+
+	数值比较/字符比较
+
+		数值比较：= != > >= < <=        
+		字符比较：= !=
+
+	1. 找出攻击力高于150的英雄的名字和攻击值
+		select name,gongji from sanguo where gongji > 150;
+	2. 将赵云的攻击力设置为360，防御力设置为68
+		update sanguo set gongji=360, fangyu=68 where name='赵云';
+
+	逻辑比较
+		
+		and（两个或多个条件同时成立）
+		or （任意一个条件成立即可）
+
+	1. 找出攻击值高于200的蜀国英雄的名字、攻击力
+		select name,gongji from sanguo where gongji > 200 and country = '蜀国';
+	2. 将吴国英雄中攻击值为110的英雄的攻击值改为100，防御力改为60
+		update sanguo set gongji = 100, fangyu = 60 where country = '吴国' and gongji = 110;
+	3. 查找蜀国和魏国的英雄信息
+		select * from hero where country = '蜀国' or country = '魏国';
+	
+	范围内比较
+
+		between 值1 and 值2
+		where 字段名 in(值1,值2,...)
+		where 字段名 not in(值1,值2,...)
+
+	1、查找攻击值100～200的蜀国英雄信息
+		select * from sanguo where gongji between 100 and 200 and country = "蜀国";
+	2、找到蜀国和吴国以外的国家的女英雄信息
+		select * from sanguo where country not in ("蜀国","吴国") and sex = "女";
+	3、找到id为1、3或5的蜀国英雄和貂蝉的信息
+		select * from sanguo 
+		where id in(1, 3, 5) and country = '蜀国' or name="貂蝉";
+		select * from sanguo 
+		where (id in(1, 3, 5) and country = '蜀国') or name="貂蝉";用括号来制定优先级
+
+	匹配空、非空
+
+		空：		where name is null
+		非空：	where name is not null
+			注意：
+				NULL：空值，只能用is或者is not去匹配
+				""：空字符串，用=或者!=去匹配
+
+	1、姓名为NULL值的蜀国男英雄信息
+		select * from sanguo where name is null and country = "蜀国" and sex = "男"
+	2、姓名为""的英雄信息
+		select * from sanguo where name="";
+
+	模糊比较
+
+		where 字段名 like 表达式
+			表达式：
+				1、_:匹配单个字符
+				2、%:匹配0到多个字符
+				#NULL不会被统计，只能用is、is not去匹配
+
+	1、示例：
+		select name from sanguo where name like "_%_";
+		select name from sanguo where name like "%";
+		select name from sanguo where name like "___";
+		select name from sanguo where name like "赵%";
+
+SQL查询
+
+	select ...聚合函数 from 表名
+	where ...
+	group by ...
+	having ...
+	order by ...
+	limit ...;		
+
+	order by
+
+		作用：给查询结果进行排序
+		语法：... order by 字段名 asc/desc
+
+		1、将英雄安防御值从高到低排序
+			select * from sanguo order by fangyu desc;
+		2、将蜀国英雄按攻击值从高到低排序
+			select * from sanguo where country = "蜀国" order by gongji ASC;
+		3、将魏蜀两国英雄中名字为三个字的防御值升序排列
+			select * from sanguo where country in("蜀国","魏国") and name like"___" order by fangyu ASC;
+
+	limit 永远放在SQL语句的最后写
+
+		作用：限制显示查询记录的个数
+		用法：
+			1、limit n # 显示n条记录	
+			2、limit m,n # m表示从m+1条记录开始显示，显示n条
+				limit 2,3 显示第3、4、5三条记录
+			3、分页：每页显示5条记录，显示4第四页的内容
+				第1页：limit 0,5 # 1 2 3 4 5
+				第2页：limit 5,5 # 6 7 8 9 10
+				第3页：limit 10,5 # 11 12 13 14 15
+				第4页：limit 15,5 # 16 17 18 19 20
+
+				每页显示n条记录，显示第m页：limit (m-1)*n,n
+
+		1、在蜀国英雄中，查找防御值倒数第二名至倒数第四名的英雄的记录
+			select * from sanguo where country = "蜀国" order by fangyu ASC limit 1,3;
+		2、在蜀国英雄中，查找攻击值前三名且名字不为NULL的英雄的姓名、攻击值和国家
+			select name,gongji,country from sanguo 
+			where country = "蜀国" and name is not NULL order by gongji ASC limit 3;
+
+	聚合函数
+
+		avg(字段名):求该字段平均值
+		sum(字段名):求和
+		max(字段名):最大值
+		min(字段名):最小值
+		count(字段名):统计该字段记录的个数
+
+		1、攻击力平均值是多少？
+			select avg(gongji) from sanguo;
+		2、统计id、name两个字段分别有几条记录？
+			select count(id),count(name) from sanguo;
+			# 空值 NULL 不会被统计，""会被统计
+		3、计算蜀国英雄的总攻击力
+			select sum(gongji) from sanguo where country = '蜀国';
+		4、统计蜀国英雄中攻击力大于200的英雄
+			select count(*) from sanguo where gongji>200 and country="蜀国";
+			# 用*以防NULL不被统计
+
+	group by
+
+		作用：给查询结果进行分组（
+		注意：
+			1、group by之后的字段名必须要为select之后的字段名
+			2、如果select之后的字段名和group by之后的字段不一致，则必须进行聚合处理
+
+		1、查询表中一共有几个国家
+			select country from sanguo
+			group by country;
+		2、计算每个国家的平均攻击力
+			select country,avg(gongji) from sanguo
+			group by country;
+			
+			先分组	再聚合	再去重
+			蜀国
+			蜀国
+			蜀国		120		蜀国
+			魏国
+			魏国		110		魏国
+			吴国		115		吴国
+		3、查找所有国家中英雄的数量最多的前两名，国家名称和数量
+			select country,count(id) from sanguo
+			group by country
+			order by count(id) desc
+			limit 2;	
+
+	having 语句
+
+		作用：对查询的结果进行进一步筛选
+		注意：
+			1、having语句通常和group by语句联合使用，过滤由group by语句返回的语句集
+			2、where智能操作表中实际存在的字段，having可操作由聚合函数生成的
+
+		1、找出平均攻击力大于105的国家的前两名，显示国家和平均攻击力
+			select country,avg(gongji) from sanguo group by country having avg(gongji) > 105 order by avg(gongji) DESC limit 2;
+
+	distinct
+
+		作用：不显示字段重复值
+		注意：
+			1、distinct和from之间所有字段都相同才会去重
+			2、distinct不能对任何字段做聚合处理
+
+		1、表中都有哪些国家
+			select distinct country from sanguo;
+		2、计算蜀国一共有多少个英雄
+			select count(distinct id) from sanguo where country = "蜀国";
+
+	查询时做数学运算
+	
+		运算符
+			+ - * /
+
+		1、查询时所有英雄攻击力翻倍
+			select id,name,gongji*2 as 2gj from sanguo;
+
+	约束
+
+		作用：保证数据的完整性、一致性、有效性
+		分类：
+			1、默认约束（default）
+				插入记录不给该字段赋值，则使用默认值
+
+			2、非空约束（not null）
+				不允许该字段值有NULL记录，否则报错
+
+		create table t2(id int not null, name varchar(15), sex enum("M", "F", "S") default "S");
+
+SQL索引
+
+	定义：对数据库表的一列或多列的值进行排序的一种结构(Btree)
+	优点：
+		加快数据检索速度
+	缺点：
+		1、占用物理存储空间
+		2、当对表中的数据更新时，索引需要动态维护，降低数据维护速度
+
+	示例：
+		查看检测开启状态
+			show variables like "profiling";
+		1、开启运行时间检测
+			set profiling=1;
+		2、执行查询语句
+			select name from t1 where name ="lucy99999";
+		3、查询看执行时间
+			show profiles;
+		4、在name字段创建索引
+			create index name on t1(name);
+		5、再执行查询语句
+			select name from t1 where name ="lucy88888";
+		6、查看执行时间
+			show profiles;
+
+	分类：普通索引、唯一索引、主键索引、外键索引
+
+	普通索引(index) 
+		规则：
+			1、可设置多个字段
+			2、字段值无约束
+			3、key标志：MUL
+		创建：
+			1、创建表时
+				create table t3(id int, name char(15), index(id),index(name));
+			2、已有表
+				create index 索引名 on 表名(字段名);
+		查看索引：
+			1、desc 表名; key标志为：MUL
+			2、show index from 表名 \G;
+		删除索引：
+			drop index 索引名 on 表名;
+
+	唯一索引(unique)
+		规则：
+			1、可设置多个字段
+			2、约束：字段值不允许重复，但可以为NULL
+			3、key标志：UNI
+		创建：
+			1、创建表时
+				unique()
+				unique()
+			2、已有表
+				create unique index ......
+		查看、删除同普通索引
+
+	主键索引(primary key)
+		自增长属性(auto_increment,配合主键一起使用)
+		规则：
+			1、只能有一个主键字段
+			2、约束：不允许重复，且不能为NULL
+			3、key标志：PRI
+			4、通常设置记录变好字段id，能唯一锁定一条记录
+		创建：
+			1、创建表时
+				create table t4(id int primary key auto_increment, name char(15));
+				increment默认是1
+			2、已有表
+				alter table 表名 add primary key(id);
+			3、删除
+				1、删除自增长属性(modify)
+					alter table 表名 modify id int;
+				2、删除主键索引
+					alter table 表名 drop primary key;
+
+数据导入
+	
+	作用：把文件系统的内容导入到数据库中
+
+	语法：
+		load data infile "/var/tmp/scoretable.csv"
+		into table scoretab
+		fields terminated by ","
+		lines terminated by "\n";
+	步骤：
+		vim /etc/my.cnf
+		加入secure_file_priv='' 
+		show variables like "%tmpdir%"显示读取路径
+		1、在数据库中创建对应的表
+			create database db3 character set utf8;
+			create table scoretab( id int, name varchar(15), score float(5,2), number bigint, class char(7));
+
+		2、把文件拷贝到数据库的默认搜索路径中
+			show variables like "secure_file_priv";
+			# 查看默认搜索路径
+			拷贝到
+
+		3、执行数据导入语句
+
+数据导出
+
+	作用：将数据库中表的记录导出到系统文件里
+
+	语法：
+		select ... from 表名
+		into outfile ""
+		fields terminated by ","
+		lines terminated by "\n";
+
+	把MOSHOU库下的sanguo表英雄的姓名、攻击值、国家导出来，sanguo.txt
+		select name,gongji,country from MOSHOU.sanguo into outfile "/var/tmp/sanguo.txt" fields terminated by "," lines terminated by "\n"
+
+	1、把/etc/passwd 导入到数据库表userinfo里面
+		用户名 密码 UID号 GID号 用户描述 主目录 登陆权限 
+
+	2、在userinfo第一列添加一个id字段，主键、自增长，显示宽度为3，位数不够用0填充
+
+foreign key 外键
+
+	定义：让当前表字段的值在另一个表的范围内选择
+	语法：
+		foreign key(参考字段名)
+		references 主表(被参考字段名)
+		on delete 级联动作
+		on update 级联动作
+	使用规则：
+		1、主表、从表字段数据类型要一致
+		2、主表被参考字段：主键
+	示例：
+		表1、缴费信息表
+			id 	姓名 	班级 	缴费金额
+			1	小张		1班		  300
+			2   小明		1班       250
+		表2、学生信息表（班主任）
+			id  姓名     缴费金额
+			1   	
+	步骤
+		表1
+		create table jftab(id int primary key, name varchar(15), class char(5), money int);
+		表2（从表）
+		create table bjtab(stu_id int, name varchar(15), money int, foreign key(stu_id) references jftab(id) on delete cascade on update cascade);
+
+	删除外键：
+		alter table 表名
+		drop foreign key 外键名;
+		外键名：show create table 表名;来查看
+	级联动作
+		1、cascade
+			数据级联三处、更新（参考字段）
+		2、restrict（默认）
+			从表有相关联记录，不允许主表操作
+		3、set null
+			主表删除、更新，从表相关联的字段值为NULL
+
+	已有表添加外键
+		alter table 表名 add
+		foreign key(被参考字段) references 主表(参考字段)
+		on delete ...
+		on update ...
+
+表的复制
+
+	语法：
+		create table 表名 select from 表名 where .....;
+	复制表结构：key属性不会复制
+		create table 表名 select * from 表名 where false;
+
+嵌套查询（子查询）
+
+	定义：把内层的查询结果作为外层的查询条件
+	语法格式：
+		select ... from 表名 where 条件 (select ....);
+	示例：
+		1、把攻击值小于平均攻击值的英雄名字和攻击值显示出来
+			select name,gongji from sanguo where gongji < (select avg(gongji) from sanguo);
+		2、找出每个国家攻击力最高的英雄的名字和攻击值
+			select name,gongji from sanguo where (country,gongji) in (select country,max(gongji) from sanguo group by country); 
+
+多表查询
+
+	1、两种方式
+		select 字段名列表 from 表名类表(笛卡尔积)
+		select * from t1,t2
+
+	练习：
+		1、显示省和市的详细信息
+			select s_name,c_name from sheng,city where sheng.s_id = city.cfather_id;
+		2、显示省市县的详细信息
+			select sheng.s_name as sheng, city.c_name as city, xian.x_name as xian from sheng,city,xian where sheng.s_id=city.cfather_id and city.c_id = xian.xfather_id;
+
+连接查询
+
+	1、内链接
+		select 字段名 from 表1 inner join 表2 on 条件;
+		显示省和市详细信息
+		select sheng.s_name,city.c_name from sheng inner join city on sheng.s_id = city.cfather_id;
+		显示省市县详细信息
+		select sheng.s_name,city.c_name,xian.x_name from sheng inner join city on sheng.s_id = city.cfather_id inner join xian on city.c_id=xian.xfather_id;
+
+	2、外链接
+		1、左连接
+			select 字段名 from 表1 left join 表2 on 条件 left join 表3 on 条件;
+
+			select sheng.s_name as sheng,city.c_name as city from sheng left join city on sheng.s_id = city.cfather_id;
+		2、右连接
+			用法同左连接，只不过是以右表为主显示查询结果
+
+数据备份(mysqldump，在Linux终端中操作)
+
+	1、命令格式
+		mysqldump -u 用户名 -p 源库名 > /xxx/xxx.sql
+
+	2、源库名的表达方式
+		--all-databases	备份所有库
+		库名				备份单个库
+		-B 库1 库2 库3	备份多个库
+		库名 表1 表2 表3	备份指定库的多张表
+
+		示例：
+			1、备份所有库，放到Backup目录下：all.sql
+				 mysqldump -u root -p --all-databases > all.sql
+			2、备份db3库中的sheng city xian三张表，scx.sql
+			3、备份MOSHOU和db3库，md.sql
+
+	完全备份
+
+	增量备份
+
+数据恢复
+
+	1、命令格式
+		mysql -uroot -p 目标库名 < /xxx/xxx.sql
+	2、从所有库备份中恢复某一个库(--one-database)
+		mysql -uroot -p --one-database 目标库名 < all.sql
+		目标库名一定要是原始库名
+	注意：
+		1、恢复库时如果恢复到原库会将表中数据覆盖，新增表不会删除
+		2、数据恢复时如果恢复的库不存在，则必须先创建空库
+
+MySQL的用户多账户管理
+
+	1、开启MySQL的远程连接
+		(Ubuntu)sudo -i cd /etc/mysql/mysqld.conf.d/
+		打开mysqld.conf
+		注释 bind-address=127.0.0.1
+		重启服务
+
+	2、添加授权用户
+		用root用户登录到mysql
+
+		grant 授权列表 on 库.表 to "用户名"@"%" identified by "密码" with grant option;
+		最后一句指的是是否有授权权限
+
+		权限列表：all privileges,select,insert,*.*（所有库的所有表）
+
+		示例：
+			1、添加授权用户haoen110,密码123,对所有库所有表所有权限
+			grant all privileges on *.* to "haoen110"@"%" identified by "123" with grant option;
+			2、添加授权用户haoen110,密码123,对db3库的所有表所有权限
+			grant all privileges on db3.* to "haoen110"@"%" identified by "123" with grant option;
+			3、macOS
+			create user 'haoen110'@'localhost' identified by '123';
+			grant all privileges on *.* to "haoen110"@"localhost";
+
+存储引擎（处理表的处理器）（默认：InnoDB）
+
+	基本操作
+		1、查看所有存储引擎
+			show engines;
+		2、查看已有表的存储引擎
+			show create table xxx;	
+		3、更改新的
+			create table xxx(id int...)engine=muisam,char..;
+			alter table xxx engine=innodb;
+
+锁
+	目的：解决客户并发访问的冲突问题
+	分类
+		1、读锁（共享锁）
+			select：加读锁之后别人不能更改表记录，但是可以进行查询
+
+		2、写锁（排他锁、互斥锁）
+			insert delete update：加写锁之后别人不能查、不能改
+	锁粒度
+		1、表级锁：myisam
+		2、行级锁：innodb
+	特点
+		1、InnoDB特点
+			- 共享表空间
+				表名.frm：表结构和索引文件
+				表名.idb：表记录
+			- 支持行级锁
+			- 支持外键、事物操作
+
+		1、MyISAM
+			- 独享表空间
+				表名.frm：表结构
+				表名.myd：表记录
+				表名.myi：索引文件
+			- 支持表级锁
+
+	如何决定使用那个存储引擎
+		1、执行查询操作多的表用MyISAM（使用InnoDB浪费资源）
+		2、执行写操作多的表用InnoDB
+
+MySQL调优
+
+	1、选择合适的存储引擎
+		读操作多用MyISAM，写操作多用InnoDB
+
+	2、创建索引
+		在select、where、order by经常涉及到的字段建立索引
+
+	3、SQL语句的优化
+		1、where子句中不使用 !=，否则放弃索引进行全表扫描
+		2、尽量避免 NULL 值判断，否则放弃索引进行全表扫描
+			优化前：select from t1 where number is null;
+			优化后：
+				在number列上设置默认值0，确保number列无NULL值
+				select from t1 where number=0;
+		3、尽量避免 or 连接条件，否则放弃索引
+			优化前：
+				select id from t1 where id=10 or id=20;
+			优化后：
+				select id from t1 where id=10
+				union all
+				select id from t1 wehre id= 20;
+		4、模糊查询尽量避免使用前值 % ，否则全表扫描
+			select name from t1 where name like "%c%";
+		5、尽量避免使用 in 和 not in，否则全表扫描
+			select id from t1 where id in(1,2,3,4);
+			select id from t1 where id between 1 and 4;
+		6、尽量避免使用 select* ..；用具体的字段代替*,不要返回用不到的任何字段
+
+事务和事务回滚
+
+	定义：一件事从开始发生到结束的整个过程		
+	作用：确保数据一致性
+	应用：
+		1、MySQL中SQL命令会自动commit到数据库
+			show variables like "autocommit";
+		开启事务
+			begin;
+			....
+			....
+			....;一条或多条SQL语句
+			# 此时autocommit被禁用
+		中止事务
+			commit;
+			# 如果没有成功则使用 rollback;
+
+
+
+
+
+
+
+
+

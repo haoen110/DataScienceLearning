@@ -1,0 +1,3 @@
+
+
+from mypack.games import *

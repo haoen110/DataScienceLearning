@@ -1,0 +1,292 @@
+day02回顾
+对象(实例):
+  实例变量(属性)  # 对象.属性名 = 表达式 添加实例变是一
+  实例方法(行为)
+  def 实例方法名(self, .....):
+      ....
+
+类:
+  类变量(属性)
+  类方法(行为)  @classmethod
+
+  @classmethod
+  def 类方法名(cls, .....):
+     ....
+
+静态方法 @staticmethod
+  类名.静态方法名(传参)
+  对象.静态方法名(传参)
+
+类内的 __slots__ 列表属性
+   class Student:
+      __slots__ = ['name', 'score']
+
+类的文档字符串
+  类内的 __doc__属性绑定文档字符串
+
+
+继承 / 派生
+object 类派生出所有的类
+所有的类都直接或间接的继承自object类
+
+单继承
+  class 子类名(父类名):
+       ....
+
+基类/父类/超类
+派生类/子类
+
+类内的 __base__ 属性 (绑定父类)
+
+覆盖
+  .....略
+
+super 函数
+  调用父类的覆盖版本的方法
+
+
+当子类实现了__init__方法时,父类的__init__方法将被覆盖,
+此时需要显式调用父类的__init__方法才能完成父类的初始化工作
+
+
+
+day03笔记:
+用于类的函数
+ issubclass(cls, class_or_tuple)   判断一个类是否继承自其它的类,如果此类cls是class或 tuple中的一个派生子类则返回True,否则返回False
+
+示例:
+  class A:
+      pass
+  class B(A):
+      pass
+  class C(B):
+      pass
+  issubclass(C, (A, B))  # True
+  issubclass(C, (int, str)) # False
+
+查看python内建类的继承关系的方法:
+  >>> help(__builtins__)  
+
+封装 enclosure
+  封装是指隐藏类的实现细节,让使用者不用关心这些细节
+  封装的目的是让使用者尽可能少的实例变量(属性)进行操作
+
+私有属性:
+  python类中,以双下划线'__'开头,不以双下划线结尾的标识符为私有成员,在类的外部无法直接访问
+
+示例见:
+  01_enclosure.py
+
+多态 polymorphic
+  字面意思: "多种状态"
+  多态是指在继承/派生关系的类中,调用基类对象的方法,实际能调用子类的覆盖版本方法的现象叫多态
+
+说明:
+  多态调用的方法与对象相关,不与类型相关
+  Python的全部对象都只有"运行时状态(动态)", 没有"C++/Java"里的"编译时状态(静态)"
+
+示例见:
+  02_poly.py
+面向对象的编程语言的特征:
+  继承
+  封装
+  多态
+  如:
+    C++ / Java / Python / Swift / C#
+
+多继承 multiple inheritance
+  多继承是指一个子类继承自两个或两个以上的基类
+
+  语法:
+    class 类名(基类名1, 基类名2, ....):
+        语句块
+  说明:
+    1. 一个子类同时继承自多个父类,父类中的方法可以同时被继承下来
+    2. 如果两个父类中有同名的方法,而在子类中又没有覆盖此方法时,调用结果难以确定
+
+  示例见:
+    03_multi_inherit.py
+
+多继承的问题(缺陷)
+  标识符(名字空间冲突的问题)
+    要谨慎使用多继承
+
+  示例见:
+    04_multi_inherit_bug.py
+
+
+继承的MRO(Method Resolution Order)问题
+  类内的__mro__属性用来记录继承方法的查找顺序
+
+
+示例见:
+  05_mro.py
+  06_mro2.py
+
+
+练习:
+  已知list 列表类中没有insert_head方法,
+    写一个自定义的类MyList,继承自list类,在MyList类内添加
+
+    class MyList(list):
+      def insert_head(self, value):
+          '''以下自己实现,将Value插入到列表的开始处'''
+
+    如:
+      L = MyList(range(1,5))
+      print(L)  # [1,2,3,4]
+      L.insert_head(0)
+      print(L)  # [0,1,2,3,4]
+      L.append(5)
+      print(L)  # [0,1,2,3,4,5]
+
+
+函数重写 override
+  重写是在自定义的类内添加相应的方法,让自定义的类生成的对象(实例)像内建对象一样进行内建的函数操作
+
+对象转字符串函数重写
+  repr(obj)  返回一个能代表此对象的表达式字符串,通常:
+    eval(repr(obj)) == obj
+  str(obj)  通过给定的对象返回一个字符串(这个字符串通常是给人看的)
+
+问题:
+    class MyNumber:
+        pass
+        # def __len__(self):
+        #     return 100
+
+    n1 = MyNumber()
+
+    x = len(n1)  # 重写了__len__方法才可以
+    print('x =', x)
+
+示例见:
+  07_str_repr.py
+
+对象转字符串函数重写方法:
+  repr() 函数的重写方法:
+      def __repr__(self):
+           return 能够表达self内容的字符串
+
+  str() 函数的重写方法:
+      def __str__(self):
+          return 人能看懂的字符串
+  说明:
+    1. str(obj) 函数优先调用obj.__str__()方法返回字符串
+    2. 如果obj没有__str__()方法,则调用obj.__repr__()方法返回的字符串
+    3. 如果obj没有__repr__()方法,则调用object类的 __repr__() 实例方法显示 <xxxx> 格式的字答鼓足 
+
+
+数值转换函数的重写
+
+  def __complex__(self)   complex(obj) 函数调用
+  def __int__(self)       int(obj) 函数调用
+  def __float__(self)     float(obj) 函数调用
+  def __bool__(self)      bool(obj) 函数调用
+
+示例见:
+  08_number_trans.py
+
+内建函数的重写
+  __abs__        abs(obj)
+  __len__        len(obj)
+  __reversed__   reversed(obj)
+  __round__      round(obj)
+
+示例见:
+  09_mylist.py
+
+
+布尔测试函数的重写
+  格式 def __bool__(self):
+      ...
+  作用:
+    用于bool(obj) 函数取值
+    用于if语句真值表达式中
+    用于while语句真值表达式中
+  说明:
+    1. 优先调用__bool__方法取值
+    2. 如果不存在__bool__方激动 ,则用__len__()方法取值后判断是否为零值,如果不为零返回True,否则返回False
+    3. 如果再没有__len__方法,则直接返回True
+
+迭代器(高级)
+  什么是迭代器
+    可以通过next(it) 函数取值的对象就是迭代器
+  迭代器协议:
+    迭代器协议是指对象能够使用next函数获取下一项数据,在没有下一项数据时触发一个StopIterator来终止迭代的约定
+  实现方法:
+    类内需要有 __next__(self) 方法来实现迭代器协议
+  语法形式:
+    class MyIterator
+        def __next__(self):
+            迭代器协议的实现
+            return 数据
+  
+  什么是可迭代对象
+     是指能用iter(obj) 函数返回迭代器的对象(实例)
+     可迭代对象内部一定要定义__iter__(self)方法来返回迭代器
+
+  可迭代对象的语法形式:
+    class MyIterable:
+        def __iter__(self):
+            语句块
+            return 迭代器
+
+  示例见:
+    11_myiterator.py
+
+
+
+明天:
+  with语句
+  环境管理器
+  运算符重载
+
+
+练习1:
+  把学生信息管理系统中的学生信息:姓名,年龄,成绩 改为私有属性,不让此类以外的函数访问来实现封装
+   (需要修改Student类)
+
+练习2:
+   写一个类,Fibonacci 实现迭代器协议,此类的对象可以作为可迭代对象生成相应的斐波那契数
+     1 1 2 3 5 8 ....
+
+    class Fibonacci:
+        def __init__(self, n):
+           ...
+
+    实现如下操作:
+    for x in Fibonacci(10):
+        print(x)
+    L = [ x for x in Fibonacci(30)]
+    print(sum(Fibonacci(25)))
+      (需要实现迭代器协议)
+
+
+
+
+提示: 可以用一个类来实现,也可以用两个类实现
+    class Fibonacci:
+        def __init__(self, n):
+           ...
+
+        def __iter__(self):
+            ....
+
+        def __next__(self):
+            ....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

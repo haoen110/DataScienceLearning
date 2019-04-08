@@ -1,0 +1,266 @@
+day04回顾
+作用域
+  全局变量 和 局部变量
+  globals()  / locals()
+
+  函数变量
+  def 函数名(...):
+      pass
+  
+  函数可以作为参数传递
+  函数可以作为返回值返回
+  函数的嵌套定义
+
+python 作用域
+  局部作用域
+  外部嵌套函数作用域
+  模块级的作用域(全局作用域)
+  内建模块的作用域
+
+global 语句
+  声明
+nonlocal 语句
+
+
+
+lambda 表达式(用来创建匿名函数)
+  lambda 参数列表: 表达式
+
+exec / eval函数
+
+day05 笔记:
+
+函数式编程
+  函数式编程是指用一系列函数决定问题
+
+函数是一等公民
+  函数本身可以赋值给变量，赋值后变量绑定函数
+  允许将函数本身作为参数传入另一个函数
+  允许返回一个函数
+
+
+函数的可重入性:
+  可重入是指一个函数传的参数一定，则结果必须一定
+  要求:
+    def定义的函数不要访问除局部变量以外的变量
+
+  示例:
+    # 以下是不可重入的函数myadd
+      y = 200
+      def myadd(x):
+          return x + y
+      print(myadd(10))  # 210
+      y = 300
+      print(myadd(10))  # 310
+    # 以下是可重入的函数 myadd
+    def myadd(x, y):
+        return x + y
+    print(myadd(10, 20))
+
+
+高阶函数 High Order Function
+  什么是高阶函数:
+    满足下列一个条件的函数即为高阶函数:
+      1. 函数接受一个或多个函数作为参数传入
+      2. 函数返回一个函数
+
+python中内建（builtins)的高阶函数
+   map, filter, sorted
+
+map函数:
+  map(func, *iterables) 用函数和对可迭代对象中的每一个元素作为参数计算出新的可迭代对象，当最短的一个可迭代对象不再提供数据时，此可迭代对象生成结束
+
+示例:
+    def pow2(x):
+        return x**2
+    for x in map(pow2, range(1, 10)):
+        print(x)
+
+    内建的pow(x, y, z=None)
+    # 生成  1 ** 4 , 2**3 , 3 ** 2, 4 ** 1
+    for x in map(pow, range(1, 10), range(4,0,-1)):
+        print(x)
+
+    for x in map(pow, [2,3,5,7],
+                 [4,3,2,1], range(5, 10)):
+        print(x)
+
+练习:
+  1. 求 1 ** 2 + 2 ** 2 + 3 ** 2 + ... + 9**2 的和
+  2. 求 1 ** 3 + 2 ** 3 + 3 ** 3 + ... + 9**3 的和
+  3. 求 1**9 + 2**8 + 3**7 + ... + 9**1的和  # 11377
+
+
+
+filter 函数
+  格式:
+    filter(func, iterable)
+  作用:
+    筛选可迭代对象iterable中的数据，返回一个可迭代对象，此可迭代对象将对iterable进行筛选
+  说明:
+    函数func将对每个元素进行求值，返回False则将此数据丢弃，返回True则保留此数据
+  示例:
+    def isodd(x):  # 此函数判断x是否为奇数
+        return x % 2 == 1
+    for x in filter(isodd, range(10)):
+        print(x)
+    even = [x for x in 
+              filter(lambda x: x%2==0, range(10))]
+
+练习:
+  1. 将 1 ~20 内的偶数用filter筛选出来，形成列表
+  2. 用filter函数将1~100之间的所有素数(prime) 放入到列表中
+
+
+sorted 函数:
+  作用:
+    将原可迭代对象的数据进行排序，生成排序后的列表
+  格式:
+    sorted(iterable, key=None, reverse=False)
+  说明:
+    iterable 可迭代对象
+    key 函数是用来提供一个参考值，这个值将作为排序的依据
+    reverse 标志用来设置是否降序排序
+  示例:
+    L = [5, -2, -4, 0, 3, 1]
+    L2 = sorted(L)  # L2 = [-4, -2, 0, 1, 3, 5]
+    L2 = sorted(L, reverse=True)
+    L3 = sorted(L, key=abs) # L3 = [0, 1, -2, 3, -4, 5]
+    # 思考:
+    names = ['Tom', 'Jerry', 'Spike', 'Tyke']
+    sorted(names)
+    # 要想按名字的长度升序排序怎么办？
+    L4 = sorted(names, key=len)
+
+练习:
+    names = ['Tom', 'Jerry', 'Spike', 'Tyke']
+    让names排序
+      排序的依据是字符串的反序
+             'moT'    'yrreJ'  'ekipS'  'keyT'
+    L2 = sorted(names, ....) 
+    排序后:
+    L2 = ['Spike', 'Tyke', 'Tom', 'Jerry']
+
+练习:
+   写函数input_student() 得到学生的姓名,成绩，年龄
+   output_student(L) 打印学生信息
+   (可以把以前的input_student/output_student函数直接拿过来用)
+
+   L = input_student()  # 输入一些学生信息
+   print("按年龄从大到小排序后")
+   L2 = sorted(L, .....)
+   output_student(L2)
+   print("按成绩从高到低排序后")
+   L3 = sorted(L, .....)
+   output_student(L3)
+
+
+递归函数 recursion
+  函数直接或间接的调用自身
+
+示例:
+  import time
+  def story():
+      # time.sleep(1)
+      print("从前有座山")
+      print("山上有座庙")
+      print('庙里有人老和尚讲故事:')
+      story()  # 直接调用自身
+  stroy()
+
+  # 函数间接调用自身的递归
+  def fa():
+      fb()
+  def fb():
+      fa()
+  fa()
+  print("递归结束")
+
+递归说明:
+  1. 递归一定要控制递归的层数,当符合某一条件时要终止递归
+  2. 几乎所有的递归都能用while循环来代替
+
+控制递归层数的示例 ：
+  def fx(n):
+      print("递归进入第", n, "层")
+      if n == 3:
+          return
+      fx(n + 1)
+      print("递归退出第", n, '层')
+  fx(1)
+  print("程序结束")
+  见: 02_recursion_deep.py
+
+
+递归的优缺点:
+  优点：
+    递归可以把问题简单化，让思路更为清晰，代码更简洁
+  缺点:
+    递归因系统环境影响大，当递归深度太大时，可能会得到不可预知的结果
+
+递归函数的实现方法:
+  先假设函数已经实现
+
+示例见:
+  03_recursion_sum.py
+
+练习:
+  编写程序用递归求阶乘:
+    def myfac(x):
+        ....
+
+    print(myfac(5))  # 120
+    print(myfac(4))  # 24
+
+闭包 closure
+  将内嵌函数的语句和这些语句的执行环境打包在一起时，得到的对象称为闭包(closure)
+
+闭包必须满足三个条件:
+  1. 必须有一个内嵌函数
+  2. 内嵌函数必须引用外部函数中的变量
+  3. 外部函数返回值必须是内嵌函数
+
+示例见:
+     04_closure.py
+  def make_power(y):
+      def fx(arg):
+          return arg ** y
+      return fx
+
+  pow2 = make_power(2)
+  print('3的平方是: ', pow2(3))
+
+示例:
+    # 用 参数返回相应的数学函数的示例 
+    #  y = a*x**2 + b*x + c
+    def make_function(a, b, c):
+        def fx(x):
+            return a*x**2 + b*x + c
+        return fx
+    # 创建一个 y = 4x2 + 5x + 6 的函数用fx1绑定
+    fx1 = make_function(4, 5, 6)
+    print(fx1(2))  # 求在x等2时y的值
+
+
+
+
+练习:
+   1. 编写函数求阶乘 myfac(x), 用什么方法都可以
+   2. 写程序算出1~20的阶乘的和
+     1!+2!+3!+.....+20!
+   3. 改写之前学生信息管理程序，添加如下四个功能
+     5)  按成绩从高至低打印学生信息
+     6)  按成绩从低至高打印学生信息
+     7)  按年龄从大到小打印学生信息
+     8)  按年龄从小到大打印学生信息
+     (要求原来输入的列表顺序保持不变)
+   4. 已知有列表:
+     L = [[3,5,8], 10, [[13, 14], 15, 18], 20]
+       1) 写一个函数print_list(lst) 打印出所有元素
+         print_list(L)  # 打印 ....
+       2) 写一个函数 sum_list(lst) 返回这个列表中所有元素的和
+    注:
+      type(x) 可以返回一个变量的类型
+      如:
+          type(20) is int        # 返回True
+          type([1,2,3]) is list  # 返回True
