@@ -353,7 +353,7 @@ else:
 ```python
 import os 
 from time import sleep 
-b
+
 pid = os.fork()
 
 if pid < 0:
@@ -373,12 +373,314 @@ else:
     haoen110          1242  1241  1241      0    1 Z+   s002    0:00.00 (python3.7)
     
 
+### 如何避免僵尸进程产生
+
+`pid,status = os.wait()`
+- 功能：
+    - 在父进程中阻塞等待处理子进程退出
+- 返回值：
+    - pid 退出的子进程的PID号
+    - status 获取子进程退出状态
+
+
+```python
+import os 
+from time import sleep 
+
+pid = os.fork()
+
+if pid < 0:
+    print("create process failed")
+elif pid == 0:
+    sleep(3)
+    print("Child process exit",os.getpid())
+    os._exit(3)
+else:
+    pid,status = os.wait()
+    print(pid,status)
+    print(os.WEXITSTATUS(status)) #获取子进程退出状态
+    while True:
+        pass
+```
+
+`pid,status = os.waitpid(pid，option)`
+            
+- 功能 ：
+    - 在父进程中阻塞等待处理子进程退出
+- 参数 ： 
+    - pid -1 表示等待任意子进程退出
+    - pid >0 表示等待对应PID号的子进程退出
+    - option  0 表示阻塞等待
+    - WNOHANG 表示非阻塞
+- 返回值： 
+    - pid 退出的子进程的PID号
+    - status  获取子进程退出状态
+    
+`os.waitpid(-1,0)  ===> os.wait()`
+
+
+```python
+import os
+from time import sleep 
+
+pid = os.fork()
+
+if pid < 0:
+    print("create process failed")
+elif pid == 0:
+    sleep(3)
+    print("Child process exit",os.getpid())
+    os._exit(3)
+else:
+    while True:
+        sleep(1)
+        #通过非阻塞的形式捕获子进程退出
+        pid,status = os.waitpid(-1,os.WNOHANG)
+        print(pid,status)
+        print(os.WEXITSTATUS(status)) #获取子进程退出状态
+    while True:
+        pass
+```
+
+- 让父进程先退出
+   1. 父进程创建子进程等待子进程退出
+   2. 子进程创建二级子进程后立即退出
+   3. 二级子进程称为孤儿，和原来的父进程各自执行事件
+
+
+```python
+#创建二级子进程避免僵尸
+
+import os 
+from time import sleep 
+
+def f1():
+    sleep(3)
+    print("第一件事")
+
+def f2():
+    sleep(4)
+    print("第二件事")
+
+pid = os.fork()
+
+if pid < 0:
+    print('error')
+elif pid == 0:
+    #创建二级子进程
+    p = os.fork()
+    if p == 0:
+        f2() #做第二件事
+    else:
+        os._exit(0)
+else:
+    os.wait()  #等一级子进程退出
+    f1()  #做第一件事
+```
+
 - 写一个聊天室
-- 功能 ： 类似qq群聊
-1. 进入聊天室需要输入姓名，姓名不能重复
-2. 有人进入聊天室会向其他人发送通知
-   xxx 进入了聊天室
-3. 一个人发消息，其他人会收到消息
-   xxx 说 ： xxxxxxxx
-4. 某人退出聊天室，其他人也会收到通知
-   xxx 退出了聊天室
+- 功能：类似qq群聊
+    1. 进入聊天室需要输入姓名，姓名不能重复
+    2. 有人进入聊天室会向其他人发送通知  
+       xxx 进入了聊天室
+    3. 一个人发消息，其他人会收到消息  
+       xxx 说 ： xxxxxxxx
+    4. 某人退出聊天室，其他人也会收到通知  
+       xxx 退出了聊天室
+    5. 管理员喊话 服务端发送消息所有的客户端都就收到  
+       管理员说 ：xxxxxx
+
+
+- 功能模型：转发
+- 需要的技术：套接字通信 udp套接字
+- 用户存储：字典或列表
+- 消息收发的随意性：多进程
+
+
+- 代码设计
+    1. 封装 将每个功能封装为函数
+    2. 接口测试（每实现一步就测试一步）
+
+
+- 代码编写流程
+    - 搭建网络连接---> 创建多进程---> 每个进程功能编写---> 项目功能模块实现
+
+
+- **登录**
+    - 客户端： 
+        1. 输入姓名，将信息发给服务端（L name）
+        2. 等待服务端回复，根据回复判断是否登录成功
+    - 服务端： 
+        1. 接收请求信息，判断请求类型  
+        2. 判断用户名是否存在，如果存在回复不能登录
+        3. 如果不存在回复可以登录并插入到数据结构，发送通知给其他用户
+
+- **聊天**
+    - 客户端：
+        1. 创建**父子进程**，一个发，一个收！
+        2. 发送聊天请求/接收聊天信息
+    - 服务端：
+        1. 接收请求信息
+        2. 将消息转发给其他客户端
+
+
+
+- 退出
+
+- 管理员消息
+
+
+```python
+#!/usr/bin/env python3
+
+from socket import * 
+import os,sys 
+
+#登录判断
+def do_login(s,user,name,addr):
+    if (name in user)  or  name == '管理员': # name in user 是判断键
+        s.sendto("该用户已存在".encode(),addr) 
+        return
+    s.sendto(b'OK',addr)
+
+    #通知其他人
+    msg = "\n欢迎 %s 进入聊天室"%name 
+    for i in user:
+        s.sendto(msg.encode(),user[i])
+    #插入用户
+    user[name] = addr 
+
+#转发聊天消息
+def do_chat(s,user,name,text):
+    msg = "\n%s 说:%s"%(name,text)
+    for i in user:
+        if i != name:
+            s.sendto(msg.encode(),user[i])
+
+#退出聊天室
+def do_quit(s,user,name):
+    msg = '\n' + name + "退出了聊天室"
+    for i in user:
+        if i == name:
+            s.sendto(b'EXIT',user[i])
+        else:
+            s.sendto(msg.encode(),user[i])
+    #从字典删除用户
+    del user[name]
+
+
+# 接收客户端请求
+def do_parent(s):
+    #存储结构 {'zhangsan':('127.0.0.1',9999)}
+    user = {} # 创建字典
+
+    while True:
+        msg,addr = s.recvfrom(1024)
+        msgList = msg.decode().split(' ')
+        
+        #区分请求类型
+        if msgList[0] == 'L':
+            do_login(s,user,msgList[1],addr)  # 字典是可变类型，函数内部可以改变其内容
+        elif msgList[0] == 'C':
+            do_chat(s,user,msgList[1],\
+                ' '.join(msgList[2:]))
+        elif msgList[0] == 'Q':
+            do_quit(s,user,msgList[1])
+
+# 做管理员喊话
+def do_child(s,addr): # 自己发送给父进程，父进程接收
+    while True:
+        msg = input("管理员消息:")
+        msg = 'C 管理员 ' + msg 
+        s.sendto(msg.encode(),addr)
+
+#创建网络,创建进程,调用功能函数
+def main():
+    #server address 
+    ADDR = ('0.0.0.0',9999)
+
+    #创建套接字
+    s = socket(AF_INET,SOCK_DGRAM) # 创建UDP套接字
+    s.setsockopt(SOL_SOCKET,SO_REUSEADDR,1)
+    s.bind(ADDR)
+
+    #创建一个单独的进程处理管理员喊话功能
+    pid = os.fork()
+    if pid < 0:
+        sys.exit("创建进程失败")
+    elif pid == 0:
+        do_child(s,ADDR)
+    else:
+        do_parent(s)
+
+if __name__ == "__main__":
+    main()
+```
+
+
+```python
+# client
+from  socket import * 
+import sys,os 
+
+#发送消息
+def send_msg(s,name,addr):
+    while True:
+        text = input("发言:")
+        #如果输入quit表示退出
+        if text.strip() == 'quit':
+            msg = 'Q ' + name
+            s.sendto(msg.encode(),addr)
+            sys.exit("退出聊天室") 
+                      
+        msg = 'C %s %s'%(name,text)
+        s.sendto(msg.encode(),addr)
+
+#接收消息
+def recv_msg(s):
+    while True:
+        data,addr = s.recvfrom(2048)
+        if data.decode() == 'EXIT':
+            sys.exit(0)
+        print(data.decode() + "\n发言:",end="") 
+
+#创建套接字,登录,创建子进程
+def main():
+    # 从命令行获取服务端地址
+    if len(sys.argv) < 3:
+        print("请在后面附上IP地址和端口，用空格隔开")
+        return
+    HOST = sys.argv[1]
+    PORT = int(sys.argv[2])
+    ADDR = (HOST,PORT)
+
+    #创建套接字
+    s = socket(AF_INET,SOCK_DGRAM)
+
+    while True:
+        name = input("请输入姓名:")
+        msg = "L" + " " + name 
+        #发送登录请求
+        s.sendto(msg.encode(),ADDR)
+        #等待服务器回复
+        data,addr = s.recvfrom(1024)
+        if data.decode() == 'OK':
+            print("您已进入聊天室")
+            break 
+        else:
+            #不成功服务端会回复不允许登录原因
+            print(data.decode())
+
+    #创建父子进程
+    pid = os.fork()
+    if pid < 0:
+        sys.exit("创建子进程失败")
+    elif pid == 0:
+        send_msg(s,name,ADDR)
+    else:
+        recv_msg(s)
+
+
+if __name__ == "__main__":
+    main()
+```
