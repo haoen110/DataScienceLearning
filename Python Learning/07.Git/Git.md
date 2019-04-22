@@ -70,6 +70,12 @@
     - 将文件提交到**暂存区**
     - 提交内容可以是一个文件，多个文件用个空格分开
     - 如果是 * 表示所有文件，也可以是目录
+- `git add .`
+    - 监控工作区的状态树，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。
+- `git add -u`
+    - 仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区，add -u不会提交新文件（untracked file）--update的缩写）
+- `git add -A`
+    - 是上面两个功能的合集（git add --all的缩写）
 - `git rm --cached Readme.txt`   
     - 删除暂存区某个文件提交记录
    
@@ -77,6 +83,7 @@
 - `git commit -m "some message"`
    - 同步时需要附加一些同步信息，在-m后添加
    - 所有对工作区的修改如果想同步到本地仓库，都需要add--->commit
+   - `git commit -ma "some message"` == `git add .` + `git commit -m "some message"`
 
 ### 查看commit日志
     git log
