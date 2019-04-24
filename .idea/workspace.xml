@@ -2,11 +2,774 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/haoen110.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProjects/student/Student.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProjects/student/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProjects/student/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProjects/student/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProjects/student/student_info.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux Learning/Linux Learning.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linux Learning/笔记/1. Linux.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/.ipynb_checkpoints/MongoDB-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/MongoDB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/MongoDB.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/MongoDB.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/MongoDB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/grid_read.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/grid_write.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/mongo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/mongo1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/save_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoDB/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/.Rhistory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/.ipynb_checkpoints/MySQL1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/.ipynb_checkpoints/MySQL3-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/Backup/all.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/Backup/db3.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/Backup/md.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/Backup/scx.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQL3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/MySQLPractice.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/MySQL-Files/day02/1-MOSHOU.hero.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/MySQL-Files/day02/2-MOSHOU.sanguo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/MySQL-Files/day03/insert_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/MySQL-Files/day03/scoretable.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/MySQL-Files/day04/LianJieChaXun.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/SQLAlchemy-1.2.10.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day01/day01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day01/存取数据过程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day01/库结构.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day01/表结构.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day02/day02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day03/BTree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day03/Homework.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day03/day03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day04/Day04-Homework.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day04/day04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day05.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day05/Homework-Result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day05/SQLAlchemy-1.2.10.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day05/day05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/day05/orm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/alchemy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/csh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/frist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/mysqlpython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/select.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/testmysqlpython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/mysql/zsg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/NULL/sha1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/data/sanguo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySQL/data/scoretable.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/.idea/Python.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/.ipynb_checkpoints/PythonBasic习题-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/000PythonBasic.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/000PythonBasicPractice" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/001print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/002print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/003statement.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/004.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/005input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/006if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/007if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/008if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/009if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/010abs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/011or.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/012.5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/012.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/013str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/014slice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/015srt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/016str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/017str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/018str.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/019while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/020while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/021while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/022while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/023while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/024while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/025while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/026for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/027for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/028for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/029for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/030continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/031continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/032prime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/033.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/034list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/035list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/036list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/037.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/038dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/039dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/040dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/041.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/042students.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/043set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/044set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/045set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day01/day01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/00_statement.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/01_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/02_print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/03_if.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/04_if_elif_else.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/05_if_embed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/06_if_express.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/07_pass.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/code/08_or.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/day02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/01_age.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/02_second.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/03_if_exercise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/04_season.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/05_month.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/06_score.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day02/exercise/07_absolute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/day02_exercise/01_taxi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/day02_exercise/02_score.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/day02_exercise/03_runnian.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/day03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/exercise/01_str_rectangle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/exercise/02_string_process.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/exercise/03_huiwen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/exercise/04_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day03/exercise/05_chr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/code/01_while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/code/02_while_1~20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/code/03_while_embed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/code/04_break.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/code/05_while_embed_break.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/day04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/01_str_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/02_str_format.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/03_nlines_hello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/04_while_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/05_while_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/06_number_1_20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/07_number_1_20.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/08_number_10_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/09_sum100.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/10_triangle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day04/exercise/11_while_embed_square.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/code/01_for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/code/02_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/code/03_continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/code/04_while_continue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/day03_exercise/02_center_display.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/day03_exercise/03_center_display_with_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/day04_exercise/01_cal_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/day04_exercise/02_triangle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/day04_exercise/03_fromula.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/day05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/01_blanks_count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/02_for_range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/03_number_100.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/04_odd_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/05_number_square.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/06_number_square.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/07_even.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/08_special_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day05/exercise/09_prime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/code/01_deepcopy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/day05_exercise/01_tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/day05_exercise/02_alpha.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/day06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/exercise/01_list_index_slice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/exercise/02_sequence_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/exercise/03_text_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/day06/exercise/04_list_comprehesion_odd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Python01/python_base_docs_html.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/PythonBasic习题.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/01.PythonBasic/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/000PythonAdvanced.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/000PythonAdvancedPractice" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/001fun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/002fun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/003fun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/004fun.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/005return.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/006return.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/007arg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/008arg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/009arg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/010arg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/011prime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/012students.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/013calculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/014lambda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/015.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/016students.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/017map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/018filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/019sorted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/020students.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/021recursion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/022.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/023deco.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/024math.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/025time.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/026time.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/027time.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/028math.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/029random.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/030poker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/031try.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/032.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/033gen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/033iter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/034gen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/035diedai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/036.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/037file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/037file_read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/038file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/038file_read.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/039file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/039file_write.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/040phone_book.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/040phone_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/040phone_output.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/041number.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/041number_in.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/041number_out.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day01/day01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day01/day05_exercise/03_Narcissistic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day01/exercise/01_season.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day01/exercise/02_char_times.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day01/exercise/03_dict_len.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day01/exercise/04_number_names.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/code/01_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/code/02_def.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/code/03_def2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/day01_exercise/01_dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/day01_exercise/01_student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/day01_exercise/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/day02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/exercise/01_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/exercise/02_del_repeate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day02/exercise/03_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/01_return.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/02_return2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/03_pos_arg_give.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/04_seq_arg_give.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/05_keywords_arg_give.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/06_dict_keywords_arg_give.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/07_default_argument.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/08_star_args.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/09_named_keywork_args.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/10_star_star_dict_kwargs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/code/11_combo_args.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/day02_exercise/01_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/day02_exercise/02_monkey.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/day02_exercise/03_perfect_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/day03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/01_return.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/02_input_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/02_input_number2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/03_sum_pow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/04_mysum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/05_mysum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day03/exercise/06_myrange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/01_variable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/02_globals_locals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/03_function_args_give.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/04_function_args_give2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/05_return_function.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/06_function_embed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/07_namespace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/07_namespace2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/08_global.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/09_global.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/10_nonlocal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/code/11_nonlocal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/day03_exercise/01_primes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/day03_exercise/01_student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/day03_exercise/02_student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/day04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/exercise/01_mycalculate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/exercise/02_lambda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day04/exercise/03_mymax.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/code/01_recursion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/code/02_recursion_deep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/code/03_recursion_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/code/04_closure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/day04_exercise/01_mysum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/day04_exercise/02_myfac.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/day04_exercise/03_power_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/day04_exercise/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/day05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/exercise/01_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/exercise/02_filter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/exercise/03_sorted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/exercise/04_student_info_sorted.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python02/day05/exercise/05_recusion_factorial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/code/01_deco1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/code/02_deco2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/code/03_mydeco3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/code/04_time_sleep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/day01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/day05_exercise/01_02_myfac.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/day05_exercise/04_recursion_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/day05_exercise/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/exercise/01_import.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/exercise/01_import2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day01/exercise/02_birthday.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/01_myhello.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/02_sys_platform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/03_sys_argv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/04_sys_exit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/05_test_mymod1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/06_test_mymod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/07_test_mymod3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/08_test_mymod5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/09_test_mypack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mymod7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mypack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mypack/games/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mypack/games/contra.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mypack/games/supermario.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mypack/games/tanks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/code/mypack/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/day01_exercise/01_clock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/day01_exercise/02_alarm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/day01_exercise/03_factorial_sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/day02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day02/exercise/01_guess_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/01_test_mypack_all_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/02_relative_import.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/03_try_except.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/04_try_except2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/05_try_except_as.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/06_try_except.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/07_try_except_else.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/08_try_except_finally.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/09_try_except.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/10_try_finally.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/11_raise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/12_raise_get_age.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/13_assert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/14_built_house.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/15_built_house.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/mypack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/mypack/games/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/mypack/games/contra.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/mypack/games/supermario.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/mypack/games/tanks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/code/mypack/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/day02_exercise/poke.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/day03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/exercise/01_get_score.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/exercise/01_get_score2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/student_project/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/student_project/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day03/student_project/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/code/01_iterator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/code/02_yield.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/code/03_myzip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/code/04_bytes_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/day03_exercise/01_ball.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/day03_exercise/02_zhiyinshu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/day04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/exercise/01_iterator_while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/exercise/02_myinteger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/exercise/03_myodd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day04/exercise/mytest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/01_fileopen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/02_fileread_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/03_file_readlines_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/04_file_write_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/05_file_write_text_with_append.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/06_file_writelines_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/07_sys_stdin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/08_stdout_stderr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/09_flush.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/10_read_binary_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/11_read_binary_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/12_write_binary_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/13_file_tell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/14_file_seek.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/abc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/hello_windows.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/infos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/mynote.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/untitled" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/code/windows.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/day05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/exercise/01_read_text_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/exercise/02_phone_book_input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/exercise/03_phone_book_output.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/exercise/info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/Python03/day05/exercise/phone_book.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/games/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/games/contra.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/games/supermario.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/games/tanks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/mypack/office/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/si.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/student/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/student/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/student/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/02.PythonAdvanced/student/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/.Rhistory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/.ipynb_checkpoints/001PythonOOP-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/.ipynb_checkpoints/002PythonOOP-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/.ipynb_checkpoints/003PythonOOP-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/.ipynb_checkpoints/Practice-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/.ipynb_checkpoints/PythonOOP_Practice-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/002PythonOOP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/002PythonOOP.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/002PythonOOP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/003PythonOOP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/003PythonOOP.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/003PythonOOP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/Practice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/Practice.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/01_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/02_instance_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/03_attribute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/04_dogs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/05_init_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/06_del_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/code/07_object_relative.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/day01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/day04_exercise/01_primes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/day04_exercise/02_myrange.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/day05_exercise/01_input_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/day05_exercise/02_read_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/day05_exercise/numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/exercise/01_class_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day01/exercise/02_class_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/01_class_variable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/02_class_variable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/03_human_count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/04_slots.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/05_classmethod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/06_classmethod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/07_staticmethod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/08_inherit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/09_inherit2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/10_override.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/11_override.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/12_super.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/13_super.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/code/classdoc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/day02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/exercise/student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/student_project/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/student_project/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/student_project/si.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/student_project/student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day02/student_project/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/01_enclosure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/02_poly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/03_multi_inherit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/04_multi_inherit_bug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/05_mro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/06_mro2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/07_str_repr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/08_number_trans.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/09_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/10_bool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/code/11_myiterator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/day02_exercise/02_bicycle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/day03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/exercise/01_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day03/exercise/02_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/01_with.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/02_with.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/03_context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/04_context2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/05_attribute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/06_mynumber.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/07_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/08_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/09_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/10_contains.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/11_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/12_mylist_slice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/13_pep8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/code/info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/day03_exercise/01_fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/day03_exercise/02_fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/day04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/exercise/01_getattribute.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/exercise/02_mylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/orderset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/student_project/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/student_project/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/student_project/si.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/student_project/student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/PythonOOP/day04/student_project/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/student/Student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/student/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/student/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/student/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/student/si.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/03.PythonOOP/student/student_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/.Rhistory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/.ipynb_checkpoints/PythonNET1-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/.ipynb_checkpoints/PythonNET2-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/.ipynb_checkpoints/PythonNET3-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/.ipynb_checkpoints/PythonNET4-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day1/tcp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day1/tcp_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/argv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/broadcast_recv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/broadcast_send.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/http_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/http_test0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/sock_attr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/systest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/tcp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/tcp_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/udp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day2/udp_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/DAY03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/HTTP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/block_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/http_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/poll_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/recv_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/select_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/send_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/tcp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/tcp_client2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day3/timeout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/DAY04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/epoll_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/exit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/fork.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/fork1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/fork_z.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/tcp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/unix_recv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/unix_send.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Day4/while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/TCP1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/TCP_Client.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/TCP_Server.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/UDP.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/UDP_Client.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/UDP_Server.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/byte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/ctype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/ctypes_type.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/huchi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/huishou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/osi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/osi1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/osi2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/setsockopt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/signal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/signal2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/sockopt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/tcp.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/tcp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/tcp45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/tongbu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/urlopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/woshou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/三次握手.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/信号异步.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/共享内存.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/发送接收缓冲.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/四次挥手.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/多路复用.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/父子进程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/线程通信.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/网站访问流程.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/进程锁.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/IMGS/非阻塞.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/chatroom/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/chatroom/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/groupclient.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/groupserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/hh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/recv.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/send.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/tcptran_cli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/Practice/tcptran_ser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET4.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/.Rhistory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/.ipynb_checkpoints/PythonMultiprocessing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/.ipynb_checkpoints/PythonServer-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/.ipynb_checkpoints/PythonThread-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/DAY01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/chatroom/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/chatroom/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/process1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/process2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/waitpid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/DAY02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/clock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/copy_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/daemon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/kill.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/pipe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/pool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/pool_map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/process1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/queue1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/queue2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/value.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY02/wt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/DAY03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/Test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/Test/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/Test/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/Test/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/Test/test3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/alarm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/myThread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/process_event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/process_lock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/sem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/signal_0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/signal_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/thread1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/thread2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/thread3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/thread_event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/thread_lock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY03/wait_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY04/DAY04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY04/driver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY04/fork_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY04/tcp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/DAY05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/HTTPServer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/ftp/ftp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/ftp/ftp_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/gevent_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/gevent_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/greenlet0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/process_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/sock_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/sock_server1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/static/abc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/static/python.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/static/sublime.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/tcp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/thread_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/trace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY05/udp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/DAY03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/Test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/Test/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/Test/test1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/Test/test2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/Test/test3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/alarm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/myThread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/process_event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/process_lock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/sem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/signal_0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/signal_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/thread1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/thread2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/thread3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/thread_event.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/thread_lock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp/wait_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp_c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp_s.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/ftp_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/mulcpy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/mulcpy1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/Practice/mulcpy2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonMultiprocessing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonMultiprocessing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonMultiprocessing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonServer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonServer.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonServer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonThread.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonThread.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/05.PythonThread/PythonThread.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/.ipynb_checkpoints/PythonRegular-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/PythonRegular.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/RegEx.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/dict.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/exer1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/exer2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/regex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/regex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/regex1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/regex2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/regex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/06.Regular/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/07.Git/.ipynb_checkpoints/Git-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/07.Git/Git.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/07.Git/Git.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/07.Git/Git.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/PythonDataScience/.ipynb_checkpoints/Numpy Learning-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/PythonDataScience/.ipynb_checkpoints/Pandas Learning-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/PythonDataScience/Numpy Learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Learning/PythonDataScience/Pandas Learning.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/.Rhistory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/FirstStep.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/FirstStep1.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/jjyc.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/jjyc2.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/R/var.R" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +778,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyProjects/student/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+              <folding>
+                <element signature="e#32#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyProjects/student/menu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MyProjects/student/Student.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MyProjects/student/student_info.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,20 +843,50 @@
         <option value="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork1.py" />
         <option value="$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/wait.py" />
         <option value="$PROJECT_DIR$/Python Learning/PythonDataScience/Numpy Learning.py" />
+        <option value="$PROJECT_DIR$/MyProjects/student/__init__.py" />
+        <option value="$PROJECT_DIR$/MyProjects/student/student_inifo.py" />
+        <option value="$PROJECT_DIR$/MyProjects/student/Student.py" />
+        <option value="$PROJECT_DIR$/MyProjects/student/menu.py" />
+        <option value="$PROJECT_DIR$/MyProjects/student/main.py" />
+        <option value="$PROJECT_DIR$/MyProjects/student/student_info.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -79,45 +912,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Python Learning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Python Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="03.PythonOOP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="Python Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="PythonDataScience" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="R" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,7 +936,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="DataScienceLearning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,12 +944,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="E:\Anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Learning/PythonAdvanced" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyProjects" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Learning/PythonAdvanced" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyProjects/student" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -153,6 +958,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DataScienceLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyProjects/student" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyProjects/student/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DataScienceLearning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MyProjects/student" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MyProjects/student/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.menu" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -213,11 +1069,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13876967" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1416309" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
@@ -226,7 +1083,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32866243" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32866243" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.47388536" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32866243" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -263,87 +1120,59 @@
     <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvancedPractice" />
     <entry file="file://$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvanced" />
     <entry file="file://$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET4.ipynb" />
-    <entry file="file://$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET4.html">
+    <entry file="file://$PROJECT_DIR$/Python Learning/04.PythonNET/PythonNET4.html" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork1.py" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork_test.py" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/wait.py" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/DAY01.txt" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.md" />
+    <entry file="file://$PROJECT_DIR$/R/FirstStep.R" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/PythonDataScience/Numpy Learning.py" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/01.PythonBasic/000PythonBasic.txt" />
+    <entry file="file://$PROJECT_DIR$/Python Learning/02.PythonAdvanced/000PythonAdvanced.txt" />
+    <entry file="file://$PROJECT_DIR$/MyProjects/student/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1480" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork1.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_import_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyProjects/student/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyProjects/student/Student.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/fork_test.py">
+    <entry file="file://$PROJECT_DIR$/MyProjects/student/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="243">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#32#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/wait.py">
+    <entry file="file://$PROJECT_DIR$/MyProjects/student/student_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/05.PythonThread/DAY01/DAY01.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="9390">
-            <caret line="626" selection-start-line="626" selection-end-line="626" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/R/FirstStep.R">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/03.PythonOOP/001PythonOOP.ipynb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/PythonDataScience/Numpy Learning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/01.PythonBasic/000PythonBasic.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Learning/02.PythonAdvanced/000PythonAdvanced.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7731">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="277">
+          <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
         </state>
       </provider>
     </entry>

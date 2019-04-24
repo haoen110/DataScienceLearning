@@ -1,3 +1,0 @@
-xiaozhang,20,100
-xiaoli,19,96
-xiaozhao,18,98
