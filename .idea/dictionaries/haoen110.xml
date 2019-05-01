@@ -1564,6 +1564,7 @@
       <w>add_datalist</w>
       <w>add_row</w>
       <w>addmargins</w>
+      <w>addr</w>
       <w>addr_col</w>
       <w>addr_row</w>
       <w>address</w>
@@ -2427,6 +2428,7 @@
       <w>conflicts</w>
       <w>conformMethod</w>
       <w>congeneric.sim</w>
+      <w>connfd</w>
       <w>console_width</w>
       <w>constantFold</w>
       <w>constrOptim</w>
@@ -6132,6 +6134,7 @@
       <w>snip.rpart</w>
       <w>socketConnection</w>
       <w>socketSelect</w>
+      <w>sockfd</w>
       <w>solarnoon</w>
       <w>solarpos</w>
       <w>solder</w>

@@ -44,8 +44,7 @@
 	    3. 将结果反馈给客户端
 	    4. 注册信息插入数据库
 
-
-    cookie
-    import  getpass
-    passwd = getpass.getpass()
-    功能：隐藏密码输入
+>cookie  
+>import  getpass  
+>passwd = getpass.getpass()  
+>功能：隐藏密码输入
