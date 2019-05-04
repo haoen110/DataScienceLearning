@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/neihanba/neihanba.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/cnblogs/cnblogs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/jpg/jpg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/request.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/06.Regular/PythonRegular.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/06.Regular/PythonRegular.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/.ipynb_checkpoints/Spider1-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Spider1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Spider1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/.ipynb_checkpoints/Spider_reg-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/.ipynb_checkpoints/Spider_reg-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Spider_reg.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/Spider_reg.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" column="160" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="160" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -30,11 +29,38 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/cnblogs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/request.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/jpg/jpg.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/top.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
             <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -74,9 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Python Learning/&lt;&lt;Python 面向对象编程&gt;&gt;" />
-        <option value="$PROJECT_DIR$/Python Learning/Programs/for.py" />
-        <option value="$PROJECT_DIR$/Python Learning/__Python 面向对象编程__" />
         <option value="$PROJECT_DIR$/Python Learning/PythonAdvanced/1.py" />
         <option value="$PROJECT_DIR$/Python Learning/PythonAdvanced/000PythonAdvanced" />
         <option value="$PROJECT_DIR$/Python Learning/PythonAdvanced/001def.py" />
@@ -125,6 +148,9 @@
         <option value="$PROJECT_DIR$/02.Python/08.Spider/neihanba/dz.txt" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/neihanba/neihanba.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/cnblogs/cnblogs.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/jpg/jpg.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/request.py" />
       </list>
     </option>
   </component>
@@ -190,13 +216,6 @@
               <item name="02.Python" type="462c0819:PsiDirectoryNode" />
               <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="maoyan" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -205,7 +224,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyProjects/HttpServer/WebFrame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -386,14 +405,14 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16380544" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16595136" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.32866243" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.32866243" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32866243" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32866243" />
@@ -410,26 +429,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02.Python/04.PythonNET/html/PythonNET1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="89" lean-forward="true" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyProjects/dict/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="750">
-            <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/04.MySQL/MySQL2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyProjects/ftp/ftp_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
@@ -696,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="740" column="11" selection-start-line="740" selection-start-column="7" selection-end-line="740" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/tieba.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -727,29 +719,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/top.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="740" column="11" selection-start-line="740" selection-start-column="7" selection-end-line="740" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/cnblogs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="160" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="160" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/jpg/jpg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
       </provider>
     </entry>
   </component>
