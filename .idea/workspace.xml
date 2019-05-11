@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/douban/douban.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/json_intro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/keyboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/driverfind.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/selenium_intro.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/.ipynb_checkpoints/Spider_lxml-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/.ipynb_checkpoints/Spider_lxml-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Spider_lxml.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/Spider_lxml.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/搜索.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/.ipynb_checkpoints/Spider_-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Spider_.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/urllib.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/urllib_intro.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +23,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+            <state relative-caret-position="386">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
-                <element signature="e#15#30#0" expanded="true" />
+                <element signature="e#451#462#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/info.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/xpath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/selenium_intro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,18 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MyProjects/dict/dict_client.py" />
-        <option value="$PROJECT_DIR$/MyProjects/dict/readme.md" />
-        <option value="$PROJECT_DIR$/MyProjects/dict/dict_server.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Project/debug.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Project/p.md" />
-        <option value="$PROJECT_DIR$/MyProjects/httpserver/HTTPServer/setting.py" />
-        <option value="$PROJECT_DIR$/MyProjects/httpserver/HTTPServer/HttpServer.py" />
-        <option value="$PROJECT_DIR$/MyProjects/httpserver/HttpServer/setting.py" />
-        <option value="$PROJECT_DIR$/MyProjects/httpserver/HttpServer/HttpServer.py" />
-        <option value="$PROJECT_DIR$/MyProjects/httpserver/readme.md" />
-        <option value="$PROJECT_DIR$/02.Python/08.Project/httpserver3.0/HTTPServer/HTTPServer/test.py" />
-        <option value="$PROJECT_DIR$/MyProjects/HttpServer/HttpServer/test.py" />
         <option value="$PROJECT_DIR$/MyProjects/HttpServer/readme.md" />
         <option value="$PROJECT_DIR$/MyProjects/HttpServer/HttpServer/setting.py" />
         <option value="$PROJECT_DIR$/MyProjects/HttpServer/WebFrame/static/index.html" />
@@ -102,6 +142,18 @@
         <option value="$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/json_intro.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douban/douban.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douban/douban.csv" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/phantomjs.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/phantomjs_intro.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/selenium_intro.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/driverfind.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douban_login.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/keyboard.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py" />
       </list>
     </option>
   </component>
@@ -119,6 +171,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="JD" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="MyProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="dict" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -144,72 +236,26 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="01.PythonBasic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="tieba_xpath" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="MyProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="MyProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="dict" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="ics" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike" />
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider/bookstore" />
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider" />
-      <recent name="$PROJECT_DIR$/02.Python/07.Git" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
       <recent name="$PROJECT_DIR$/MyProjects/HttpServer/WebFrame" />
       <recent name="$PROJECT_DIR$/MyProjects/HttpServer" />
       <recent name="$PROJECT_DIR$/MyProjects/dict" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/douban_login" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/bookstore" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider" />
+      <recent name="$PROJECT_DIR$/02.Python/07.Git" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -374,23 +420,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17811158" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18454936" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.46878982" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.46878982" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32866243" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32866243" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299363" />
+      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -403,238 +449,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/jpg/jpg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/top.csv">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11100">
-          <caret line="740" column="11" selection-start-line="740" selection-start-column="7" selection-end-line="740" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/youdao/youdao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="34" selection-start-line="34" selection-end-line="35" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/youdao/re_youdao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/re_tieba_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/第1页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#4;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#4;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#9;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#10;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#11;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#12;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#13;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#14;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#15;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#16;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#17;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#18;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#19;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#20;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#21;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#22;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#23;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#24;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#25;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#26;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#27;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#28;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#29;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#30;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#31;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#32;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#33;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#34;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#35;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#36;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#37;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/第2页.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2009">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#4;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#4;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#4;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#7;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#9;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#10;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#11;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#12;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#13;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#14;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#15;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#16;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#17;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#18;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#19;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#20;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#21;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#22;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#23;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#24;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#25;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#26;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#27;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#28;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#29;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#30;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#31;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#32;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#33;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#34;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#35;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#36;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#code#37;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/tieba_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" column="33" selection-end-line="41" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyProjects/dict/dict_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="25" column="77" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day03/day03.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" selection-start-line="28" selection-end-line="35" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/rev_pymysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-          <folding>
-            <element signature="e#43#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/anjuke/anjuke_mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/anjuke/ajk.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="993">
-          <caret line="539" column="35" selection-start-line="539" selection-start-column="35" selection-end-line="539" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/anjuke/html.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/neihanba/neihanba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/proxies.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,16 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/urllib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="148" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="148" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86">
@@ -754,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="246" column="4" selection-start-line="246" selection-start-column="4" selection-end-line="246" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/xpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -822,16 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="52" column="26" lean-forward="true" selection-end-line="55" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/rev_pymongo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -839,12 +628,167 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/json_intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/urllib_intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="148" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="148" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/ghostdriver.log" />
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/百度.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day05/05_phantomjs+selenium æ¿˝1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/keyboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="31" column="36" lean-forward="true" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban/douban.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-5605">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban/douban.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/driverfind.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/neihanba/neihanba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+        <state relative-caret-position="690">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/selenium_intro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/xpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#451#462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day05/11_∂∑”„÷±≤•◊•»°∞∏¿˝.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="true" selection-end-line="56" />
+          <folding>
+            <element signature="e#21#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/info.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
