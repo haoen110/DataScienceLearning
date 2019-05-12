@@ -13,6 +13,7 @@ ss.send_keys(pro)
 bt = driver.find_element_by_class_name("button")
 bt.click()
 time.sleep(1)
+i = 1
 
 while True:
     # 动态加载 -> 全部加载
@@ -30,9 +31,16 @@ while True:
             writer = csv.writer(f)
             L = [name, price, store, com]
             writer.writerow(L)
-    break
+    print("第%d页爬取成功..." % i)
+    i += 1
+    # 点击下一页
+    if driver.page_source.find("pn-next disabled") == -1:
+        driver.find_element_by_class_name("pn-next").click()
+        time.sleep(1)
+    else:
+        print("爬取完毕，共%d页！" % i)
+        break
 
-# 点击下一页
 # .......
 
 
