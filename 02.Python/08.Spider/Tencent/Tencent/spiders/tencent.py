@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import time
 from Tencent.items import TencentItem
 
 class TencentSpider(scrapy.Spider):
@@ -12,8 +13,9 @@ class TencentSpider(scrapy.Spider):
 
     def parse(self, response):
         for i in range(2, 4):
-            # print(self.url + str(i))
-            yield scrapy.Request(self.url+str(i), callback=self.parse_page, dont_filter=True)
+            print("*"*6, self.url + str(i))
+            time.sleep(1)  # 这里有问题
+            yield scrapy.Request(self.url+str(i), callback=self.parse_page)
 
     def parse_page(self, response):
         # 每个职位节点对象列表

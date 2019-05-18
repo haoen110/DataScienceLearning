@@ -101,3 +101,15 @@ class TencentDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+from Tencent.user_agents import user_agents
+import random
+
+class RandomUserAgentMiddleware(object):
+    def process_request(self, request, spider):
+        request.headers['User-Agent'] = random.choice(user_agents)
+
+
+class ProxyMiddleware(object):
+    def process_request(self, request, spider):
+        request.meta['proxy'] = "http://180.167.162.166:8080"

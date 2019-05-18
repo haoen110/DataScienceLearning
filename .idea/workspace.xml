@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/user_agents.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/douban_login/yzm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/pytess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/test1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/test2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/zhanshen.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/笔记/.ipynb_checkpoints/Spider_scrapy-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/笔记/.ipynb_checkpoints/Spider_scrapy-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/spiders/tencent.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/spiders/tencent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/笔记/Spider_scrapy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/笔记/Spider_scrapy.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,67 +23,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/items.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/spiders/cnblogs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/spiders/daomu.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/spiders/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="15">
+              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/pytess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
               <folding>
-                <element signature="e#24#37#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/pipelines.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
-                <element signature="e#220#246#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/spiders/tengxun.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban_login/yzm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
-                <element signature="e#24#37#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/settings.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-185">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/spiders/tencent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="259">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -103,18 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/cnblogs/cnblogs.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/jpg/jpg.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/request.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/youdao/re_youdao.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/tieba/re_tieba_class.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/putongdaili.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/proxies.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/anjuke/html.txt" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/rev_pymongo.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/anjuke/anjuke.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/anjuke/anjuke_mysql.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/web验证.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/t.xml" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/bookstore/t.xml" />
@@ -151,9 +144,21 @@
         <option value="$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/settings.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/spiders/daomu.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/items.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/settings.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/pipelines.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/user_agent.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/spiders/tencent.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/middlewares.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/settings.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/items.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/settings.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/spiders/douyu.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/pipelines.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/JD/JingDong/JingDong/settings.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/JD/JingDong/JingDong/middlewares.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/spiders/cnblogs.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/settings.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/pytess.py" />
+        <option value="$PROJECT_DIR$/02.Python/08.Spider/douban_login/yzm.py" />
       </list>
     </option>
   </component>
@@ -171,6 +176,83 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="cnblogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="cnblogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Cnblogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="cnblogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Cnblogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Cnblogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="cnblogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Cnblogs" type="462c0819:PsiDirectoryNode" />
+              <item name="Cnblogs" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="douban_login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="tesseract_intro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
+              <item name="示例" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -196,59 +278,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="Daomu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="Daomu" type="462c0819:PsiDirectoryNode" />
-              <item name="Daomu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="Daomu" type="462c0819:PsiDirectoryNode" />
-              <item name="Daomu" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="示例" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,18 +286,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/douban_login" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/bookstore" />
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
       <recent name="$PROJECT_DIR$/MyProjects/HttpServer/WebFrame" />
       <recent name="$PROJECT_DIR$/MyProjects/HttpServer" />
       <recent name="$PROJECT_DIR$/MyProjects/dict" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider/douban_login" />
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike" />
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider/bookstore" />
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider" />
-      <recent name="$PROJECT_DIR$/02.Python/07.Git" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,14 +467,14 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19670959" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19957082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.46751592" />
+      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.44968152" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32866243" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32866243" />
@@ -473,103 +502,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/rev_pymongo.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/urllib_intro.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/ghostdriver.log" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/百度.png" />
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day05/05_phantomjs+selenium æ¿˝1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/keyboard.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/neihanba/neihanba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day05/11_∂∑”„÷±≤•◊•»°∞∏¿˝.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/maoyan/maoyan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day06/01_∂‡œﬂ≥Ã≈¿»°∞ŸÀº≤ªµ√∆‰Ω„∞∏¿˝.py" />
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day05/12_æ©∂´…Ã∆∑≈¿»°.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/info.csv" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/json_intro.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban/douban.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban/douban.csv" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/xpath.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/selenium_intro.py" />
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/threading_baisubudeqijie/baisibudeqijie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/driverfind.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/bs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/示例/bs_intro.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -675,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
@@ -703,37 +628,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/items.py">
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="-112">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="e#220#246#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="201">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/spiders/daomu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="189">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/spiders/tencent.py">
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/user_agents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/spiders/tengxun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
@@ -742,17 +671,196 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="200">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/spiders/tengxun.py">
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        <state relative-caret-position="315">
+          <caret line="112" column="6" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban/douban.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Tencent/Tencent/spiders/tencent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/images/full/1c0f50f3147c52b41f0257f2e3d589707da11265.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#194#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douyu/Douyu/Douyu/spiders/douyu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day08/day08/Douyu/Douyu/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#212#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JingDong/JingDong/spiders/jingdong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JingDong/JingDong/spiders/JD.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JingDong/JingDong/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="116" column="57" selection-start-line="116" selection-start-column="57" selection-end-line="116" selection-end-column="57" />
+          <folding>
+            <element signature="e#169#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/cnblogs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JingDong/JingDong/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/spiders/cnblogs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/cnblogs/Cnblogs/Cnblogs/spiders/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/test1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/test2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/zhanshen.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/pytess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day08/02_tesseractµ«¬Ω∂π∞Í∞∏¿˝.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="e#28#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/douban_login/yzm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
