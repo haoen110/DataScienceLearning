@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="" />
+    <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/JD/info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/tieba/第1页.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/tieba/第2页.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/tieba/第3页.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/tieba/第4页.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/tieba/第5页.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/10.MachineLearning/ipnb/FacialRecongnition.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/10.MachineLearning/ipnb/FacialRecongnition.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,10 +19,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfang.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
+            <state relative-caret-position="300">
               <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="71" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -23,10 +32,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfangpic.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="232">
+              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -35,22 +44,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/tieba.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/第1页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="52" />
+            <state relative-caret-position="225">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
               </folding>
@@ -234,27 +240,21 @@
               <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
               <item name="02.Python" type="462c0819:PsiDirectoryNode" />
               <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaodian" type="462c0819:PsiDirectoryNode" />
+              <item name="anjuke" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
               <item name="02.Python" type="462c0819:PsiDirectoryNode" />
               <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="tieba" type="462c0819:PsiDirectoryNode" />
+              <item name="JD" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
               <item name="02.Python" type="462c0819:PsiDirectoryNode" />
               <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="tieba_xpath" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
+              <item name="neihanba" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,18 +293,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
-      <recent name="$PROJECT_DIR$/MyProjects/HttpServer/WebFrame" />
-      <recent name="$PROJECT_DIR$/MyProjects/HttpServer" />
-      <recent name="$PROJECT_DIR$/MyProjects/dict" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/taobaodian" />
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/taobaodian/pics" />
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro" />
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/douban_login" />
       <recent name="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
+      <recent name="$PROJECT_DIR$/MyProjects/HttpServer/WebFrame" />
+      <recent name="$PROJECT_DIR$/MyProjects/HttpServer" />
+      <recent name="$PROJECT_DIR$/MyProjects/dict" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -473,7 +473,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.21387696" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2167382" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
@@ -508,13 +508,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -779,66 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/info.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/info2.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfang.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfangpic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/tieba.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="52" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/info3.csv">
@@ -885,6 +822,69 @@
             <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/info.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfangpic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/tieba.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/JD/JD.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba/第1页.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tieba_xpath/tieba_xpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
