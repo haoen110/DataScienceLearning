@@ -1,16 +1,6 @@
-# List
-###########################################
-L = list(range(10))
-type(L[0])
-L2 = [str(c) for c in L]
-type(L2[0])
-L3 = [True, '2', 3.0, 4]
-[type(item) for item in L3]
-###########################################
 # Numpy基础
 ###########################################
 import numpy as np
-
 np.array([1, 4, 2, 5, 3])
 np.array([3.14, 4., 2., 3.], dtype=int)
 np.zeros(10, dtype=int)
@@ -24,14 +14,15 @@ np.random.randint(0, 10, (3, 3))
 np.eye(3)
 x1 = np.random.randint(10, size=(3, 4, 5))
 print(x1.ndim, x1.shape, x1.size, x1.nbytes)
+
 ###########################################
 # 数组索引；切片；复制；拼接和分裂
 ###########################################
 import numpy as np
-
 x1 = np.random.randint(10, size=10)
 x1
 print(x1[0], x1[4], x1[-1])
+
 x2 = np.random.randint(10, size=(3, 4))
 x2
 print(x2[0, 0], x2[2, 0], x2[2, -1])
@@ -64,6 +55,7 @@ x[np.newaxis, :]
 x.reshape((3, 1))
 x[:, np.newaxis]
 
+# 合并
 x = np.array([1, 2, 3])
 y = np.array([3, 2, 1])
 np.concatenate(([x, y]))
@@ -76,16 +68,20 @@ np.concatenate([grid, grid], axis=1)
 np.vstack([x, grid])
 np.hstack([grid, x.reshape(3, 1)])
 
+# 拆分
 x = [1, 2, 3, 99,  99, 3, 2, 1]
 x1, x2, x3 = np.split(x, [3, 5])
 print(x1, x2, x3)
+
 grid = np.arange(16).reshape((4, 4))
 upper, lower = np.vsplit(grid, [2])
 left, right = np.hsplit(grid, [2])
+
 print(upper)
 print(lower)
 print(left)
 print(right)
+
 ###########################################
 # 通用函数
 ###########################################
@@ -140,6 +136,7 @@ plt.hist(heights)
 plt.title('Height Distribution of US Presidents')
 plt.xlabel('height(cm)')
 plt.ylabel('number')
+
 ###########################################
 # 广播
 ###########################################
@@ -185,18 +182,9 @@ plt.colorbar()
 ###########################################
 # 比较、掩码、布尔逻辑
 ###########################################
-import numpy as np
-import pandas as pd
-rainfall = pd.read_csv('~/Documents/PythonDataScienceHandbook-master/notebooks/data/Seattle2014.csv')['PRCP'].values
-inches = rainfall / 254  # 1/10mm -> inches
-inches.shape
-import matplotlib.pyplot as plt
-import seaborn; seaborn.set()
-plt.hist(inches, 40)
-
 x = np.array([1, 2, 3, 4, 5])
 x < 3
-x!= 3
+x != 3
 (2 * x) == (x ** 2)
 
 rng = np.random.RandomState(0)
@@ -211,8 +199,17 @@ np.all(x < 10)
 np.all(x == 10)
 np.all(x < 8, axis=1)
 np.sum((inches > 0.5) & (inches < 1))  # & | ~ ^(np.bitwise_nor)
-
 x[x < 5]
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn
+seaborn.set()
+rainfall = pd.read_csv('./02.Python/09.DataScience/data/Seattle2014.csv')['PRCP'].values
+inches = rainfall / 254  # 1/10mm -> inches
+inches.shape
+plt.hist(inches, 40)
 rainy = (inches > 0)
 summer = (np.arange(365) - 172 < 90) & (np.arange(365) - 172 > 0)
 np.median(inches[rainy])
