@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/US States Merge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/programs/Numpy Learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/programs/Numpy Learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Numpy/Function and Broadcasting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Numpy/Function and Broadcasting.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +15,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02.Python/09.DataScience/programs/Numpy Learning.py">
+        <entry file="file://$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/US States Merge.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2985">
-              <caret line="199" column="21" lean-forward="true" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike.py" />
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/json_intro.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/douban/douban.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/douban/douban.csv" />
@@ -101,13 +103,15 @@
         <option value="$PROJECT_DIR$/02.Python/08.Spider/taobaodian/pics/banfangpic.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/taobaodian/banfangpic.py" />
         <option value="$PROJECT_DIR$/02.Python/09.DataScience/programs/Numpy Learning.py" />
+        <option value="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/IndexAlignment.py" />
+        <option value="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/US States Merge.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="223" />
-    <option name="y" value="89" />
-    <option name="width" value="1440" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="720" />
+    <option name="y" value="23" />
+    <option name="width" value="720" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -135,6 +139,21 @@
               <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
               <item name="02.Python" type="462c0819:PsiDirectoryNode" />
               <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
+              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+              <item name="Pandas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -356,12 +375,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="720" y="23" width="720" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22246066" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.30088496" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
@@ -396,13 +415,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../老师笔记/第四阶段-课堂笔记资料/SPIDER/day07/day07/Tengxun/Tengxun/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/Daomu/Daomu/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112">
@@ -772,8 +784,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/09.DataScience/programs/Numpy Learning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2985">
-          <caret line="199" column="21" lean-forward="true" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+        <state relative-caret-position="446">
+          <caret line="199" column="21" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/US States Merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,100 @@
+pandas
+
+~~~~~~~~~~series
+
+创建方法：
+
+	1.
+	series = pd.series([0.25, 0.5, 0.75, 1.0], index=['a', 'b', 'c', 'd'])
+	
+	series.values
+	series.index
+	series[1]
+	series[1:3]
+	series['b']
+
+	2.
+	population_dict = pd.series({'California': 38332521,
+		                   	     'Texas': 26448193,
+		                   		 'New York': 19651127,
+		                   		 'Florida': 19552860,
+		                   		 'Illinois': 12882135})
+	population = pd.Series(population_dict)	 
+	area_dict = {'California': 423967, 
+				 'Texas': 695662, 
+				 'New York': 141297,
+             	 'Florida': 170312, 
+             	 'Illinois': 149995}
+	area = pd.Series(area_dict)                  
+
+~~~~~~~~~~dataframe
+
+创建方法：
+	
+	1. 
+
+	states = pd.DataFrame({'population': population,
+                       	   'area': area})
+    states.index
+    states.columes
+    states['area']
+
+    pd.DataFrame(population, columns=['population'])    
+
+    2. list of dicts
+
+    data = [{'a': i, 'b': 2 * i} for i in range(3)]
+	pd.DataFrame(data)
+
+	3. two-dimensional numpy array
+
+	pd.DataFrame(np.random.rand(3, 2),
+             columns=['foo', 'bar'],
+             index=['a', 'b', 'c'])
+
+    4. numpy structured array
+
+    A = np.zeros(3, dtype=[('A', 'i8'), ('B', 'f8')])
+    pd.DataFrame(A)
+
+~~~~~~~~~~indexing and selection series
+
+data = pd.Series([0.25, 0.5, 0.75, 1.0], index=['a', 'b', 'c', 'd'])
+
+	data['b']
+	'a' in data
+	data.keys()
+	list(data.items())
+	data['e'] = 1.25
+	data['a':'c']
+	data[0:2]
+	data[(data > 0.3) & (data < 0.8)]
+	data[['a', 'e']]
+
+data = pd.Series(['a', 'b', 'c'], index=[1, 3, 5])
+
+	explicit
+		data.loc[1]
+		data.loc[1:3]
+	implicit
+		data.iloc[1]
+		data.iloc[1:3]
+
+~~~~~~~~~~indexing and selection dataframes
+
+data = pd.DataFrame({'area':area, 'pop':pop})
+
+	data['area']
+	data.area
+	data.area is data['area']
+	data['density'] = data['pop'] / data[area]
+	data.values
+	data.T
+	data.values[0]
+
+	data.iloc[:3, :2]
+	data.loc[:'Illinois', :'pop']
+	data.ix[:3, :'pop']
+
+	data.loc[data.density > 100, ['pop', 'density']]
+	data.iloc[0, 2] = 90
