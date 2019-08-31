@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02.Python/08.Spider/weather/w1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notes for Machine Learning/p.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DataScienceLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataScienceLearning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/qiushibaike/qiushibaike.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/08.Spider/笔记/Spider_basic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/08.Spider/笔记/Spider_basic.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/.ipynb_checkpoints/PandasBasic-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/.ipynb_checkpoints/PandasHierarchicalIndexing层级索引-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/.ipynb_checkpoints/PandasHierarchicalIndexing层级索引-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/PandasBasic.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/PandasHierarchicalIndexing层级索引.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/Pandas/PandasHierarchicalIndexing层级索引.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/01.numpy/01.numpy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/01.numpy/01.numpy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/02.matplotlib/02.matplotlib_basic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/02.matplotlib/02.matplotlib_basic.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/03.numpy/03.numpy_basic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/03.numpy/03.numpy_basic.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Python/09.DataScience/notes/04.numpy/04.numpy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Python/09.DataScience/notes/04.numpy/04.numpy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/House-pricing/a-stats-analysis-and-ml-workflow-of-house-pricing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/House-pricing/a-stats-analysis-and-ml-workflow-of-house-pricing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/Titanic/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projects/Titanic/Untitled.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,68 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/spiders/Weather.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/spiders/CSDN.py">
+        <entry file="file://$PROJECT_DIR$/Notes for Machine Learning/p.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+            <state relative-caret-position="78">
+              <caret line="43" selection-start-line="43" selection-end-line="44" selection-end-column="87" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/02.Python/08.Spider/douban_login.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/douban_login/douban_login.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/keyboard.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/douyu/douyu.py" />
@@ -164,6 +111,7 @@
         <option value="$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/settings.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/items.py" />
         <option value="$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/spiders/Weather.py" />
+        <option value="$PROJECT_DIR$/Notes for Machine Learning/p.py" />
       </list>
     </option>
   </component>
@@ -181,6 +129,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="Notes for Machine Learning" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -206,127 +170,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="csdn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="csdn" type="462c0819:PsiDirectoryNode" />
-              <item name="csdn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="csdn" type="462c0819:PsiDirectoryNode" />
-              <item name="csdn" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="weather" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="08.Spider" type="462c0819:PsiDirectoryNode" />
-              <item name="笔记" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-              <item name="Pandas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataScienceLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataScienceLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="02.Python" type="462c0819:PsiDirectoryNode" />
-              <item name="09.DataScience" type="462c0819:PsiDirectoryNode" />
-              <item name="programs" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/02.Python/08.Spider/youdao" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -510,18 +359,18 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2539342" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.26108727" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.33248407" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49785408" visible="true" weight="0.44968152" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49785408" weight="0.44968152" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32866243" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50214595" side_tool="true" weight="0.44968152" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.4356688" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,9 +394,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/test2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/tesseract_intro/zhanshen.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -780,13 +626,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/t.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/t.html" />
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/笔记/Spider_lxml.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -797,16 +637,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="34" selection-start-line="36" selection-start-column="8" selection-end-line="47" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather.py" />
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/info.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -882,52 +713,62 @@
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/spiders/Weather.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="30">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/weather/weather/weather/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/spiders/CSDN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02.Python/08.Spider/csdn/csdn/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes for Machine Learning/p.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="43" selection-start-line="43" selection-end-line="44" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
