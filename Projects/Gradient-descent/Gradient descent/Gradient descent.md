@@ -304,3 +304,86 @@ plt.show()
 
 ![png](output_9_0.png)
 
+
+## Compared to Normal Equation
+
+$$ \theta = (X^T X)^{-1} X^T y $$
+
+
+```python
+X = x
+X.shape
+```
+
+
+
+
+    (30, 1)
+
+
+
+
+```python
+one = np.ones((30, 1))
+one.shape
+X = np.concatenate([one, X], axis=1)
+```
+
+
+
+
+    (30, 1)
+
+
+
+
+```python
+theta = np.linalg.pinv(X.T @ X) @ X.T @ y
+theta
+```
+
+
+
+
+    array([[0.05839456],
+           [0.70327706]])
+
+
+
+
+```python
+print("The result is: h = %.2f + %.2f * x" % (theta[0], theta[1]))
+yh = h(theta[0], theta[1])
+fig1 = plt.figure(dpi=150)
+plt.plot(x, yh)
+plt.plot(x, y, 'o', markersize=1.5)
+for i in range(len(x)):
+    plt.plot([x[i], x[i]], [y[i], yh[i]], "r--", linewidth=0.8)
+plt.title("Fit")
+plt.tight_layout()
+plt.show()
+```
+
+    The result is: h = 0.06 + 0.70 * x
+
+
+
+![png](output_14_1.png)
+
+
+
+```python
+print("gd cost:", cost[-1])
+print("ne cost:", J(theta[0], theta[1]))
+```
+
+    gd cost: 8.042499159722341e-05
+    ne cost: 8.014548878265756e-05
+
+
+
+
+
+    True
+
+
