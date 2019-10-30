@@ -561,7 +561,7 @@ MySQL调优
 			优化后：
 				select id from t1 where id=10
 				union all
-				select id from t1 wehre id= 20;
+				select id from t1 wehre id=20;
 		4、模糊查询尽量避免使用前值 % ，否则全表扫描
 			select name from t1 where name like "%c%";
 		5、尽量避免使用 in 和 not in，否则全表扫描
