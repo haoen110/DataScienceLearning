@@ -6,3 +6,8 @@ CREATE TABLE users(id INT(11) AUTO_INCREMENT PRIMARY KEY,
                    password VARCHAR(100),
                    register_date TIMESTAMP  DEFAULT CURRENT_TIMESTAMP);
 
+CREATE TABLE articles(id INT(11) AUTO_INCREMENT PRIMARY KEY,
+                   title VARCHAR(30),
+                   body VARCHAR(30),
+                   transactor VARCHAR(30),
+                   issue_date TIMESTAMP  DEFAULT CURRENT_TIMESTAMP);
