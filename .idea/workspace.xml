@@ -2,127 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84fe4a2-9b18-4d1d-9997-d50fb5dea6f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/.ipynb_checkpoints/PythonBasic习题-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/000PythonBasicPractice" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/PythonBasic习题.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/Untitled.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/Untitled1.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/001print.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/002print.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/003statement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/004.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/005input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/006if.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/007if.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/008if.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/009if.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/010abs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/011or.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/012.5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/012.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/013str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/014slice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/015srt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/016str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/017str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/018str.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/019while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/020while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/021while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/022while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/023while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/024while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/025while.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/026for.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/027for.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/028for.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/029for.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/030continue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/031continue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/032prime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/033.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/034list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/035list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/036list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/037.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/038dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/039dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/040dict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/041.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/042students.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/043set.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/044set.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/01.PythonBasic/py/045set.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/000PythonAdvanced.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/000PythonAdvancedPractice" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/001fun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/002fun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/003fun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/004fun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/005return.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/006return.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/007arg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/008arg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/009arg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/010arg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/011prime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/012students.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/013calculator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/014lambda.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/015.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/016students.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/017map.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/018filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/019sorted.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/020students.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/021recursion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/022.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/023deco.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/024math.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/025time.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/026time.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/027time.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/028math.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/029random.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/030poker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/031try.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/032.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/033gen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/033iter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/034gen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/035diedai.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/036.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/037file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/037file_read.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/038file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/038file_read.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/039file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/039file_write.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/040phone_book.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/040phone_input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/040phone_output.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/041number.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/041number_in.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/041number_out.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/games/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/games/contra.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/games/supermario.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/games/tanks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/mypack/office/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/si.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/student/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/student/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/student/menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py/student/student_info.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Python/02.PythonAdvanced/py2/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,6 +194,7 @@
       <workItem from="1574226636107" duration="1850000" />
       <workItem from="1575430099991" duration="143000" />
       <workItem from="1575430295677" duration="28000" />
+      <workItem from="1575430743932" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1548929336888</created>
@@ -350,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555216936447</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1575430835045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575430835045</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -383,10 +271,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="301" y="66" key="CommitChangelistDialog2" timestamp="1575430816209">
+    <state x="301" y="66" key="CommitChangelistDialog2" timestamp="1575430834682">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="301" y="66" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1575430816209" />
+    <state x="301" y="66" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1575430834682" />
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2" timestamp="1575430841382">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="203" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1575430841382" />
     <state x="374" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1575430743572">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
