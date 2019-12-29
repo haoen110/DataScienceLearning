@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+<!--    手机端适用-->
+    <meta name="viewport", content="width=device-width", initial-scale="1.0">
+    <title>Style</title>
+<!--    内嵌样式(少量页面中使用)-->
+    <style type="text/css">
+        /*id选择器；大量使用！*/
+        #p2{color: red;}
+        #d1{background-color: #F49E9F}
+        /* *indicate all elements; set all margins 0; default margin is 8px*/
+        *{margin: 0px; padding: 0px}
+        /*tag选择器:效率低*/
+        p{}
+        div{}
+        /*class选择器*/
+        .blue{background-color: #00B0E4}
+        p.blue{background-color: #AA22FF}
+        .block{
+            width: 400px;
+            background-color: #8888FF;
+            color: #fff0f0;
+            text-align: center;
+        }
+        /*伪类*/
+        .block:hover{color: #AA22FF; background-color: #007427}
+        #name:focus{background-color: yellow}
+        /*链接的样式*/
+        a:link{color: green}
+        a:visited{color: orange}
+        a:hover{color: blue}
+        a:active{color: purple}
+        /*群组选择器*/
+        p, div, h3{background-color: #F37626}
+        /*群组子类选择*/
+        div p span{}
+
+    </style>
+<!--    外链样式(项目中使用)-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+<!--    行内样式(单一页面使用)-->
+    <p id="p1" style="color: #007427;">
+        Today is hot.
+    </p>
+    <p id="p2">
+        Today is cold.
+    </p>
+    <div id="d1">Tomorrow is rainy.
+<!--        子样式-->
+        <div>child element</div>
+    </div>
+    <div id="d2">`Tomorrow is snowy.</div>
+    <div id="d3"></div>
+
+<!--    class选择器-->
+    <div class="blue">today</div>
+    <p class="blue">tomorrow</p>
+    <h3 class="blue">heading3</h3>
+<!--    群组选择器-->
+    <div>jintian</div>
+        <p>子类
+            <span>孙子类</span>
+        </p>
+    <p>mingtian</p>
+    <h3>houtian</h3>
+
+    <div class="block">
+        鼠标放上来试试看，这里宽度改变了
+    </div>
+
+    <form action="#">
+        <label for="name">姓名：</label>
+        <input type="text" id="name">
+    </form>
+
+    <a href="https://www.baidu.com">百度</a>
+    <hr>
+
+<!--    尺寸：px像素；百分比相对父元素；em相对单位1em=16px-->
+    <div id="div1" style="width: 100px; height: 50px; background-color: red">div1
+        <div style="width: 20%; background-color: white">child</div>
+    </div>
+    <div id="div2" style="width: 20em; background-color: yellow">移动端建议使用em</div>
+
+<!--    颜色训练-->
+    <p style="background-color: rgba(0, 0, 255, 0.5); color: orangered; width: 300px; text-align: center">
+        这一句话测试颜色
+    </p>
+<!--    内容超出限额-->
+    <p style="width: 100px; height: 100px; overflow: auto;">这一句话测试长度这一句话测试长度这一句话测试长度这一句话测试长度这一句话测试长度这一句话测试长度这一句话测试长度</p>
+</body>
+</html>

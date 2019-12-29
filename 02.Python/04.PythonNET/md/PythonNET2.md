@@ -193,7 +193,7 @@ def handleClient(connfd):
     #     print(line.decode())
 
     try:
-        f = open("index.html")
+        f = open("basic.html")
     except IOError:
         response = "HTTP/1.1 404  not found\r\n"
         response += "\r\n"  #空行

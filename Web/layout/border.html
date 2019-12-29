@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Border</title>
+    <style>
+        #test{
+            /* 固定宽度元素居中 */
+            margin: 0 auto; 
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid blue;
+        }
+        #test2{
+            margin: 0 auto; 
+            width: 0px;
+            height: 0px;
+            border: 50px solid blue;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+        #test3{
+            margin: 0 auto; 
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 2px solid blue;
+            /* 如果做圆，将边框弧度radius设置为长宽一半，或50% */
+            border-radius: 50%;
+        }        
+        input{
+            outline: none;
+        }
+        #img1{
+            display: flex;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            box-shadow: 5px 5px 10px red;
+        }
+        #test4{
+            background-color: red;
+            margin-top: 20px;
+        }
+        #test5{
+            margin-top: 20px;
+            background-color: blue;
+        }
+        #test6{
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+        }
+        #test7{
+            margin: 0 auto;
+            /* margin-top: 40px; */
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        div1
+    </div>
+
+    <div id="test2">
+        div2
+    </div>
+
+    <div id="test3">
+        div3
+    </div>
+
+    <input type="text">
+    <input type="submit">
+    <button type="button" value="操作">操作</button>
+
+    <div id="img1">
+        <img src="imgs/timg.jpg" alt="no" width="20%">
+    </div>
+
+    <div id="test4">
+        div4
+    </div>
+    <div id="test5">
+        div5
+    </div>
+
+    <div id="test6">
+        <div id="test7">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -65,7 +65,7 @@ class HTTPServer(object):
 
     def get_html(self,connfd,getRequest):
         if getRequest == '/':
-            filename = self.static_dir + "/index.html"
+            filename = self.static_dir + "/basic.html"
         else:
             filename = self.static_dir + getRequest
         try:

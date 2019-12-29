@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EnweiH</title>
+</head>
+
+<body>
+    <div id="top">This is top of page.
+        <h1 title="heading1" style="text-align:center">Hello, World</h1>
+        <p>
+            Today is <b>bright</b>! </br> <i>The weather is pretty good!</i>
+        </p>
+        <p>
+            This is paragraph 2. This sentence is a little bit longer.
+        </p>
+        <hr>
+        <p>
+            This is paragraph 3. Above is a line. &copy;
+            <!-- target can customize the way of opening a page -->
+            <a href="https://www.baidu.com" target="_blank">A link to Baidu, new page.</a>
+            <a href="https://www.baidu.com" target="_blank">A link to Baidu</a>
+        </p>
+        <p style="text-align:end;">&copy; EnweiH a&gt;b c &frac12;</p>
+
+    </div>
+
+
+    <div id="main">
+        <h1>This is main part of page.</h1>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577605991&di=62e164591f54544cba62d82572220ef0&imgtype=jpg&er=1&src=http%3A%2F%2Fa1.jikexueyuan.com%2Fhome%2F201507%2F17%2Fd462%2F55a86c87b0eb5.jpg"
+            height="200px" , width="250px">
+        <a href="#top">To top.</a>
+    </div>
+
+    <div id="list">
+        <!-- unordered list -->
+        <ul>
+            <li>Number1</li>
+            <li>Number2</li>
+        </ul>
+        <!-- order list -->
+        <ol start="3" type="i">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ol>
+        <!-- group -->
+        <ul>
+            <li>Section 1</li>
+            <ol>
+                <li>page1</li>
+                <li>page2</li>
+            </ol>
+            <li>Section 2</li>
+            <ol>
+                <li>page1</li>
+                <li>page2</li>
+                <li>page3</li>
+            </ol>
+        </ul>
+    </div>
+
+    <div id="table">
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>22</td>
+                <td>Class4</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <caption>Schedual</caption>
+            <tr>
+                <td colspan="4">Name:</td>
+            </tr>
+            <tr>
+                <td>Weekday</td>
+                <td>Mon.</td>
+                <td>Tue.</td>
+            </tr>
+            <tr>
+                <td rowspan="4">AM</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </table>
+    </div>
+    <hr>
+
+    <div id="form">
+        <form action="#">
+            <div>
+                <label for="name">Please input your username:</label>
+                <input type="text" id="name" name="name" placeholder="Enter">
+                <br>
+                <label for="pwd">Please input your password:</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+            <div>
+                <label for="degree">Degree:</label>
+                <select name="degree" id="degree" name="degree">
+                    <option value="1">Bachlor</option>
+                    <option value="2">Master</option>
+                    <option value="3">Doctor</option>
+                </select>
+            </div>
+
+            <div>
+                <!-- set attribute same to single choice -->
+                <label for="gender">Gender:</label>
+                <input type="radio" checked name="gender" value="1">Male
+                <input type="radio" name="gender" value="2">Female
+            </div>
+
+            <div>
+                <label for="hobby">Hobby:</label>
+                <input type="checkbox" id="hobby" name="hobby">coding
+                <input type="checkbox" name="reading" id="">readning
+            </div>
+
+            <div>
+                <!-- multiple rows and cols input -->
+                <label for="profile">Profile:</label>
+                <textarea name="profile" id="profile" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Singup">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
