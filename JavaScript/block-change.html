@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #tabs{
+           width: 416px;
+           height: 218px;
+           border:solid 1px #ccc;
+       }
+       #tabs>.nav{
+           overflow: hidden;
+       }
+       #tabs>.nav>div{
+           padding: 5px 0;
+           float: left;
+           text-align: center;
+           width: 104px; 
+       }
+       .hidd{
+           display: none;
+       }
+       .show{
+           display: block;
+       }
+       .bg{
+           background-color: #c5c5c5; 
+       }
+       .focus{
+           background-color:#0392cc;
+           color:#fff;
+       }
+    </style>
+</head>
+<body>
+    <div id="tabs">
+        <div class="nav">
+           <div class="bg" id="div1">热点新闻</div>
+           <div class="bg" id="div2">合作播报</div>
+           <div class="bg" id="div3">行业咨询</div>
+           <div id="div4" class="focus">运营攻略</div>
+        </div>
+        <div class="con">
+           <div id="div1_1" class="hidd">1111</div>
+           <div id="div1_2" class="hidd">2222</div>
+           <div id="div1_3" class="hidd">3333</div>
+           <div id="div1_4">4444</div>
+        </div>
+    </div>
+    <script>
+        function $$(id){
+            return document.getElementById(id);
+        }
+        $$("div1").onclick=function(){
+        //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div1").className="focus";
+            $$("div2").className="bg"
+            $$("div3").className="bg"
+            $$("div4").className="bg"
+            //内容元素显示
+            $$("div1_1").className="show"
+            $$("div1_2").className="hidd"
+            $$("div1_3").className="hidd"
+            $$("div1_4").className="hidd"
+        }
+        $$("div2").onclick=function(){
+        //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div2").className="focus";
+            $$("div1").className="bg"
+            $$("div3").className="bg"
+            $$("div4").className="bg"
+            //内容元素显示
+            $$("div1_2").className="show"
+            $$("div1_1").className="hidd"
+            $$("div1_3").className="hidd"
+            $$("div1_4").className="hidd"
+        }
+        $$("div3").onclick=function(){
+        //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div3").className="focus";
+            $$("div2").className="bg"
+            $$("div1").className="bg"
+            $$("div4").className="bg"
+            //内容元素显示
+            $$("div1_3").className="show"
+            $$("div1_2").className="hidd"
+            $$("div1_1").className="hidd"
+            $$("div1_4").className="hidd"
+        }
+        $$("div4").onclick=function(){
+        //  当点击某个按钮时，获取焦点，显示对应内容
+            $$("div4").className="focus";
+            $$("div2").className="bg"
+            $$("div3").className="bg"
+            $$("div1").className="bg"
+            //内容元素显示
+            $$("div1_4").className="show"
+            $$("div1_2").className="hidd"
+            $$("div1_3").className="hidd"
+            $$("div1_1").className="hidd"
+        }
+    </script>
+</body>
+</html>

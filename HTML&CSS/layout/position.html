@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+        }
+        /* 在集合中查找某个子类 */
+        div:nth-child(1){
+            
+        }
+        div:nth-child(2){
+            position: relative;
+            left: 8px;
+        }
+        div:nth-child(3){
+            position: relative;
+            top: 8px;
+        }
+        #parent{
+            height: 300px;
+            width: 300px;
+            border: solid 1px orangered;
+            margin: auto;
+            position: relative;
+        }
+        #parent>#child{
+            height: 100px;
+            width: 100px;
+            background-color: rgba(0, 0, 255, 0.5);
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        #top{
+            width: 100%;
+            height: 25px;
+            background-color: #01204f;
+            border: 0;
+            text-align: center;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 30;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        固定定位
+    </div>
+    <!-- 通过元素的伪类选择器获取相同元素的某个元素 -->
+    <!-- 相对定位 -->
+    <div style="margin-top: 45px;"></div>
+    <div></div>
+    <div></div>
+
+    <!-- 绝对定位(parent相对定位的前提下) -->
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

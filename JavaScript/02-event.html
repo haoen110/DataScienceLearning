@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tip">
+    </div>
+
+    <button onclick="a=document.getElementById('tip'); a.innerText='Hello, World!'">显示字符串到tip</button>
+    <script>
+        // 定义全局变量
+        a = 1;
+        // 定义全局变量
+        A = 2;
+        // 定义页面局部变量
+        var a2 = 3;
+        var a3, a4, a5;
+        var a3 = 4, a4 = 5, a5 = 6;
+
+        // 定义常量
+        const PI = 3.1415926;
+        // 保留两位，显示在页面
+        // alert(PI.toFixed(2));
+    </script>
+
+    <button onclick="a=document.getElementById('tip'); a.innerText=PI.toFixed(2)">显示常量PI到tip并保留两位小数</button>
+
+    <script>
+        var str_name = "hello"
+        console.log(typeof(str_name))
+        var is_save = false
+        console.log(typeof(is_save))
+        var a = 100
+        console.log(typeof(a))
+        var b = a.toString();
+        console.log(typeof(b))
+        var x = "100.5"
+        var c = Number(x)
+        console.log(c)
+    </script>
+
+    <div id="text"></div>
+    <input type="text" id="txt"></input>
+    <button onclick="a=document.getElementById('txt'); t=document.getElementById('text'); t.innerText=a.value;">显示文本框中的内容</button>
+
+    <script>
+        console.log("a的unicode值为"+"a".charCodeAt())
+        var a=10, b=20
+        resulet=a>b?a:b
+        console.log("最大值为:"+resulet)
+    
+    </script>
+</body>
+
+</html>

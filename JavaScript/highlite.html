@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #search{
+            width: 260px;
+            margin: 0 auto;
+        }
+        p>span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="search">
+        <input type="text" id="key">
+        <button id="btnSearch">查询</button>
+        <p id="p1">
+           今天是一个好天气，明天可能会下雨，后天又是一个大晴天，每天都有好心情。
+           今天是一个好天气，明天可能会下雨，后天又是一个大晴天，每天都有好心情。
+        </p>
+    </div>
+    <script>
+       function $$(id){
+           return document.getElementById(id);
+       }
+       //获取查询按钮，并绑定单击事件
+       var btnSearch=$$("btnSearch");
+       //获取文本框对象，并保存
+       var key=$$("key");
+       //获取内容对象，并保存
+       var p1=$$("p1");
+
+       btnSearch.onclick=function(){
+           //定义一个正则对象
+           var reg=new RegExp(key.value,"ig");
+           //获取内容
+           var newStr=p1.innerHTML.replace(reg,"<span>"+key.value+"</span>");
+           //重置新的字符内容
+           p1.innerHTML=newStr;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Please Enter Your Name!</div>
+    <div>
+      <input id="name" type="text" />
+      <button id="btn" onclick="fun01()">Output</button>
+      <button id="btn2" onclick="log.fun02()">Output2</button>
+    </div>
+    <div id="tip">...</div>
+    <script>
+      var nm = document.getElementById("name");
+      var tip = document.getElementById("tip");
+      function fun01() {
+        tip.innerText = "Hello!" + nm.value;
+      }
+      //   JSON 格式函数
+      var log = {
+        fun02: function() {
+          tip.innerText = "Hello!" + nm.value;
+        }
+      };
+    </script>
+  </body>
+</html>

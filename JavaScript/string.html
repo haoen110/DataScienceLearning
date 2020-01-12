@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><h1>Upper Case</h1></div>
+    <div>
+      Output:
+      <div id="tip"></div>
+      Location of a:
+      <div id="tip2"></div>
+      Substring(3, 5):
+      <div id="tip3"></div>
+      Spliting string by ,
+      <div id="tip4"></div>
+    </div>
+    <input type="text" name="" id="text" />
+    <script>
+      var str = document.getElementById("text");
+      var tip = document.getElementById("tip");
+      var tip2 = document.getElementById("tip2");
+      var tip3 = document.getElementById("tip3");
+      str.oninput = function() {
+        tip.innerText = str.value.toUpperCase();
+        tip2.innerText = str.value.indexOf("a");
+        tip3.innerText = str.value.substring(3, 5);
+      };
+    </script>
+  </body>
+</html>

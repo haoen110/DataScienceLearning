@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #check .txt {
+        padding: 5px;
+      }
+      #check .btn {
+        margin: 8px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="check">
+      <h3>输入文字的验证：</h3>
+      <input type="text" id="txt" class="txt" placeholder="请输入字符串内容" />
+      <div class="btn">
+        <button onclick="bb()">验证</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script>
+      function bb() {
+        // 分别获取元素对象，并保存在变量中
+        var txt = document.getElementById("txt");
+        var res = document.getElementById("result");
+        //根据文本框获取的值，进行判断
+        var num = txt.value;
+        //Number(num)  如果是数字，返回数字，如果不是，返回nan
+        //isNan(num) 如果是数字false, 否则返回true
+        var isNum = isNaN(Number(num)) ? false : true;
+        res.innerText = isNum ? "Number" : "Not a number";
+      }
+    </script>
+  </body>
+</html>

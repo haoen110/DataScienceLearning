@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      ul {
+        width: 260px;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        border: solid 1px #cccccc;
+      }
+
+      ul>li:nth-child(1) {
+        font-weight: 700;
+        border: 0;
+        background-color: gray;
+      }
+
+      ul>li {
+        border-bottom: dashed 1px #cccccc;
+      }
+
+      ul>li {
+        padding: 5px 10px;
+      }
+
+      ul>li>span {
+        display: inline-block;
+        width: 80px;
+      }
+
+      #add {
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="ul">
+    </ul>
+    <div id="add">
+      <div>
+        <span>姓名:</pan>
+          <input type="text" id="name">
+      </div>
+      <div>
+        <span>年龄:</pan>
+          <input type="text" id="age">
+      </div>
+      <button id="btn">增加</button>
+    </div>
+    <script>
+      var stu = [{ name: '张三', age: 20 },
+      { name: '李四', age: 30 }]
+      function loadStu() {
+        var HTML = "<li><span>姓名</span><span>年龄</span></li>"
+        for (var i = 0; i < stu.length; i++) {
+          HTML += '<li>';
+          HTML += '<span>' + stu[i].name + '</span>'
+          HTML += '<span>' + stu[i].age + '</span>'
+          HTML += '</li >'
+          console.log(stu[i])
+        }
+        document.getElementById("ul").innerHTML = HTML
+      }
+      loadStu()
+      document.getElementById("btn").onclick = function () {
+        var _name = document.getElementById("name").value
+        var _age = document.getElementById("age").value
+        var _obj = {};
+        _obj.name = _name;
+        _obj.age = _age;
+        stu.push(_obj);
+        loadStu()
+      }
+      var arr2 = ['a', 'b', 'c']
+      arr2.pop()
+      console.log(arr2)
+      arr2.unshift('D')
+      arr2.toString()
+      console.log(arr2)
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #pics{
+           width: 739px;
+           height: 419px;
+           border: solid 0px red;
+           margin: 0 auto;
+           position: relative;
+       }
+       #pics>.lleft{
+           top:48%;
+           left:0;
+           position: absolute;
+           cursor:pointer;
+       }
+       #pics>.rright{
+           top:48%;
+           right: 0;
+           position: absolute;
+           cursor:pointer;
+       }
+    </style>
+</head>
+<body>
+    <!-- 1.添加页面元素
+         2.添加元素样式
+         3.微调，调优 -->
+    <div id="pics">
+        <a href="https://news.sina.com.cn/">
+            <img id="img" src="imgs/gm1.jpg" alt="">
+        </a>
+        <div class="lleft">
+            <img src="imgs/l1.png" alt="">
+        </div>
+        <div class="rright">
+            <img src="imgs/r1.png" alt="">
+        </div>
+    </div>
+    <script>
+      //新建一个数组保存全部图片的地址
+      var arrImgs=['imgs/gm1.jpg','imgs/gm2.jpg','imgs/gm3.jpg','imgs/gm4.jpg','imgs/gm5.jpg']
+      //获取右侧单击按钮对象
+      var rright=document.getElementsByClassName("rright")[0];
+      
+      // 获取左侧单击按钮对象
+      var lleft=document.getElementsByClassName("lleft")[0];
+
+      //获取显示图片元素对象
+      var img=document.getElementById("img");
+      //定义一个下标变量
+      var index=0;
+      //绑定按钮的事件
+      rright.onclick=function(){
+          //下标累加1
+          index++;
+          //判断是否超过最大值
+          if(index==arrImgs.length) index=0;
+          console.log(index);
+          //调用修改属性方法重置图片对象的来源
+          img.setAttribute("src",arrImgs[index]);
+      }
+      //绑定按钮的单击事件
+      lleft.onclick=function(){
+          //判断是否小于0
+          if(index==0) index=arrImgs.length;
+          //下标累减1
+          index--;
+          console.log(index);
+          //调用修改属性方法重置图片对象的来源
+          img.setAttribute("src",arrImgs[index]);
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            #box {
+                width: 150px;
+                border: solid 1px #ccc;
+                margin: auto;
+                padding: 10px 5px;
+                overflow: hidden;
+            }
+            #box > span {
+                display: inline-block;
+                width: 20px;
+                text-align: center;
+                font-size: 28px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <span id="hour">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+        </div>
+        <button id="btn">Stop console output.</button>
+        <script>
+            // var taskID = setInterval(function() {
+            //     console.log("Output ok every 1s.");
+            // }, 1000);
+
+            // var btn = document.getElementById("btn");
+            // btn.onclick = function() {
+            //     clearInterval(taskID);
+            //     console.log("Stopped");
+            // };
+            function singleNum(num) {
+                if (num < 10) {
+                    return "0" + num;
+                } else {
+                    return num;
+                }
+            }
+            function timer() {
+                var dt = new Date();
+                document.getElementById("hour").innerText = singleNum(
+                    dt.getHours()
+                );
+                document.getElementById("min").innerText = singleNum(
+                    dt.getMinutes()
+                );
+                document.getElementById("sec").innerText = singleNum(
+                    dt.getSeconds()
+                );
+            }
+            var taskID2 = setInterval(timer, 1);
+            btn.onclick = function() {
+                clearInterval(taskID2);
+                console.log("Stopped");
+            };
+
+            var taskID3 = setTimeout(function() {
+                console.log("这是两秒后输出的");
+            }, 2000);
+            var taskID3 = setTimeout(function() {
+                console.log("这是四秒后输出的");
+            }, 2000);
+        </script>
+    </body>
+</html>

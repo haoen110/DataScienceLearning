@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            #fs {
+                width: 260px;
+                border: solid 1px #ccc;
+                padding: 10px;
+            }
+
+            .focus {
+                color: #000;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 1.添加需求元素
+         2.添加元素样式
+         3.微调，调优 -->
+
+        <!-- 1. 获取点击链接的对象
+         2. 绑定对象的单击事件
+         3. 在事件中设置p元素内容的字体大小 -->
+        <div id="fs">
+            <div class="title">
+                <!-- 为了使用a元素不跳转，须在href属性中添加js代码 -->
+                <a href="javascript:;">大</a>
+                <a href="javascript:;">中</a>
+                <a href="javascript:;" class="focus">小</a>
+            </div>
+            <p id="p1">
+                操作元素的行内样式,访问元素节点的style属性，获取样式对象；样式对象中包含CSS属性，使用点语法操作。
+            </p>
+        </div>
+        <script>
+            var links = document.getElementsByTagName("a");
+            //根据id号获取p元素并保存在变量中
+            var p1 = document.getElementById("p1");
+
+            //使用函数方式移除全部链接样式
+            function clearFocus() {
+                //遍历整个链接对象集合
+                for (var i = 0; i < links.length; i++) {
+                    //移除每一个链接对象样式
+                    links[i].removeAttribute("class");
+                }
+            }
+
+            //遍历链接对象，获取每一个对象
+            links[0].onclick = function () {
+                //通过style对象访问字体大小属性
+                p1.style.fontSize = "20px";
+                //调用函数移除全部样式
+                clearFocus();
+                //设置选中效果样式
+                this.className = "focus";
+            }
+            links[1].onclick = function () {
+                p1.style.fontSize = "18px";
+                //调用函数移除全部样式
+                clearFocus();
+                //设置选中效果样式
+                this.className = "focus";
+            }
+            links[2].onclick = function () {
+                p1.style.fontSize = "16px";
+                //调用函数移除全部样式
+                clearFocus();
+                //设置选中效果样式
+                this.className = "focus";
+            }
+        </script>
+    </body>
+
+</html>

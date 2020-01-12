@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    Input strings and replace "a" by @.
+    <input type="text" name="" id="text" />
+    <div id="output"></div>
+    <script>
+      var str = "efgabcde";
+      //   在意大小写，全局匹配
+      var reg = /a/gi;
+      var reg2 = new RegExp("f", "ig");
+      console.log(reg.test(str));
+      console.log(reg2.test(str));
+      console.log(reg2.lastIndex);
+
+      var str2 = document.getElementById("text");
+      var output = document.getElementById("output");
+      str2.oninput = function() {
+        output.innerText = str2.value.replace(reg, "@");
+      };
+    </script>
+  </body>
+</html>

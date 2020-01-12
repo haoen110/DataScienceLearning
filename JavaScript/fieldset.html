@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        width: 200px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Change Background Color</legend>
+      <div class="btns">
+        <button id="red">Red</button>
+        <button id="blue">Blue</button>
+        <button id="green">Green</button>
+      </div>
+    </fieldset>
+    <script>
+      var btnRed = document.getElementById("red");
+      var btnBlue = document.getElementById("blue");
+      var btnGreen = document.getElementById("green");
+      btnRed.onclick = function() {
+        document.body.style.backgroundColor = "red";
+      };
+      btnBlue.onclick = function() {
+        document.body.style.backgroundColor = "blue";
+      };
+      btnGreen.onclick = function() {
+        document.body.style.backgroundColor = "green";
+      };
+    </script>
+  </body>
+</html>

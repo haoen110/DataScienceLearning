@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      #pic {
+        width: 300px;
+        border: solid 1px gray;
+        padding: 5px;
+        margin: auto;
+      }
+      img {
+        width: 100%;
+        height: 250px;
+      }
+      #pic input {
+        margin-right: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pic">
+      <div>
+        <img id="img" src="imgs/01.jpeg" alt="no" />
+      </div>
+      <fieldset>
+        <legend>Select Images</legend>
+        <input checked type="radio" name="pic" id="pic1" />
+        <input type="radio" name="pic" id="pic2" />
+        <input type="radio" name="pic" id="pic3" />
+      </fieldset>
+    </div>
+
+    <script>
+      var radio1 = document.getElementById("pic1");
+      var radio2 = document.getElementById("pic2");
+      var radio3 = document.getElementById("pic3");
+      var img = document.getElementById("img");
+      radio1.onclick = function() {
+        img.setAttribute("src", "imgs/01.jpeg");
+      };
+      radio2.onclick = function() {
+        img.setAttribute("src", "imgs/02.jpg");
+      };
+      radio3.onclick = function() {
+        img.setAttribute("src", "imgs/03.jpg");
+      };
+    </script>
+  </body>
+</html>

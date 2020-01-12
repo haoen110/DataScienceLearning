@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            span:hover {
+                color: white;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>首页</span>
+            <span>新闻</span>
+            <span>图片</span>
+            <span>音乐</span>
+        </div>
+        <script>
+            var spans = document.getElementsByTagName("span");
+            spans[0].setAttribute("title", "This is directed to index.");
+            console.log(spans[0].title); //same to spans[0].getAttribute("title")
+            
+        </script>
+    </body>
+</html>

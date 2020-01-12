@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+        <p class="pclass">4</p>
+        <p class="pclass">5</p>
+        <p class="pclass">6</p>
+        <input type="text" name="" id="input" />
+        <span id="out">显示：</span><span></span>
+        <script>
+            var divs = document.getElementsByTagName("div");
+            console.log(divs); //输出列表
+            console.log(divs[1]); //输出第二个元素
+            var classes = document.getElementsByClassName("pclass");
+            console.log(classes);
+
+            var input = document.getElementsByTagName("input");
+            var spans = document.getElementsByTagName("span");
+            input[0].oninput = function() {
+                spans[0].innerText = "显示：" + input[0].value;
+            };
+        </script>
+    </body>
+</html>

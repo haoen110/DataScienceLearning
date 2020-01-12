@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="sw">
+      <input type="range" id="num" min="1" max="10" value="3" />
+      <!-- 在js中绑定函数onchange="move()" -->
+      <div id="tip"></div>
+    </div>
+    <script>
+      var a = document.getElementById("num");
+      var b = document.getElementById("tip");
+      a.onchange = function() {
+        console.log(a.value);
+        b.innerText = a.value;
+        switch (a.value) {
+          case "1":
+            console.log("This is 1");
+            break;
+          case "2":
+            console.log("This is 2");
+            break;
+          default:
+            console.log("No number");
+            break;
+        }
+      };
+    </script>
+  </body>
+</html>

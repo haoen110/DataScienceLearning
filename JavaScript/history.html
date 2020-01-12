@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <a href="https://www.baidu.com">进入百度</a>
+        <script>
+            var his = window.history;
+            console.log(his);
+            var loc = window.location;
+            console.log(loc);
+            // loc.reload(true); //false表示从缓存刷新
+        </script>
+        <button onclick="window.history.back()">返回</button>
+        <button onclick="window.history.forward()">
+            前进(先进入百度，然后再返回，再使用)
+        </button>
+        <button onclick="window.location.reload(false)">
+            刷新页面
+        </button>
+    </body>
+</html>

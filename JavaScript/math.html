@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num = 123.4563;
+      console.log("向上取整" + Math.ceil(num));
+      console.log("向下取整" + Math.floor(num));
+      console.log("四舍五入" + Math.round(num));
+      console.log("随机数" + Math.random());
+      var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D"];
+      console.log("定义列表:" + arr);
+      var index = Math.floor(Math.random() * arr.length);
+      console.log("随机输出列表中的值:" + arr[index]);
+      var r = "";
+      console.log("随机抽取列表中的值4个");
+      for (var i = 1; i < 5; i++) {
+        var index = Math.floor(Math.random() * arr.length);
+        r = r + arr[index];
+        console.log(r);
+      }
+    </script>
+  </body>
+  u
+</html>
